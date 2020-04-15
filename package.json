@@ -49,6 +49,7 @@
   "author": "simplr-components",
   "license": "MIT",
   "dependencies": {
+    "@material/mwc-button": "^0.14.1",
     "@material/mwc-icon": "^0.14.1",
     "@material/mwc-textfield": "^0.14.1",
     "@webcomponents/webcomponentsjs": "^2.4.3",
