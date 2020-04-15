@@ -9,6 +9,9 @@ export const PrimaryButton = () => html`
   <p>Normal button</p>
   <simplr-button label="Button"></simplr-button>
 
+  <p>On click event</p>
+  <simplr-button label="Click me for event" @click="${() => alert('YAY!')}"></simplr-button>
+
   <p>Icon button</p>
   <simplr-button label="Button" icon="cancel"></simplr-button>
 
