@@ -24,8 +24,14 @@ export const PrimaryButton = () => html`
   <simplr-button label="Button" icon="code" secondary raised></simplr-button>
 
   <p>Custom color button</p>
-  <simplr-button label="Button" icon="code"></simplr-button>
-  <simplr-button label="Button" icon="code" raised></simplr-button>
+  <simplr-button label="Button" icon="code" color="#ff6d00"></simplr-button>
+  <simplr-button
+    label="Button"
+    icon="code"
+    color="#ff6d00"
+    labelColor="#484848"
+    raised
+  ></simplr-button>
 
   <p>Outlined button</p>
   <simplr-button label="Button" outlined></simplr-button>
