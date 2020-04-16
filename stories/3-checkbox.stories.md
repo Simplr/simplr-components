@@ -1,28 +1,50 @@
+```js script
 import { html } from 'lit-html';
 import '../lib/input/checkbox/checkbox.js';
 
 export default {
   title: 'Checkbox elements',
 };
+```
 
-export const Checkbox = () =>
-  html`
-    <p>Normal checkbox</p>
+### Normal checkbox
+```js preview-story
+export const Checkbox = () => html`
     <simplr-checkbox label="Label"></simplr-checkbox>
+`
+```
 
-    <p>Without label</p>
+### Normal checkbox without label
+```js preview-story
+export const CheckboxWithoutLabel = () => html`
     <simplr-checkbox></simplr-checkbox>
+`
+```
 
-    <p>Indeterminate</p>
+### Indeterminate checkbox
+```js preview-story
+export const IndeterminateCheckbox = () => html`
     <simplr-checkbox label="Label" indeterminate></simplr-checkbox>
+`
+```
 
-    <p>Disabled</p>
+### Disabled checkbox
+```js preview-story
+export const DisabledCheckbox = () => html`
     <simplr-checkbox label="Label" disabled></simplr-checkbox>
+`
+```
 
-    <p>Checked</p>
+### Checked checkbox
+```js preview-story
+export const CheckedCheckbox = () => html`
     <simplr-checkbox label="Label" checked></simplr-checkbox>
+`
+```
 
-    <p>@change event listener (Prints to console)</p>
+### Checkbox with change event
+```js preview-story
+export const CheckboxWithEvent = () => html`
     <simplr-checkbox
       id="event-checkbox"
       label="Label"
@@ -32,4 +54,5 @@ export const Checkbox = () =>
         console.log('Checked ', document.querySelector('#event-checkbox').getChecked());
       }}"
     ></simplr-checkbox>
-  `;
+`
+```

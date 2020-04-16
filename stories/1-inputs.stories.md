@@ -1,83 +1,132 @@
+``` js script
 import { html } from 'lit-html';
 import '../lib/input/text-input/text-input.js';
 import '../lib/input/number-input/number-input.js';
 import '../lib/input/email-input/email-input.js';
 import '../lib/input/password-input/password-input.js';
+import '../lib/button/simplr-button.js';
 
 export default {
   title: 'Input elements',
+    parameters: { components: 'simplr-input' }
 };
+```
 
+### Normal input
+```js preview-story
 export const TextInput = () =>
-  html`
-    <p>Normal Text Input</p>
+html`
     <simplr-text-input label="Label"></simplr-text-input>
-    <button onclick="console.log(document.querySelector('simplr-text-input').getValue())">
-      Console log value
-    </button>
+`
+```
 
-    <p>Input with icon</p>
-    <simplr-text-input label="Label" icon="cancel"></simplr-text-input>
+### Input with icon
+```js preview-story
+export const TextInputWithIcon = () =>
+html`
+<simplr-text-input label="Label" icon="cancel"></simplr-text-input>
+`
+```
 
-    <p>Input with icon (Trailing)</p>
+### Input with trailing icon
+```js preview-story
+export const TextInputWithTrailingIcon = () =>
+html`
     <simplr-text-input label="Label" iconTrailing="cancel"></simplr-text-input>
+`
+```
 
-    <p>Required input</p>
+### Required input
+```js preview-story
+export const RequiredInput = () =>
+html`
     <simplr-text-input label="Label" required></simplr-text-input>
+`
+```
 
-    <p>Required input ( Custom error message )</p>
+
+### Required input ( Custom error message )
+```js preview-story
+export const RequiredInputWithCustomErrorMessage = () =>
+html`
     <simplr-text-input
       label="Label"
       required
       errorMessage="${'This input is not valid'}"
     ></simplr-text-input>
+`
+```
 
-    <p>Disabled input</p>
+### Disabled input
+```js preview-story
+export const DisabledInput = () =>
+html`
     <simplr-text-input label="Label" ?disabled="${true}"></simplr-text-input>
+`
+```
 
-    <p>Fullwidth input</p>
+### Fullwidth input
+```js preview-story
+export const FullwidthInput = () =>
+html`
     <simplr-text-input label="Label" ?fullWidth="${true}"></simplr-text-input>
+`
+```
 
-    <p>Character counter input</p>
+### Character counter input
+```js preview-story
+export const CharacterCounterInput = () =>
+html`
     <simplr-text-input label="Label" ?charCounter="${true}" maxLength="255"></simplr-text-input>
+`
+```
 
-    <p>Placeholder</p>
+### Input with placeholder
+```js preview-story
+export const InputWithPlaceholder = () =>
+html`
     <simplr-text-input label="Label" placeHolder="Placeholder"></simplr-text-input>
+`
+```
 
-    <p>Helper Text</p>
+### Input with helper text
+```js preview-story
+export const InputWithHelperText = () =>
+html`
     <simplr-text-input
       label="Label"
       helperText="I'm here to help"
       ?helperPersistent="${true}"
     ></simplr-text-input>
+`
+```
 
-    <p>Helper Text (disappearing)</p>
+### Input with helper text (Disappearing)
+```js preview-story
+export const InputWithDisappearingHelperText = () =>
+html`
     <simplr-text-input label="Label" helperText="${"I'm here to help"}"></simplr-text-input>
-  `;
+`
+```
 
+
+### Number input
+```js preview-story
 export const NumberInput = () => html`
-  <p>Number input</p>
   <simplr-number-input label="Label"></simplr-number-input>
-
-  <p>
-    Number input uses the same properties as the text input. Refer to Text Input for more examples
-  </p>
 `;
+```
 
+### Email input
+```js preview-story
 export const EmailInput = () => html`
-  <p>Email input</p>
   <simplr-email-input label="Label"></simplr-email-input>
-
-  <p>
-    Email input uses the same properties as the text input. Refer to Text Input for more examples
-  </p>
 `;
+```
 
+### Password input
+```js preview-story
 export const PasswordInput = () => html`
-  <p>Password input</p>
   <simplr-password-input label="Label"></simplr-password-input>
-
-  <p>
-    Password input uses the same properties as the text input. Refer to Text Input for more examples
-  </p>
 `;
+```
