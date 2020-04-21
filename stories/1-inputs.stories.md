@@ -5,6 +5,7 @@ import '../lib/input/number-input/number-input.js';
 import '../lib/input/email-input/email-input.js';
 import '../lib/input/password-input/password-input.js';
 import '../lib/button/simplr-button.js';
+import '../lib/input/textarea/textarea.js';
 
 export default {
   title: 'Input elements',
@@ -129,4 +130,12 @@ export const EmailInput = () => html`
 export const PasswordInput = () => html`
   <simplr-password-input label="Label"></simplr-password-input>
 `;
+```
+
+### Textarea input
+
+```js preview-story
+export const TextareaInput = () => html`
+    <simplr-text-area label="Label"></simplr-text-area>
+`
 ```
