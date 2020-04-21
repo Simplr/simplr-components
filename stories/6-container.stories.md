@@ -1,7 +1,7 @@
 ```js script
 import { html } from 'lit-html';
 import '../lib/containers/container.js';
-import '../lib/button/simplr-button.js';
+import '../lib/button/button.js';
 
 export default {
   title: 'Container',

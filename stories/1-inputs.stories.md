@@ -4,7 +4,7 @@ import '../lib/input/text-input/text-input.js';
 import '../lib/input/number-input/number-input.js';
 import '../lib/input/email-input/email-input.js';
 import '../lib/input/password-input/password-input.js';
-import '../lib/button/simplr-button.js';
+import '../lib/button/button.js';
 import '../lib/input/textarea/textarea.js';
 
 export default {
