@@ -1,30 +1,18 @@
-<p align="center">
-  <img width="200" src="https://open-wc.org/hero.png"></img>
-</p>
+![Simplr Logo](simplr_logo.png)
 
-## Open-wc Starter App
+## Simplr Components
+Simplr Components is a Web Component library built on top of the [Material Components Web Components](https://github.com/material-components/material-components-web-components) library by [Material Components](https://github.com/material-components)
 
-[![Built with open-wc recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://github.com/open-wc)
 
-## Quickstart
+Simplr Components takes use of the Material Design principles and web components provided by Material Components, but adds some additional functionality to components and a few missing ones like containers.
 
-To get started:
 
-```sh
-npm init @open-wc
-# requires node 10 & npm 6 or higher
-```
+### Developing
 
-## Scripts
+You can run the storybook instance by running `npm run storybook`
 
-- `start` runs your app for development, reloading on file changes
-- `start:build` runs your app after it has been built using the build command
-- `build` builds your app and outputs it in your `dist` directory
-- `test` runs your test suite with Karma
-- `lint` runs the linter for your project
 
-## Tooling configs
+### Component description
 
-For most of the tools, the configuration is in the `package.json` to reduce the amount of files in your project.
+*Components description table coming soon* 
 
-If you customize the configuration a lot, you can consider moving them to individual files.
