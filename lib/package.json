@@ -1,0 +1,43 @@
+{
+  "name": "simplr-components",
+  "version": "0.0.0",
+  "description": "Simplr wrapper for Material Web Components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simplr/simplr-components.git"
+  },
+  "keywords": [
+    "simplr",
+    "web-components",
+    "lit-html"
+  ],
+  "author": "Simplr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Simplr/simplr-components/issues"
+  },
+  "homepage": "https://github.com/Simplr/simplr-components#readme",
+  "dependencies": {
+    "@material/mwc-button": "^0.14.1",
+    "@material/mwc-checkbox": "^0.14.1",
+    "@material/mwc-dialog": "^0.14.1",
+    "@material/mwc-fab": "^0.14.1",
+    "@material/mwc-formfield": "^0.14.1",
+    "@material/mwc-icon": "^0.14.1",
+    "@material/mwc-icon-button": "^0.14.1",
+    "@material/mwc-icon-button-toggle": "^0.14.1",
+    "@material/mwc-list": "^0.14.1",
+    "@material/mwc-radio": "^0.14.1",
+    "@material/mwc-select": "^0.14.1",
+    "@material/mwc-snackbar": "^0.14.1",
+    "@material/mwc-textarea": "^0.14.1",
+    "@material/mwc-textfield": "^0.14.1",
+    "@webcomponents/webcomponentsjs": "^2.4.3",
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0"
+  }
+}
