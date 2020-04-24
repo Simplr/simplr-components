@@ -65,6 +65,7 @@
     "@material/mwc-snackbar": "^0.14.1",
     "@material/mwc-textarea": "^0.14.1",
     "@material/mwc-textfield": "^0.14.1",
+    "@material/mwc-top-app-bar": "^0.14.1",
     "@webcomponents/webcomponentsjs": "^2.4.3",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
