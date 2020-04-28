@@ -14,15 +14,8 @@ export default {
 | `label`         | `String`  |         | Label for the checkbox                                                                                                                                                   |
 | `checked`       | `Boolean` | `false` | Creates a checked checkbox                                                                                                                                               |
 | `indeterminate` | `Boolean` | `false` | When a checkbox is the parent of a set of child checkboxes, the indeterminate state is used on the parent to indicate that some but not all of its children are checked. |
-| `outlined`      | `Boolean` | `false` | Creates a button that is outlined                                                                                                                                        |
-| `raised`        | `Boolean` | `false` | Creates a button that is elevated above surface                                                                                                                          |
-| `unelevated`    | `Boolean` | `false` | Creates a button that is flush with the surface                                                                                                                          |
-| `dense`         | `Boolean` | `false` | Makes the button text and container slightly smaller                                                                                                                     |
-| `disabled`      | `Boolean` | `false` | Disable the button                                                                                                                                                       |
-| `primary`       | `Boolean` | `false` | Inherits the primary styles from the theme                                                                                                                               |
-| `secondary`     | `Boolean` | `false` | Inherits the secondary styles from the theme                                                                                                                             |
-| `color`         | `String`  |         | Color of the button: Hex / RGBA / String                                                                                                                                 |
-| `labelColor`    | `String`  |         | Color of the label: Hex / RGBA / String                                                                                                                                  |
+| `disabled`      | `Boolean` | `false` | Disables the checkbox                                                                                                                                                    |
+| `value`         | `String`  |         | Value for the checkbox                                                                                                                                                   |
 
 ### Normal checkbox
 
