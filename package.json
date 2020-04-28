@@ -39,7 +39,7 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "(lib|stories)/*.js": [
       "prettier --write",
       "git add"
     ]
