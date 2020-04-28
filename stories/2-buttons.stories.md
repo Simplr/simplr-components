@@ -9,20 +9,20 @@ export default {
 
 ### Properties
 
-| Name           | Type      | Description                                          |
-| -------------- | --------- | ---------------------------------------------------- |
-| `label`        | `String`  | Label for the button                                 |
-| `icon`         | `String`  | Creates a button that has material a icon            |
-| `trailingIcon` | `Boolean` | Creates a button that has trailing a icon            |
-| `outlined`     | `Boolean` | Creates a button that is outlined                    |
-| `raised`       | `Boolean` | Creates a button that is elevated above surface      |
-| `unelevated`   | `Boolean` | Creates a button that is flush with the surface      |
-| `dense`        | `Boolean` | Makes the button text and container slightly smaller |
-| `disabled`     | `Boolean` | Disable the button                                   |
-| `primary`      | `Boolean` | Inherits the primary styles from the theme           |
-| `secondary`    | `Boolean` | Inherits the secondary styles from the theme         |
-| `color`        | `String`  | Color of the button: Hex / RGBA / String             |
-| `labelColor`   | `String`  | Color of the label: Hex / RGBA / String              |
+| Name           | Type      | Default | Description                                          |
+| -------------- | --------- | ------- | ---------------------------------------------------- |
+| `label`        | `String`  |         | Label for the button                                 |
+| `icon`         | `String`  |         | Creates a button that has material a icon            |
+| `trailingIcon` | `Boolean` | `false` | Creates a button that has trailing a icon            |
+| `outlined`     | `Boolean` | `false` | Creates a button that is outlined                    |
+| `raised`       | `Boolean` | `false` | Creates a button that is elevated above surface      |
+| `unelevated`   | `Boolean` | `false` | Creates a button that is flush with the surface      |
+| `dense`        | `Boolean` | `false` | Makes the button text and container slightly smaller |
+| `disabled`     | `Boolean` | `false` | Disable the button                                   |
+| `primary`      | `Boolean` | `false` | Inherits the primary styles from the theme           |
+| `secondary`    | `Boolean` | `false` | Inherits the secondary styles from the theme         |
+| `color`        | `String`  |         | Color of the button: Hex / RGBA / String             |
+| `labelColor`   | `String`  |         | Color of the label: Hex / RGBA / String              |
 
 ### Normal button
 
