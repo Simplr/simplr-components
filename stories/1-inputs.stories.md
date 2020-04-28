@@ -15,35 +15,34 @@ export default {
 
 ### Properties
 
-| Name               | Type      | Description                                                                |
-| ------------------ | --------- | -------------------------------------------------------------------------- |
-| `name`             | `String`  | Name of the input field                                                    |
-| `label`            | `String`  | Label shown above the input field                                          |
-| `icon`             | `String`  | Material icon prepended to the input field                                 |
-| `iconTrailing`     | `String`  | Material icon appended to the input field                                  |
-| `value`            | `String`  | Set value of the input field                                               |
-| `placeHolder`      | `String`  | Placeholder string on the input                                            |
-| `helperText`       | `String`  | Helper text below the input field                                          |
-| `helperPersistent` | `Boolean` | Should the helper text disappear on blur                                   |
-| `required`         | `Boolean` | Is the input field required                                                |
-| `disabled`         | `Boolean` | Is the input field disabled                                                |
-| `fullWidth`        | `Boolean` | Is the input field fullWidth                                               |
-| `outlined`         | `Boolean` | Should the input field use the outlined style of material input            |
-| `chartCounter`     | `String`  | Should the input field have a character counter below it                   |
-| `maxLength`        | `Number`  | The maximum length of the input field value                                |
-| `errorMessage`     | `String`  | Error message that is shown on invalid input                               |
-| `autoValidate`     | `Boolean` | Should the input field automatically validate the input on every keystroke |
-| `autoValidate`     | `Boolean` | Should the input field automatically validate the input on every keystroke |
+| Name               | Type      | Default | Description                                                                |
+| ------------------ | --------- | ------- | -------------------------------------------------------------------------- |
+| `name`             | `String`  |         | Name of the input field                                                    |
+| `label`            | `String`  |         | Label shown above the input field                                          |
+| `icon`             | `String`  |         | Material icon prepended to the input field                                 |
+| `iconTrailing`     | `String`  |         | Material icon appended to the input field                                  |
+| `value`            | `String`  |         | Set value of the input field                                               |
+| `placeHolder`      | `String`  |         | Placeholder string on the input                                            |
+| `helperText`       | `String`  |         | Helper text below the input field                                          |
+| `helperPersistent` | `Boolean` | `false` | Should the helper text disappear on blur                                   |
+| `required`         | `Boolean` | `false` | Is the input field required                                                |
+| `disabled`         | `Boolean` | `false` | Is the input field disabled                                                |
+| `fullWidth`        | `Boolean` | `false` | Is the input field fullWidth                                               |
+| `outlined`         | `Boolean` | `false` | Should the input field use the outlined style of material input            |
+| `chartCounter`     | `String`  |         | Should the input field have a character counter below it                   |
+| `maxLength`        | `Number`  |         | The maximum length of the input field value                                |
+| `errorMessage`     | `String`  |         | Error message that is shown on invalid input                               |
+| `autoValidate`     | `Boolean` | `false` | Should the input field automatically validate the input on every keystroke |
 
 ### Unique properties
 
 ##### Number input
 
-| Name   | Type     | Description                       |
-| ------ | -------- | --------------------------------- |
-| `step` | `Number` | Step size of the number input     |
-| `min`  | `Number` | Minimum value of the number input |
-| `max`  | `Number` | Maximum value of the number input |
+| Name   | Type     | Default | Description                       |
+| ------ | -------- | ------- | --------------------------------- |
+| `step` | `Number` |         | Step size of the number input     |
+| `min`  | `Number` |         | Minimum value of the number input |
+| `max`  | `Number` |         | Maximum value of the number input |
 
 ### Normal input
 
@@ -96,7 +95,10 @@ export const DisabledInput = () =>
 
 ```js preview-story
 export const FullwidthInput = () =>
-  html` <simplr-text-input label="Label" ?fullWidth="${true}"></simplr-text-input> `;
+  html`
+    <!-- Note: FullWidth does not support label; Only placeholder -->
+    <simplr-text-input placeholder="Placeholder" ?fullWidth="${true}"></simplr-text-input>
+  `;
 ```
 
 ### Character counter input
