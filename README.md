@@ -7,6 +7,8 @@ Simplr Components is a Web Component library built on top of the [Material Compo
 Simplr Components takes use of the Material Design principles and web components provided by Material Components, but adds some additional functionality to components and a few missing ones like containers.
 
 
+[Storybook hosted at Github Pages](https://simplr.github.io/simplr-components/)
+
 ### Developing
 
 You can run the storybook instance by running `npm run storybook`

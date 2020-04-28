@@ -7,7 +7,16 @@ export default {
 };
 ```
 
+### Properties
+
+| Name              | Type     | Default | Description                                                                |
+| ----------------- | -------- | ------- | -------------------------------------------------------------------------- |
+| `label`           | `String` |         | Label for the checkbox-group                                               |
+| `options`         | `Array`  | `[]`    | Create checkboxes with labels and values according to the options - model  |
+| `selectedOptions` | `Array`  | `[]`    | Create checkboxes with categories according to the selectedOptions - model |
+
 ### Checkbox group
+
 ```js preview-story
 const singleCategoryOptions = [
   { label: 'Option 1', value: 1 },
@@ -22,10 +31,11 @@ export const CheckboxGroup = () =>
       label="Single category options"
       .options="${singleCategoryOptions}"
     ></simplr-checkbox-group>
-`
+  `;
 ```
 
 ### Checkbox group with categories
+
 ```js preview-story
 const multipleCategoriesOptions = [
   {
@@ -54,5 +64,5 @@ export const MultipleCategoryCheckboxGroup = () =>
       label="Multiple category options"
       .options="${multipleCategoriesOptions}"
     ></simplr-checkbox-group>
-`
+  `;
 ```
