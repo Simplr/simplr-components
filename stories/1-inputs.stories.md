@@ -44,31 +44,47 @@ export default {
 | `min`  | `Number` |         | Minimum value of the number input |
 | `max`  | `Number` |         | Maximum value of the number input |
 
+##### Textarea
+
+| Name   | Type     | Default | Description                |
+| ------ | -------- | ------- | -------------------------- |
+| `rows` | `Number` |         | Number of rows in textarea |
+| `cols` | `Number` |         | Number of cols in textarea |
+
 ### Normal input
 
 ```js preview-story
-export const TextInput = () => html` <simplr-text-input label="Label"></simplr-text-input> `;
+export const TextInput = () =>
+  html`
+    <simplr-text-input label="Label"></simplr-text-input>
+  `;
 ```
 
 ### Input with icon
 
 ```js preview-story
 export const TextInputWithIcon = () =>
-  html` <simplr-text-input label="Label" icon="cancel"></simplr-text-input> `;
+  html`
+    <simplr-text-input label="Label" icon="cancel"></simplr-text-input>
+  `;
 ```
 
 ### Input with trailing icon
 
 ```js preview-story
 export const TextInputWithTrailingIcon = () =>
-  html` <simplr-text-input label="Label" iconTrailing="cancel"></simplr-text-input> `;
+  html`
+    <simplr-text-input label="Label" iconTrailing="cancel"></simplr-text-input>
+  `;
 ```
 
 ### Required input
 
 ```js preview-story
 export const RequiredInput = () =>
-  html` <simplr-text-input label="Label" required></simplr-text-input> `;
+  html`
+    <simplr-text-input label="Label" required></simplr-text-input>
+  `;
 ```
 
 ### Required input ( Custom error message )
@@ -88,7 +104,9 @@ export const RequiredInputWithCustomErrorMessage = () =>
 
 ```js preview-story
 export const DisabledInput = () =>
-  html` <simplr-text-input label="Label" ?disabled="${true}"></simplr-text-input> `;
+  html`
+    <simplr-text-input label="Label" ?disabled="${true}"></simplr-text-input>
+  `;
 ```
 
 ### Fullwidth input
@@ -114,7 +132,9 @@ export const CharacterCounterInput = () =>
 
 ```js preview-story
 export const InputWithPlaceholder = () =>
-  html` <simplr-text-input label="Label" placeHolder="Placeholder"></simplr-text-input> `;
+  html`
+    <simplr-text-input label="Label" placeHolder="Placeholder"></simplr-text-input>
+  `;
 ```
 
 ### Input with helper text
@@ -134,19 +154,27 @@ export const InputWithHelperText = () =>
 
 ```js preview-story
 export const InputWithDisappearingHelperText = () =>
-  html` <simplr-text-input label="Label" helperText="${"I'm here to help"}"></simplr-text-input> `;
+  html`
+    <simplr-text-input label="Label" helperText="${"I'm here to help"}"></simplr-text-input>
+  `;
 ```
 
 ### Number input
 
 ```js preview-story
-export const NumberInput = () => html` <simplr-number-input label="Label"></simplr-number-input> `;
+export const NumberInput = () =>
+  html`
+    <simplr-number-input label="Label"></simplr-number-input>
+  `;
 ```
 
 ### Email input
 
 ```js preview-story
-export const EmailInput = () => html` <simplr-email-input label="Label"></simplr-email-input> `;
+export const EmailInput = () =>
+  html`
+    <simplr-email-input label="Label"></simplr-email-input>
+  `;
 ```
 
 ### Password input
@@ -160,5 +188,8 @@ export const PasswordInput = () => html`
 ### Textarea input
 
 ```js preview-story
-export const TextareaInput = () => html` <simplr-text-area label="Label"></simplr-text-area> `;
+export const TextareaInput = () =>
+  html`
+    <simplr-text-area label="Label"></simplr-text-area>
+  `;
 ```
