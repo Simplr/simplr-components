@@ -38,11 +38,11 @@ export default {
 
 ##### Number input
 
-| Name   | Type     | Default | Description                       |
-| ------ | -------- | ------- | --------------------------------- |
-| `step` | `Number` |         | Step size of the number input     |
-| `min`  | `Number` |         | Minimum value of the number input |
-| `max`  | `Number` |         | Maximum value of the number input |
+| Name   | Type     | Default | Description                                                                   |
+| ------ | -------- | ------- | ----------------------------------------------------------------------------- |
+| `step` | `Number` | `1`     | Step size of the number input. Less than 1 must be given in "0.2", "0.5" etc. |
+| `min`  | `Number` | `NaN`   | Minimum value of the number input                                             |
+| `max`  | `Number` | `NaN`   | Maximum value of the number input                                             |
 
 ##### Textarea
 
