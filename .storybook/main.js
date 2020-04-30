@@ -13,7 +13,7 @@ module.exports = {
     open: true,
   },
   // Rollup build output directory (build-storybook only)
-  outputDir: '../dist',
+  outputDir: '../docs',
   // Configuration for rollup (build-storybook only)
   rollup: config => {
     return config;
