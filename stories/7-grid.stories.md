@@ -10,16 +10,16 @@ export default {
 
 ### Properties
 
-| Name         | Type      | Default | Description                                |
-| ------------ | --------- | ------- | ------------------------------------------ |
-| `item`       | `Boolean` |         | Name of the input field                    |
-| `size`       | `Number`  |         | Label shown above the input field          |
-| `tabletSize` | `Number`  |         | Material icon prepended to the input field |
-| `phoneSize`  | `Number`  |         | Material icon appended to the input field  |
-| `columnGap`  | `String`  | `0px`   | Set value of the input field               |
-| `rowGap`     | `String`  | `0px`   | Placeholder string on the input            |
-| `column`     | `String`  | `null`  | Helper text below the input field          |
-| `row`        | `String`  | `null`  | Should the helper text disappear on blur   |
+| Name         | Type      | Default | Description                                                                       |
+| ------------ | --------- | ------- | --------------------------------------------------------------------------------- |
+| `item`       | `Boolean` | `false` | Shorthand for the grid representing one cell on the container. Check the examples |
+| `size`       | `Number`  |         | Set the size of grid-template-columns                                             |
+| `tabletSize` | `Number`  |         | Set the size of grid-template-columns for tablets                                 |
+| `phoneSize`  | `Number`  |         | Set the size of grid-template-columns for phones                                  |
+| `columnGap`  | `String`  | `0px`   | Set the size of grid-column-gap                                                   |
+| `rowGap`     | `String`  | `0px`   | Set the size of grid-row-gap                                                      |
+| `column`     | `String`  | `null`  | Set custom column size as 'grid-column' value                                     |
+| `row`        | `String`  | `null`  | Set custom row size as 'grid-row' value                                           |
 
 ### Regular grid
 
