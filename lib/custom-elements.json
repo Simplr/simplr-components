@@ -1,0 +1,2490 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "simplr-button",
+      "path": "./button/button.js",
+      "attributes": [
+        {
+          "name": "trailingIcon",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "raised",
+          "type": "boolean"
+        },
+        {
+          "name": "unelevated",
+          "type": "boolean"
+        },
+        {
+          "name": "dense",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "primary",
+          "type": "boolean"
+        },
+        {
+          "name": "secondary",
+          "type": "boolean"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        },
+        {
+          "name": "labelColor",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "trailingIcon",
+          "attribute": "trailingIcon",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "raised",
+          "attribute": "raised",
+          "type": "boolean"
+        },
+        {
+          "name": "unelevated",
+          "attribute": "unelevated",
+          "type": "boolean"
+        },
+        {
+          "name": "dense",
+          "attribute": "dense",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "type": "boolean"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "type": "boolean"
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "type": "string"
+        },
+        {
+          "name": "labelColor",
+          "attribute": "labelColor",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-container",
+      "path": "./containers/container.js",
+      "attributes": [
+        {
+          "name": "block",
+          "type": "boolean"
+        },
+        {
+          "name": "flex",
+          "type": "boolean"
+        },
+        {
+          "name": "inline",
+          "type": "boolean"
+        },
+        {
+          "name": "maxWidth",
+          "type": "boolean"
+        },
+        {
+          "name": "maxHeight",
+          "type": "boolean"
+        },
+        {
+          "name": "noMargin",
+          "type": "boolean"
+        },
+        {
+          "name": "noPadding",
+          "type": "boolean"
+        },
+        {
+          "name": "alignItems",
+          "type": "string"
+        },
+        {
+          "name": "alignContent",
+          "type": "string"
+        },
+        {
+          "name": "justifyContent",
+          "type": "string"
+        },
+        {
+          "name": "flexWrap",
+          "type": "boolean"
+        },
+        {
+          "name": "elevation",
+          "type": "number"
+        },
+        {
+          "name": "roundedCorners",
+          "type": "boolean"
+        },
+        {
+          "name": "verticalCenter",
+          "type": "boolean"
+        },
+        {
+          "name": "horizontalCenter",
+          "type": "boolean"
+        },
+        {
+          "name": "display",
+          "type": "string",
+          "default": "\"block\""
+        },
+        {
+          "name": "width",
+          "type": "string",
+          "default": "\"auto\""
+        },
+        {
+          "name": "height",
+          "type": "string",
+          "default": "\"auto\""
+        },
+        {
+          "name": "flexDirection",
+          "type": "string",
+          "default": "\"row\""
+        },
+        {
+          "name": "margin",
+          "type": "string",
+          "default": "\"8px\""
+        },
+        {
+          "name": "padding",
+          "type": "string",
+          "default": "\"0px\""
+        },
+        {
+          "name": "borderRadius",
+          "type": "string",
+          "default": "\"0px\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "block",
+          "attribute": "block",
+          "type": "boolean"
+        },
+        {
+          "name": "flex",
+          "attribute": "flex",
+          "type": "boolean"
+        },
+        {
+          "name": "inline",
+          "attribute": "inline",
+          "type": "boolean"
+        },
+        {
+          "name": "maxWidth",
+          "attribute": "maxWidth",
+          "type": "boolean"
+        },
+        {
+          "name": "maxHeight",
+          "attribute": "maxHeight",
+          "type": "boolean"
+        },
+        {
+          "name": "noMargin",
+          "attribute": "noMargin",
+          "type": "boolean"
+        },
+        {
+          "name": "noPadding",
+          "attribute": "noPadding",
+          "type": "boolean"
+        },
+        {
+          "name": "alignItems",
+          "attribute": "alignItems",
+          "type": "string"
+        },
+        {
+          "name": "alignContent",
+          "attribute": "alignContent",
+          "type": "string"
+        },
+        {
+          "name": "justifyContent",
+          "attribute": "justifyContent",
+          "type": "string"
+        },
+        {
+          "name": "flexWrap",
+          "attribute": "flexWrap",
+          "type": "boolean"
+        },
+        {
+          "name": "elevation",
+          "attribute": "elevation",
+          "type": "number"
+        },
+        {
+          "name": "roundedCorners",
+          "attribute": "roundedCorners",
+          "type": "boolean"
+        },
+        {
+          "name": "verticalCenter",
+          "attribute": "verticalCenter",
+          "type": "boolean"
+        },
+        {
+          "name": "horizontalCenter",
+          "attribute": "horizontalCenter",
+          "type": "boolean"
+        },
+        {
+          "name": "display",
+          "attribute": "display",
+          "type": "string",
+          "default": "\"block\""
+        },
+        {
+          "name": "width",
+          "attribute": "width",
+          "type": "string",
+          "default": "\"auto\""
+        },
+        {
+          "name": "height",
+          "attribute": "height",
+          "type": "string",
+          "default": "\"auto\""
+        },
+        {
+          "name": "flexDirection",
+          "attribute": "flexDirection",
+          "type": "string",
+          "default": "\"row\""
+        },
+        {
+          "name": "margin",
+          "attribute": "margin",
+          "type": "string",
+          "default": "\"8px\""
+        },
+        {
+          "name": "padding",
+          "attribute": "padding",
+          "type": "string",
+          "default": "\"0px\""
+        },
+        {
+          "name": "borderRadius",
+          "attribute": "borderRadius",
+          "type": "string",
+          "default": "\"0px\""
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-data-table",
+      "path": "./data-table/data-table.js",
+      "attributes": [
+        {
+          "name": "loading",
+          "type": "boolean"
+        },
+        {
+          "name": "tableData",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableColumns",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableOptions",
+          "type": "object",
+          "default": "{\"isRowSelectable\":false,\"tableClass\":\"simplr-table\",\"highlightFirstRowOnMobile\":true}"
+        },
+        {
+          "name": "tableLabel",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "tablePage",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "pageCount",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "resultsPerPage",
+          "type": "number",
+          "default": "20"
+        },
+        {
+          "name": "noResultsMessage",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "loading",
+          "attribute": "loading",
+          "type": "boolean"
+        },
+        {
+          "name": "tableData",
+          "attribute": "tableData",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableColumns",
+          "attribute": "tableColumns",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableOptions",
+          "attribute": "tableOptions",
+          "type": "object",
+          "default": "{\"isRowSelectable\":false,\"tableClass\":\"simplr-table\",\"highlightFirstRowOnMobile\":true}"
+        },
+        {
+          "name": "tableLabel",
+          "attribute": "tableLabel",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "tablePage",
+          "attribute": "tablePage",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "pageCount",
+          "attribute": "pageCount",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "resultsPerPage",
+          "attribute": "resultsPerPage",
+          "type": "number",
+          "default": "20"
+        },
+        {
+          "name": "noResultsMessage",
+          "attribute": "noResultsMessage",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ],
+      "events": [
+        {
+          "name": "rowClick"
+        }
+      ]
+    },
+    {
+      "name": "simplr-dialog",
+      "path": "./dialog/dialog.js",
+      "attributes": [
+        {
+          "name": "elem",
+          "type": "object"
+        },
+        {
+          "name": "primaryAction",
+          "type": "object"
+        },
+        {
+          "name": "secondaryAction",
+          "type": "object"
+        },
+        {
+          "name": "content",
+          "type": "object"
+        },
+        {
+          "name": "stacked",
+          "type": "boolean"
+        },
+        {
+          "name": "onOpened"
+        },
+        {
+          "name": "onClosed"
+        },
+        {
+          "name": "open",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "elem",
+          "attribute": "elem",
+          "type": "object"
+        },
+        {
+          "name": "primaryAction",
+          "attribute": "primaryAction",
+          "type": "object"
+        },
+        {
+          "name": "secondaryAction",
+          "attribute": "secondaryAction",
+          "type": "object"
+        },
+        {
+          "name": "content",
+          "attribute": "content",
+          "type": "object"
+        },
+        {
+          "name": "heading"
+        },
+        {
+          "name": "stacked",
+          "attribute": "stacked",
+          "type": "boolean"
+        },
+        {
+          "name": "onOpened",
+          "attribute": "onOpened"
+        },
+        {
+          "name": "onClosed",
+          "attribute": "onClosed"
+        },
+        {
+          "name": "open",
+          "attribute": "open",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-fab",
+      "path": "./fab/fab.js",
+      "attributes": [
+        {
+          "name": "primary",
+          "type": "boolean"
+        },
+        {
+          "name": "secondary",
+          "type": "boolean"
+        },
+        {
+          "name": "mini",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "extended",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showIconAtEnd",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "position",
+          "type": "string",
+          "default": "\"bottomright\""
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "buttonColor",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "type": "boolean"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "type": "boolean"
+        },
+        {
+          "name": "mini",
+          "attribute": "mini",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "extended",
+          "attribute": "extended",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showIconAtEnd",
+          "attribute": "showIconAtEnd",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "position",
+          "attribute": "position",
+          "type": "string",
+          "default": "\"bottomright\""
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "buttonColor",
+          "attribute": "buttonColor",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-icon-button",
+      "path": "./icon/icon-button.js",
+      "attributes": [
+        {
+          "name": "icon",
+          "type": "string"
+        },
+        {
+          "name": "size",
+          "type": "string"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "primary",
+          "type": "boolean"
+        },
+        {
+          "name": "secondary",
+          "type": "boolean"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string"
+        },
+        {
+          "name": "size",
+          "attribute": "size",
+          "type": "string"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "type": "boolean"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "type": "boolean"
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "type": "string"
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-icon",
+      "path": "./icon/icon.js",
+      "attributes": [
+        {
+          "name": "icon",
+          "type": "string"
+        },
+        {
+          "name": "size",
+          "type": "string"
+        },
+        {
+          "name": "primary",
+          "type": "boolean"
+        },
+        {
+          "name": "secondary",
+          "type": "boolean"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string"
+        },
+        {
+          "name": "size",
+          "attribute": "size",
+          "type": "string"
+        },
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "type": "boolean"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "type": "boolean"
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "type": "string"
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-grid",
+      "path": "./grid/grid.js",
+      "attributes": [
+        {
+          "name": "item",
+          "type": "boolean"
+        },
+        {
+          "name": "size",
+          "type": "number"
+        },
+        {
+          "name": "tabletSize",
+          "type": "number"
+        },
+        {
+          "name": "phoneSize",
+          "type": "number"
+        },
+        {
+          "name": "columnGap",
+          "type": "string",
+          "default": "\"0px\""
+        },
+        {
+          "name": "rowGap",
+          "type": "string",
+          "default": "\"0px\""
+        },
+        {
+          "name": "column",
+          "type": "string"
+        },
+        {
+          "name": "row",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "item",
+          "attribute": "item",
+          "type": "boolean"
+        },
+        {
+          "name": "size",
+          "attribute": "size",
+          "type": "number"
+        },
+        {
+          "name": "tabletSize",
+          "attribute": "tabletSize",
+          "type": "number"
+        },
+        {
+          "name": "phoneSize",
+          "attribute": "phoneSize",
+          "type": "number"
+        },
+        {
+          "name": "columnGap",
+          "attribute": "columnGap",
+          "type": "string",
+          "default": "\"0px\""
+        },
+        {
+          "name": "rowGap",
+          "attribute": "rowGap",
+          "type": "string",
+          "default": "\"0px\""
+        },
+        {
+          "name": "column",
+          "attribute": "column",
+          "type": "string"
+        },
+        {
+          "name": "row",
+          "attribute": "row",
+          "type": "string"
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-list",
+      "path": "./list/list.js",
+      "attributes": [
+        {
+          "name": "activatable",
+          "type": "boolean"
+        },
+        {
+          "name": "multi",
+          "type": "boolean"
+        },
+        {
+          "name": "selectedItems",
+          "type": "array"
+        },
+        {
+          "name": "listHeader",
+          "type": "object"
+        },
+        {
+          "name": "items",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "separator",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "activatable",
+          "attribute": "activatable",
+          "type": "boolean"
+        },
+        {
+          "name": "multi",
+          "attribute": "multi",
+          "type": "boolean"
+        },
+        {
+          "name": "selectedItems",
+          "attribute": "selectedItems",
+          "type": "array"
+        },
+        {
+          "name": "listHeader",
+          "attribute": "listHeader",
+          "type": "object"
+        },
+        {
+          "name": "items",
+          "attribute": "items",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "separator",
+          "attribute": "separator",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-select",
+      "path": "./select/select.js",
+      "attributes": [
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "selectedValue",
+          "type": "string"
+        },
+        {
+          "name": "required",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "icon",
+          "type": "string"
+        },
+        {
+          "name": "elem",
+          "type": "object"
+        },
+        {
+          "name": "options",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "errorMessage",
+          "type": "string"
+        },
+        {
+          "name": "helperText",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "selectedValue",
+          "attribute": "selectedValue",
+          "type": "string"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string"
+        },
+        {
+          "name": "elem",
+          "attribute": "elem",
+          "type": "object"
+        },
+        {
+          "name": "options",
+          "attribute": "options",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "errorMessage",
+          "type": "string"
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "type": "string"
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-snackbar",
+      "path": "./snackbar/snackbar.js",
+      "attributes": [
+        {
+          "name": "elem",
+          "type": "object"
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "default": "\"message\""
+        },
+        {
+          "name": "timeout",
+          "type": "number",
+          "default": "\"timeout\""
+        },
+        {
+          "name": "position",
+          "type": "string",
+          "default": "\"position\""
+        },
+        {
+          "name": "action",
+          "default": "\"action\""
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "default": "\"status\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "elem",
+          "attribute": "elem",
+          "type": "object"
+        },
+        {
+          "name": "message",
+          "attribute": "message",
+          "type": "string",
+          "default": "\"message\""
+        },
+        {
+          "name": "timeout",
+          "attribute": "timeout",
+          "type": "number",
+          "default": "\"timeout\""
+        },
+        {
+          "name": "position",
+          "attribute": "position",
+          "type": "string",
+          "default": "\"position\""
+        },
+        {
+          "name": "action",
+          "attribute": "action",
+          "default": "\"action\""
+        },
+        {
+          "name": "status",
+          "attribute": "status",
+          "type": "string",
+          "default": "\"status\""
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-top-app-bar",
+      "path": "./top-app-bar/top-app-bar.js",
+      "attributes": [
+        {
+          "name": "showBurger",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "centerTitle",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "dense",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "backgroundColor",
+          "type": "string"
+        },
+        {
+          "name": "textColor",
+          "type": "string"
+        },
+        {
+          "name": "primary",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "actionItems",
+          "type": "array",
+          "default": "[]"
+        }
+      ],
+      "properties": [
+        {
+          "name": "showBurger",
+          "attribute": "showBurger",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "centerTitle",
+          "attribute": "centerTitle",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "dense",
+          "attribute": "dense",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "backgroundColor",
+          "attribute": "backgroundColor",
+          "type": "string"
+        },
+        {
+          "name": "textColor",
+          "attribute": "textColor",
+          "type": "string"
+        },
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "actionItems",
+          "attribute": "actionItems",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ],
+      "events": [
+        {
+          "name": "navigationIconPressed"
+        }
+      ]
+    },
+    {
+      "name": "simplr-checkbox",
+      "path": "./input/checkbox/checkbox.js",
+      "attributes": [
+        {
+          "name": "checked",
+          "type": "boolean"
+        },
+        {
+          "name": "indeterminate",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "elem",
+          "type": "object"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "checked",
+          "attribute": "checked",
+          "type": "boolean"
+        },
+        {
+          "name": "indeterminate",
+          "attribute": "indeterminate",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "elem",
+          "attribute": "elem",
+          "type": "object"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ],
+      "events": [
+        {
+          "name": "change"
+        }
+      ]
+    },
+    {
+      "name": "simplr-checkbox-group",
+      "path": "./input/checkbox-group/checkbox-group.js",
+      "attributes": [
+        {
+          "name": "options",
+          "type": "array"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "selectedOptions",
+          "type": "array",
+          "default": "[]"
+        }
+      ],
+      "properties": [
+        {
+          "name": "options",
+          "attribute": "options",
+          "type": "array"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "selectedOptions",
+          "attribute": "selectedOptions",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-email-input",
+      "path": "./input/email-input/email-input.js",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "type": "boolean"
+        },
+        {
+          "name": "required",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "fullWidth",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "charCounter",
+          "type": "boolean"
+        },
+        {
+          "name": "errorMessage",
+          "type": "string"
+        },
+        {
+          "name": "autoValidate",
+          "type": "boolean"
+        },
+        {
+          "name": "elem",
+          "type": "object"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "type": "number",
+          "default": "-1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "attribute": "helperPersistent",
+          "type": "boolean"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "fullWidth",
+          "attribute": "fullWidth",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "charCounter",
+          "attribute": "charCounter",
+          "type": "boolean"
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "errorMessage",
+          "type": "string"
+        },
+        {
+          "name": "autoValidate",
+          "attribute": "autoValidate",
+          "type": "boolean"
+        },
+        {
+          "name": "elem",
+          "attribute": "elem",
+          "type": "object"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "attribute": "iconTrailing",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "attribute": "placeHolder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxLength",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-number-input",
+      "path": "./input/number-input/number-input.js",
+      "attributes": [
+        {
+          "name": "min",
+          "type": "number"
+        },
+        {
+          "name": "max",
+          "type": "number"
+        },
+        {
+          "name": "step",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "type": "boolean"
+        },
+        {
+          "name": "required",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "fullWidth",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "charCounter",
+          "type": "boolean"
+        },
+        {
+          "name": "errorMessage",
+          "type": "string"
+        },
+        {
+          "name": "autoValidate",
+          "type": "boolean"
+        },
+        {
+          "name": "elem",
+          "type": "object"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "type": "number",
+          "default": "-1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "min",
+          "attribute": "min",
+          "type": "number"
+        },
+        {
+          "name": "max",
+          "attribute": "max",
+          "type": "number"
+        },
+        {
+          "name": "step",
+          "attribute": "step",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "attribute": "helperPersistent",
+          "type": "boolean"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "fullWidth",
+          "attribute": "fullWidth",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "charCounter",
+          "attribute": "charCounter",
+          "type": "boolean"
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "errorMessage",
+          "type": "string"
+        },
+        {
+          "name": "autoValidate",
+          "attribute": "autoValidate",
+          "type": "boolean"
+        },
+        {
+          "name": "elem",
+          "attribute": "elem",
+          "type": "object"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "attribute": "iconTrailing",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "attribute": "placeHolder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxLength",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-password-input",
+      "path": "./input/password-input/password-input.js",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "type": "boolean"
+        },
+        {
+          "name": "required",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "fullWidth",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "charCounter",
+          "type": "boolean"
+        },
+        {
+          "name": "errorMessage",
+          "type": "string"
+        },
+        {
+          "name": "autoValidate",
+          "type": "boolean"
+        },
+        {
+          "name": "elem",
+          "type": "object"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "type": "number",
+          "default": "-1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "attribute": "helperPersistent",
+          "type": "boolean"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "fullWidth",
+          "attribute": "fullWidth",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "charCounter",
+          "attribute": "charCounter",
+          "type": "boolean"
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "errorMessage",
+          "type": "string"
+        },
+        {
+          "name": "autoValidate",
+          "attribute": "autoValidate",
+          "type": "boolean"
+        },
+        {
+          "name": "elem",
+          "attribute": "elem",
+          "type": "object"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "attribute": "iconTrailing",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "attribute": "placeHolder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxLength",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-radio-group",
+      "path": "./input/radio-group/radio-group.js",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "options",
+          "type": "array"
+        },
+        {
+          "name": "selectedValue",
+          "type": "string"
+        },
+        {
+          "name": "align",
+          "type": "string",
+          "default": "\"row\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "options",
+          "attribute": "options",
+          "type": "array"
+        },
+        {
+          "name": "selectedValue",
+          "attribute": "selectedValue",
+          "type": "string"
+        },
+        {
+          "name": "align",
+          "attribute": "align",
+          "type": "string",
+          "default": "\"row\""
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ],
+      "events": [
+        {
+          "name": "change"
+        }
+      ]
+    },
+    {
+      "name": "simplr-text-input",
+      "path": "./input/text-input/text-input.js",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "type": "boolean"
+        },
+        {
+          "name": "required",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "fullWidth",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "charCounter",
+          "type": "boolean"
+        },
+        {
+          "name": "errorMessage",
+          "type": "string"
+        },
+        {
+          "name": "autoValidate",
+          "type": "boolean"
+        },
+        {
+          "name": "elem",
+          "type": "object"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "type": "number",
+          "default": "-1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "attribute": "helperPersistent",
+          "type": "boolean"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "fullWidth",
+          "attribute": "fullWidth",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "charCounter",
+          "attribute": "charCounter",
+          "type": "boolean"
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "errorMessage",
+          "type": "string"
+        },
+        {
+          "name": "autoValidate",
+          "attribute": "autoValidate",
+          "type": "boolean"
+        },
+        {
+          "name": "elem",
+          "attribute": "elem",
+          "type": "object"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "attribute": "iconTrailing",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "attribute": "placeHolder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxLength",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    },
+    {
+      "name": "simplr-text-area",
+      "path": "./input/textarea/textarea.js",
+      "attributes": [
+        {
+          "name": "rows",
+          "type": "number",
+          "default": "2"
+        },
+        {
+          "name": "cols",
+          "type": "number",
+          "default": "20"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "type": "boolean"
+        },
+        {
+          "name": "required",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "fullWidth",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "charCounter",
+          "type": "boolean"
+        },
+        {
+          "name": "errorMessage",
+          "type": "string"
+        },
+        {
+          "name": "autoValidate",
+          "type": "boolean"
+        },
+        {
+          "name": "elem",
+          "type": "object"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "type": "number",
+          "default": "-1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "rows",
+          "attribute": "rows",
+          "type": "number",
+          "default": "2"
+        },
+        {
+          "name": "cols",
+          "attribute": "cols",
+          "type": "number",
+          "default": "20"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "attribute": "helperPersistent",
+          "type": "boolean"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "fullWidth",
+          "attribute": "fullWidth",
+          "type": "boolean"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "type": "boolean"
+        },
+        {
+          "name": "charCounter",
+          "attribute": "charCounter",
+          "type": "boolean"
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "errorMessage",
+          "type": "string"
+        },
+        {
+          "name": "autoValidate",
+          "attribute": "autoValidate",
+          "type": "boolean"
+        },
+        {
+          "name": "elem",
+          "attribute": "elem",
+          "type": "object"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "attribute": "iconTrailing",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "attribute": "placeHolder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxLength",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "charCounterFoundation",
+          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+        },
+        {
+          "name": "floatingLabelFoundation",
+          "type": "MDCFloatingLabelFoundation | undefined"
+        },
+        {
+          "name": "lineRippleFoundation",
+          "type": "MDCLineRippleFoundation | undefined"
+        }
+      ]
+    }
+  ]
+}

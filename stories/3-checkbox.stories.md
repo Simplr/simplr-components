@@ -11,6 +11,7 @@ export default {
 
 | Name            | Type      | Default | Description                                                                                                                                                              |
 | --------------- | --------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `name`         | `String`  |         | Name for the checkbox                                                                                                                                                   |
 | `label`         | `String`  |         | Label for the checkbox                                                                                                                                                   |
 | `checked`       | `Boolean` | `false` | Creates a checked checkbox                                                                                                                                               |
 | `indeterminate` | `Boolean` | `false` | When a checkbox is the parent of a set of child checkboxes, the indeterminate state is used on the parent to indicate that some but not all of its children are checked. |
