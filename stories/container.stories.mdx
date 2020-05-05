@@ -1,0 +1,30 @@
+import { html } from 'lit-html';
+import '../lib/container/container.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Layout|Container"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-container', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Container
+
+### Usage
+
+```js
+  import 'simplr-components/container/container.js';
+```
+
+```html
+<simplr-container width="100px" height="100px" elevation="3"></simplr-container>
+```
+
+
+<Story name="Simplr Container">
+  {html`
+    <simplr-container width="100px" height="100px" elevation="3"></simplr-container>
+  `}
+</Story>
+
+<Props of="simplr-container" />

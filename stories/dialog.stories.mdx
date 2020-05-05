@@ -1,0 +1,84 @@
+import { html } from 'lit-html';
+import SimplrDialog from '../lib/dialog/dialog.js';
+import '../lib/button/button.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="PopUps|Dialog|Default"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-dialog', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Dialog
+
+### Usage
+
+```js
+import SimplrDialog from 'simplr-components/dialog/dialog.js';
+import 'simplr-components/button/button.js';
+
+const openDialog = () => {
+  const dialog = new SimplrDialog({
+      primaryAction: {label: "Cool"},
+      secondaryAction: {label: "Bleh"},
+      heading: "Hello",
+      content: "Hello world :) This is my first dialog"
+  });
+  dialog.openDialog();
+}
+
+```
+
+```html
+<simplr-button
+ @click=${() => openDialog()}
+ raised
+ primary
+ label="Open dialog"
+></simplr-button>
+```
+
+##### Action structure
+
+```js
+// Example action
+const saveDocument = () => {
+  myDoc.save();
+}
+
+const primaryAction = {
+  label: "Save document",
+  action: saveDocument
+};
+
+const dialog = new SimplrDialog({
+    primaryAction: primaryAction,
+    secondaryAction: {label: "No"},
+    heading: "Save Document",
+    content: "Would you like to save the document?"
+});
+
+```
+
+
+<Story name="Simplr Dialog">
+  {html`
+    <simplr-button
+     @click=${() => {
+         const dialog = new SimplrDialog({
+             primaryAction: {label: "Cool"},
+             secondaryAction: {label: "Bleh"},
+             heading: "Hello",
+             content: "Hello world :) This is my first dialog"
+         });
+         dialog.openDialog();
+     }}
+     raised
+     primary
+     label="Open dialog"
+   ></simplr-button>
+   <simplr-dialog></simplr-dialog>
+  `}
+</Story>
+
+<Props of="simplr-dialog" />

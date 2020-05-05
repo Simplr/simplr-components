@@ -1,0 +1,35 @@
+import { html } from 'lit-html';
+import '../lib/input/checkbox/checkbox.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Input|Checkbox|Checkbox"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-checkbox', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Checkbox
+
+### Usage
+
+```js
+  import '../lib/input/checkbox/checkbox.js';
+```
+
+```html
+<simplr-checkbox
+  name="selection"
+  label="Option 1"
+></simplr-checkbox>
+```
+
+<Story name="Simplr Checkbox">
+  {html`
+  <simplr-checkbox
+    name="selection"
+    label="Option 1"
+  ></simplr-checkbox>
+  `}
+</Story>
+
+<Props of="simplr-checkbox" />

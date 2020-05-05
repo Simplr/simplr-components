@@ -1,0 +1,30 @@
+import { html } from 'lit-html';
+import '../lib/input/number-input/number-input.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Input|Number Input"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-number-input', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Number Input
+
+### Usage
+
+```js
+  import 'simplr-components/input/number-input/number-input.js';
+```
+
+```html
+  <simplr-number-input label="Number" step="1" min="0" max="10"></simplr-number-input>
+```
+
+
+<Story name="Simplr Number Input">
+  {html`
+    <simplr-number-input label="Number" step="1" min="0" max="10"></simplr-number-input>
+  `}
+</Story>
+
+<Props of="simplr-number-input" />

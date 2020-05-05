@@ -1,0 +1,48 @@
+import { html } from 'lit-html';
+import '../lib/select/select.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Input|Select"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-select', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Select
+
+### Usage
+
+```js
+import 'simplr-components/select/select.js';
+
+const options = [
+    {label: "Banana", value: 1},
+    {label: "Strawberry", value: 2},
+    {label: "Kiwi", value: 3},
+    {label: "Peach", value: 4},
+];
+```
+
+```html
+<simplr-select
+    label="Simple select"
+    .options=${options}
+></simplr-select>
+```
+
+
+<Story name="Select">
+  {html`
+    <simplr-select
+        label="Simple select"
+        .options=${[
+                       {label: "Banana", value: 1},
+                       {label: "Strawberry", value: 2},
+                       {label: "Kiwi", value: 3},
+                       {label: "Peach", value: 4},
+                   ]}
+    ></simplr-select>
+  `}
+</Story>
+
+<Props of="simplr-select" />

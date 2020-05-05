@@ -1,0 +1,55 @@
+import { html } from 'lit-html';
+import '../lib/input/checkbox-group/checkbox-group.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Input|Checkbox|Checkbox group"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-checkbox-group', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Checkbox Group
+
+### Usage
+
+```js
+  import '../lib/input/checkbox-group/checkbox-group.js';
+
+
+const singleCategoryOptions = [
+  { label: 'Option 1', value: 1 },
+  { label: 'Option 2', value: 2 },
+  { label: 'Option 3', value: 3 },
+  { label: 'Option 4', value: 4 },
+];
+```
+
+```html
+<simplr-checkbox-group
+  label="Single category options"
+  .options="${[
+                { label: 'Option 1', value: 1 },
+                { label: 'Option 2', value: 2 },
+                { label: 'Option 3', value: 3 },
+                { label: 'Option 4', value: 4 },
+              ]}"
+  .selectedOptions=${[2]}
+></simplr-checkbox-group>
+```
+
+<Story name="Simplr Checkbox Group">
+  {html`
+    <simplr-checkbox-group
+      label="Single category options"
+      .options="${[
+                    { label: 'Option 1', value: 1 },
+                    { label: 'Option 2', value: 2 },
+                    { label: 'Option 3', value: 3 },
+                    { label: 'Option 4', value: 4 },
+                  ]}"
+      .selectedOptions=${[2]}
+    ></simplr-checkbox-group>
+  `}
+</Story>
+
+<Props of="simplr-checkbox-group" />

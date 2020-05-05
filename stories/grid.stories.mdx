@@ -1,0 +1,69 @@
+import { html } from 'lit-html';
+import '../lib/grid/grid.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Layout|Grid"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-grid', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Grid
+
+### Usage
+
+```js
+  import 'simplr-components/grid/grid.js';
+```
+
+```html
+<simplr-grid size="12">
+  <simplr-grid item size="12">
+    <simplr-container noMargin flex horizontalCenter verticalCenter maxWidth maxHeight>
+      <p>Size: 12</p>
+    </simplr-container>
+  </simplr-grid>
+
+  <simplr-grid item size="6">
+    <simplr-container noMargin flex horizontalCenter verticalCenter maxWidth maxHeight>
+      <p>Size: 6</p>
+    </simplr-container>
+  </simplr-grid>
+  <simplr-grid item size="6">
+    <simplr-container noMargin flex horizontalCenter verticalCenter maxWidth maxHeight>
+      <p>Size: 6</p>
+    </simplr-container>
+  </simplr-grid>
+
+  <simplr-grid item size="3">
+    <simplr-container noMargin flex horizontalCenter verticalCenter maxWidth maxHeight>
+      <p>Size: 3</p>
+    </simplr-container>
+  </simplr-grid>
+  <simplr-grid item size="3">
+    <simplr-container noMargin flex horizontalCenter verticalCenter maxWidth maxHeight>
+      <p>Size: 3</p>
+    </simplr-container>
+  </simplr-grid>
+  <simplr-grid item size="3">
+    <simplr-container noMargin flex horizontalCenter verticalCenter maxWidth maxHeight>
+      <p>Size: 3</p>
+    </simplr-container>
+  </simplr-grid>
+  <simplr-grid item size="3">
+    <simplr-container noMargin flex horizontalCenter verticalCenter maxWidth maxHeight>
+      <p>Size: 3</p>
+    </simplr-container>
+  </simplr-grid>
+</simplr-grid>
+```
+
+
+<Story name="Simplr Grid">
+  {html`
+    <simplr-grid size="12">
+    </simplr-grid>
+  `}
+</Story>
+
+<Props of="simplr-grid" />

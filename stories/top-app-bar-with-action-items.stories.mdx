@@ -1,0 +1,42 @@
+import { html } from 'lit-html';
+import "../lib/top-app-bar/top-app-bar.js"
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Layout|Top App Bar|With Action Items"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-top-app-bar', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Top App Bar with Action Items
+
+### Usage
+
+```js
+import 'simplr-components/top-app-bar/top-app-bar.js';
+
+const actionItems = [
+  {icon: "code", onclick: () => alert("Code action")},
+  {icon: "add", onclick: () => alert("Add action")}
+];
+```
+
+```html
+<simplr-top-app-bar
+  .actionItems=${actionItems}
+></simplr-top-app-bar>
+```
+
+
+<Story name="Simplr Top App Bar with Action Items">
+  {html`
+    <simplr-top-app-bar
+    .actionItems=${[
+                {icon: "code", onclick: () => alert("Code action")},
+                {icon: "add", onclick: () => alert("Add action")}
+            ]}
+    ></simplr-top-app-bar>
+  `}
+</Story>
+
+<Props of="simplr-top-app-bar" />

@@ -1,0 +1,58 @@
+import { html } from 'lit-html';
+import '../lib/button/button.js';
+import openSnackBar from '../lib/snackbar/snackbar.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="PopUps|Snackbar|Default"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-snackbar', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Snackbar
+
+### Usage
+
+```js
+import openSnackBar from 'simplr-components/snackbar/snackbar.js';
+import 'simplr-components/button/button.js';
+```
+
+```html
+<simplr-button
+  raised
+  primary
+  label="Launch snackbar"
+  @click=${() => openSnackBar("I'm a snackbar")}
+></simplr-button>
+```
+
+###### Call with properties
+
+```js
+import openSnackBar from '../lib/snackbar/snackbar.js';
+
+openSnackBar({
+  status: "success",
+  message: "Successfully saved progress",
+  timeout: 6000,
+  action: () => console.log("closed by user action"),
+  position: "topright"
+});
+
+```
+
+
+<Story name="Simplr Snackbar">
+  {html`
+  <simplr-button
+    raised
+    primary
+    label="Launch snackbar"
+    @click=${() => openSnackBar("I'm a snackbar")}
+  ></simplr-button>
+  <simplr-snackbar></simplr-snackbar>
+  `}
+</Story>
+
+<Props of="simplr-snackbar" />

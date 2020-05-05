@@ -1,0 +1,44 @@
+import { html } from 'lit-html';
+import "../lib/list/list.js"
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="List|With Icons"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-list', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr List With Icons
+
+### Usage
+
+```js
+import 'simplr-components/list/list.js';
+
+const items = [
+    {label: "Item 1", icon: "bookmark_border"},
+    {label: "Item 2", icon: "bookmark_border"},
+    {label: "Item 3", icon: "bookmark_border"},
+    {label: "Item 4", icon: "bookmark_border"},
+    {label: "Item 5", icon: "bookmark_border"},
+]
+```
+
+```html
+<simplr-list .items=${items}></simplr-list>
+```
+
+
+<Story name="Simplr List With Icons">
+  {html`
+    <simplr-list .items=${[
+      {label: "Item 1", icon: "bookmark_border"},
+      {label: "Item 2", icon: "bookmark_border"},
+      {label: "Item 3", icon: "bookmark_border"},
+      {label: "Item 4", icon: "bookmark_border"},
+      {label: "Item 5", icon: "bookmark_border"},
+    ]}></simplr-list>
+  `}
+</Story>
+
+<Props of="simplr-list" />

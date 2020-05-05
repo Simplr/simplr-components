@@ -1,0 +1,44 @@
+import { html } from 'lit-html';
+import "../lib/list/list.js"
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="List|With header"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-list', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr List
+
+### Usage
+
+```js
+import 'simplr-components/list/list.js';
+
+const itemsForListWithHeader = [
+    {label: "About me", icon: "person"},
+    {label: "Log out", icon: "exit_to_app"},
+];
+```
+
+```html
+<simplr-list
+ .listHeader=${{label: "Joe Exotic", subtitle: "Tiger King", icon: "folder"}}
+ .items=${itemsForListWithHeader}
+></simplr-list>
+```
+
+
+<Story name="Simplr List with Header">
+  {html`
+    <simplr-list
+     .listHeader=${{label: "Joe Exotic", subtitle: "Tiger King", icon: "folder"}}
+     .items=${[
+                  {label: "About me", icon: "person"},
+                  {label: "Log out", icon: "exit_to_app"},
+              ]}
+    ></simplr-list>
+  `}
+</Story>
+
+<Props of="simplr-list" />

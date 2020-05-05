@@ -1,0 +1,30 @@
+import { html } from 'lit-html';
+import '../lib/fab/fab.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Button|Fab"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-fab', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Text Input
+
+### Usage
+
+```js
+  import 'simplr-components/fab/fab.js';
+```
+
+```html
+  <simplr-fab icon="done"></simplr-fab>
+```
+
+
+<Story name="Simplr Text Input">
+  {html`
+    <simplr-fab icon="done"></simplr-fab>
+  `}
+</Story>
+
+<Props of="simplr-fab" />
