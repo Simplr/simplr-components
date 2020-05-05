@@ -1,0 +1,86 @@
+import { html } from 'lit-html';
+import SimplrDialog from '../lib/dialog/dialog.js';
+import '../lib/button/button.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="PopUps|Dialog|Custom HTML"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-dialog', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Dialog with Custom HTML
+
+### Usage
+
+```js
+import 'simplr-components/input/text-input/text-input.js';
+import SimplrDialog from 'simplr-components/dialog/dialog.js';
+import 'simplr-components/button/button.js';
+
+const openDialog = () => {
+  const dialog = new SimplrDialog({
+      primaryAction: {label: "Cool"},
+      secondaryAction: {label: "Bleh"},
+      heading: "You can also have custom html",
+      content: html`
+          <simplr-container flex flexDirection="column" noMargin noPadding alignItems="flex-end">
+              <p>Instead of having just normal boring text, you can add any html elements with the \`html\` tag.</p>
+              <simplr-text-input label="Label"></simplr-text-input>
+              <simplr-button
+                  style="margin-top:1rem"
+                  label="Submit"
+                  icon="code"
+                  raised
+                  primary
+              ></simplr-button>
+          </simplr-container>
+      `
+  });
+  dialog.openDialog();
+}
+```
+
+```html
+<simplr-button
+ @click=${() => openDialog()}
+ raised
+ primary
+ label="Open dialog"
+></simplr-button>
+```
+
+
+<Story name="Simplr Dialog with Custom HTML">
+  {html`
+    <simplr-button
+     @click=${() => {
+         const dialog = new SimplrDialog({
+               primaryAction: {label: "Cool"},
+               secondaryAction: {label: "Bleh"},
+               heading: "You can also have custom html",
+               content: html`
+                   <simplr-container flex flexDirection="column" noMargin noPadding alignItems="flex-end">
+                       <p>Instead of having just normal boring text, you can add any html elements with the \`html\` tag.</p>
+                       <simplr-text-input label="Label"></simplr-text-input>
+                       <simplr-button
+                           style="margin-top:1rem"
+                           label="Submit"
+                           icon="code"
+                           raised
+                           primary
+                       ></simplr-button>
+                   </simplr-container>
+               `
+           });
+           dialog.openDialog();
+     }}
+     raised
+     primary
+     label="Open dialog"
+   ></simplr-button>
+   <simplr-dialog></simplr-dialog>
+  `}
+</Story>
+
+<Props of="simplr-dialog" />

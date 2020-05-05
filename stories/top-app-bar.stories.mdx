@@ -1,0 +1,32 @@
+import { html } from 'lit-html';
+import "../lib/top-app-bar/top-app-bar.js"
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Layout|Top App Bar|Default"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-top-app-bar', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Top App Bar
+
+### Usage
+
+```js
+import 'simplr-components/top-app-bar/top-app-bar.js';
+```
+
+```html
+<simplr-top-app-bar>
+</simplr-top-app-bar>
+```
+
+
+<Story name="Simplr Top App Bar">
+  {html`
+    <simplr-top-app-bar>
+    </simplr-top-app-bar>
+  `}
+</Story>
+
+<Props of="simplr-top-app-bar" />

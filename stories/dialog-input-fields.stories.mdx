@@ -1,0 +1,82 @@
+import { html } from 'lit-html';
+import SimplrDialog from '../lib/dialog/dialog.js';
+import '../lib/input/radio-group/radio-group.js';
+import '../lib/button/button.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="PopUps|Dialog|Input Fields"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-dialog', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Dialog
+
+### Usage
+
+```js
+import SimplrDialog from 'simplr-components/dialog/dialog.js';
+import 'simplr-components/button/button.js';
+import 'simplr-components/input/radio-group/radio-group.js';
+
+const openDialog = () => {
+  const dialog = new SimplrDialog({
+     primaryAction: {label: "Submit"},
+     secondaryAction: {label: "Cancel"},
+     heading: "What's your favorite game?",
+     content: html`
+                 <simplr-radio-group name="fav-game"
+                     .options=${[
+                         {value: 1, label: "Doom"},
+                         {value: 2, label: "Wolfenstein 3D"},
+                         {value: 3, label: "Quake"}
+                     ]}
+                     align="column"
+                 ></simplr-radio-group>
+         `
+   });
+   dialog.openDialog();
+}
+
+```
+
+```html
+<simplr-button
+ @click=${() => openDialog()}
+ raised
+ primary
+ label="Open dialog"
+></simplr-button>
+```
+
+
+<Story name="Simplr Dialog with Input Fields">
+  {html`
+    <simplr-button
+     @click=${() => {
+         const dialog = new SimplrDialog({
+             primaryAction: {label: "Submit"},
+             secondaryAction: {label: "Cancel"},
+             heading: "What's your favorite game?",
+             content: html`
+                         <simplr-radio-group name="fav-game"
+                             .options=${[
+                                 {value: 1, label: "Doom"},
+                                 {value: 2, label: "Wolfenstein 3D"},
+                                 {value: 3, label: "Quake"}
+                             ]}
+                             align="column"
+                         ></simplr-radio-group>
+                 `
+         });
+         dialog.openDialog();
+     }}
+     raised
+     primary
+     label="Open dialog"
+   ></simplr-button>
+   <simplr-dialog></simplr-dialog>
+  `}
+</Story>
+
+<Props of="simplr-dialog" />

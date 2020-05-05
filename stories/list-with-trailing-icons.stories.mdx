@@ -1,0 +1,44 @@
+import { html } from 'lit-html';
+import "../lib/list/list.js"
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="List|With Trailing Icons"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-list', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr List With Trailing Icons
+
+### Usage
+
+```js
+import 'simplr-components/list/list.js';
+
+const items = [
+    {label: "Item 1", trailingIcon: "info"},
+    {label: "Item 2", trailingIcon: "info"},
+    {label: "Item 3", trailingIcon: "info"},
+    {label: "Item 4", trailingIcon: "info"},
+    {label: "Item 5", trailingIcon: "info"},
+]
+```
+
+```html
+<simplr-list .items=${items}></simplr-list>
+```
+
+
+<Story name="Simplr List With Trailing Icons">
+  {html`
+    <simplr-list .items=${[
+      {label: "Item 1", trailingIcon: "info"},
+      {label: "Item 2", trailingIcon: "info"},
+      {label: "Item 3", trailingIcon: "info"},
+      {label: "Item 4", trailingIcon: "info"},
+      {label: "Item 5", trailingIcon: "info"},
+    ]}></simplr-list>
+  `}
+</Story>
+
+<Props of="simplr-list" />

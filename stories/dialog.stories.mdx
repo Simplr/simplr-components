@@ -4,7 +4,7 @@ import '../lib/button/button.js';
 import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
 
 <Meta
-  title="Dialog"
+  title="PopUps|Dialog|Default"
   decorators={[withKnobs, withWebComponentsKnobs]}
   parameters={{ component: 'simplr-dialog', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
 />
@@ -14,7 +14,6 @@ import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '
 ### Usage
 
 ```js
-import 'simplr-components/input/text-input/text-input.js';
 import SimplrDialog from 'simplr-components/dialog/dialog.js';
 import 'simplr-components/button/button.js';
 
@@ -59,50 +58,6 @@ const dialog = new SimplrDialog({
     content: "Would you like to save the document?"
 });
 
-```
-
-##### Custom HTML in Dialog
-
-```js
-const dialog = new SimplrDialog({
-    primaryAction: {label: "Cool"},
-    secondaryAction: {label: "Bleh"},
-    heading: "You can also have custom html",
-    content: html`
-        <simplr-container flex flexDirection="column" noMargin noPadding alignItems="flex-end">
-            <p>Instead of having just normal boring text, you can add any html elements with the \`html\` tag.</p>
-            <simplr-text-input label="Label"></simplr-text-input>
-            <simplr-button
-                style="margin-top:1rem"
-                label="Submit"
-                icon="code"
-                raised
-                primary
-            ></simplr-button>
-        </simplr-container>
-    `
-});
-```
-
-##### Input fields inside Dialog
-
-```js
-const dialog = new SimplrDialog({
-    primaryAction: {label: "Submit"},
-    secondaryAction: {label: "Cancel"},
-    heading: "What's your favorite game?",
-    content: html`
-                <simplr-radio-group name="fav-game"
-                    .options=${[
-                        {id: 1, label: "Doom"},
-                        {id: 2, label: "Wolfenstein 3D"},
-                        {id: 3, label: "Quake"}
-                    ]}
-                    align="column"
-                ></simplr-radio-group>
-        `
-});
-dialog.openDialog();
 ```
 
 
