@@ -37,7 +37,7 @@
   "prettier": "@open-wc/prettier-config",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run storybook:build && lint-staged"
+      "pre-commit": "npm run analyze && npm run storybook:build && lint-staged"
     }
   },
   "lint-staged": {

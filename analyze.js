@@ -10,9 +10,6 @@ const { spawnSync } = require('child_process');
  * This script was created to remove those properties by using a custom banned properties and
  * names lists.
  *
- * A second caveat is the default value interpretation, in which it doesn't recognize
- * quotes properly and clutters the default value with escaped quotes. These quotes
- * are removed by this script
  */
 
 const analyze = () => {
@@ -76,21 +73,6 @@ const removeBannedPropertiesAndAttributes = component => {
   );
 };
 
-const removeQuoteDefaults = component => {
-  component.properties.map(prop => {
-    if (prop.default === '""') {
-      prop.default = '';
-    }
-    return prop;
-  });
-  component.attributes.map(attr => {
-    if (attr.default === '""') {
-      attr.default = '';
-    }
-    return attr;
-  });
-};
-
 const fixElements = () => {
   fs.readFile(customElementFile, 'utf8', (err, data) => {
     if (err) {
@@ -102,7 +84,6 @@ const fixElements = () => {
     components.map(component => {
       log(`Analyzing ${component.name}`, green);
       removeBannedPropertiesAndAttributes(component);
-      removeQuoteDefaults(component);
       log();
     });
     fs.writeFile(customElementFile, JSON.stringify(json, null, 2), err => {

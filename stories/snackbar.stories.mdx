@@ -27,6 +27,21 @@ import 'simplr-components/button/button.js';
 ></simplr-button>
 ```
 
+###### Call with properties
+
+```js
+import openSnackBar from '../lib/snackbar/snackbar.js';
+
+openSnackBar({
+  status: "success",
+  message: "Successfully saved progress",
+  timeout: 6000,
+  action: () => console.log("closed by user action"),
+  position: "topright"
+});
+
+```
+
 
 <Story name="Simplr Snackbar">
   {html`
