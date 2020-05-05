@@ -460,136 +460,6 @@
       ]
     },
     {
-      "name": "simplr-data-table",
-      "path": "./lib/data-table/data-table.js",
-      "attributes": [
-        {
-          "name": "tableData",
-          "description": "Data of data table",
-          "type": "array",
-          "default": "[]"
-        },
-        {
-          "name": "tableColumns",
-          "description": "Column names of data table",
-          "type": "array",
-          "default": "[]"
-        },
-        {
-          "name": "tableOptions",
-          "description": "Options of data table",
-          "type": "object",
-          "default": "{\"isRowSelectable\":false,\"tableClass\":\"simplr-table\",\"highlightFirstRowOnMobile\":true}"
-        },
-        {
-          "name": "tableLabel",
-          "description": "Label of the data table",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "tablePage",
-          "description": "Current page of data table",
-          "type": "number",
-          "default": "1"
-        },
-        {
-          "name": "pageCount",
-          "description": "Count of pages in table",
-          "type": "number",
-          "default": "1"
-        },
-        {
-          "name": "resultsPerPage",
-          "description": "Number of results to display per page",
-          "type": "number",
-          "default": "20"
-        },
-        {
-          "name": "noResultsMessage",
-          "description": "Message shown when no results were found",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "loading",
-          "description": "Is the data-table still loading",
-          "type": "boolean",
-          "default": "false"
-        }
-      ],
-      "properties": [
-        {
-          "name": "tableData",
-          "attribute": "tableData",
-          "description": "Data of data table",
-          "type": "array",
-          "default": "[]"
-        },
-        {
-          "name": "tableColumns",
-          "attribute": "tableColumns",
-          "description": "Column names of data table",
-          "type": "array",
-          "default": "[]"
-        },
-        {
-          "name": "tableOptions",
-          "attribute": "tableOptions",
-          "description": "Options of data table",
-          "type": "object",
-          "default": "{\"isRowSelectable\":false,\"tableClass\":\"simplr-table\",\"highlightFirstRowOnMobile\":true}"
-        },
-        {
-          "name": "tableLabel",
-          "attribute": "tableLabel",
-          "description": "Label of the data table",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "tablePage",
-          "attribute": "tablePage",
-          "description": "Current page of data table",
-          "type": "number",
-          "default": "1"
-        },
-        {
-          "name": "pageCount",
-          "attribute": "pageCount",
-          "description": "Count of pages in table",
-          "type": "number",
-          "default": "1"
-        },
-        {
-          "name": "resultsPerPage",
-          "attribute": "resultsPerPage",
-          "description": "Number of results to display per page",
-          "type": "number",
-          "default": "20"
-        },
-        {
-          "name": "noResultsMessage",
-          "attribute": "noResultsMessage",
-          "description": "Message shown when no results were found",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "loading",
-          "attribute": "loading",
-          "description": "Is the data-table still loading",
-          "type": "boolean",
-          "default": "false"
-        }
-      ],
-      "events": [
-        {
-          "name": "rowClick"
-        }
-      ]
-    },
-    {
       "name": "simplr-dialog",
       "path": "./lib/dialog/dialog.js",
       "attributes": [
@@ -822,6 +692,136 @@
           "description": "Use secondary color theme",
           "type": "boolean",
           "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "simplr-data-table",
+      "path": "./lib/data-table/data-table.js",
+      "attributes": [
+        {
+          "name": "tableData",
+          "description": "Data of data table",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableColumns",
+          "description": "Column names of data table",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableOptions",
+          "description": "Options of data table",
+          "type": "object",
+          "default": "{\"isRowSelectable\":false,\"tableClass\":\"simplr-table\",\"highlightFirstRowOnMobile\":true}"
+        },
+        {
+          "name": "tableLabel",
+          "description": "Label of the data table",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "tablePage",
+          "description": "Current page of data table",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "pageCount",
+          "description": "Count of pages in table",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "resultsPerPage",
+          "description": "Number of results to display per page",
+          "type": "number",
+          "default": "20"
+        },
+        {
+          "name": "noResultsMessage",
+          "description": "Message shown when no results were found",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "loading",
+          "description": "Is the data-table still loading",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "tableData",
+          "attribute": "tableData",
+          "description": "Data of data table",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableColumns",
+          "attribute": "tableColumns",
+          "description": "Column names of data table",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableOptions",
+          "attribute": "tableOptions",
+          "description": "Options of data table",
+          "type": "object",
+          "default": "{\"isRowSelectable\":false,\"tableClass\":\"simplr-table\",\"highlightFirstRowOnMobile\":true}"
+        },
+        {
+          "name": "tableLabel",
+          "attribute": "tableLabel",
+          "description": "Label of the data table",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "tablePage",
+          "attribute": "tablePage",
+          "description": "Current page of data table",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "pageCount",
+          "attribute": "pageCount",
+          "description": "Count of pages in table",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "resultsPerPage",
+          "attribute": "resultsPerPage",
+          "description": "Number of results to display per page",
+          "type": "number",
+          "default": "20"
+        },
+        {
+          "name": "noResultsMessage",
+          "attribute": "noResultsMessage",
+          "description": "Message shown when no results were found",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "loading",
+          "attribute": "loading",
+          "description": "Is the data-table still loading",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "rowClick"
         }
       ]
     },

@@ -35,7 +35,7 @@ const log = (message, color, force) => {
       console.log('');
       return;
     }
-    console.log(color, message);
+    console.log(color, `${color === green ? '\u2713 ' : ''}${message}`);
   }
 };
 
