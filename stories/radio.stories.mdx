@@ -1,0 +1,50 @@
+import { html } from 'lit-html';
+import '../lib/input/radio-group/radio-group.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Input|Radio Group"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-radio-group', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Radio Group
+
+### Usage
+
+```js
+  import 'simplr-components/input/radio-group/radio-group.js';
+
+  const radioSelections = [
+    { label: 'Option 1', value: 1 },
+    { label: 'Option 2', value: 2 },
+    { label: 'Option 3', value: 3 },
+    { label: 'Option 4', value: 4 },
+  ];
+```
+
+```html
+    <simplr-radio-group
+      name="inputs-one"
+      .options="${radioSelections}"
+      .selectedValue=${2}
+    ></simplr-radio-group>
+```
+
+
+<Story name="Simplr Radio Group">
+  {html`
+    <simplr-radio-group
+      name="inputs-one"
+      .options="${[
+                      { label: 'Option 1', value: 1 },
+                      { label: 'Option 2', value: 2 },
+                      { label: 'Option 3', value: 3 },
+                      { label: 'Option 4', value: 4 },
+                    ]}"
+      selectedValue=${2}
+    ></simplr-radio-group>
+  `}
+</Story>
+
+<Props of="simplr-radio-group" />

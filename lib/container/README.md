@@ -4,7 +4,7 @@
 
 ##### Import
 ```js
-import 'simplr-components/containers/container.js';
+import 'simplr-components/container/container.js';
 ```
 
 ##### Use

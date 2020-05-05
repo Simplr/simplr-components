@@ -3,7 +3,7 @@ import { html } from 'lit-html';
 import openSnackBar from '../lib/snackbar/snackbar.js';
 import '../lib/input/text-input/text-input.js';
 import '../lib/button/button.js';
-import '../lib/containers/container.js';
+import '../lib/container/container.js';
 
 export default {
   title: 'Snackbar',

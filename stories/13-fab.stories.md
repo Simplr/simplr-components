@@ -1,7 +1,7 @@
 ```js script
 import { html } from 'lit-html';
 import "../lib/fab/fab.js";
-import "../lib/containers/container.js";
+import "../lib/container/container.js";
 import "../lib/select/select.js";
 
 export default {

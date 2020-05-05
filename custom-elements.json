@@ -123,7 +123,7 @@
     },
     {
       "name": "simplr-container",
-      "path": "./lib/containers/container.js",
+      "path": "./lib/container/container.js",
       "attributes": [
         {
           "name": "block",
@@ -414,116 +414,6 @@
       ]
     },
     {
-      "name": "simplr-data-table",
-      "path": "./lib/data-table/data-table.js",
-      "attributes": [
-        {
-          "name": "loading",
-          "type": "boolean"
-        },
-        {
-          "name": "tableData",
-          "type": "array",
-          "default": "[]"
-        },
-        {
-          "name": "tableColumns",
-          "type": "array",
-          "default": "[]"
-        },
-        {
-          "name": "tableOptions",
-          "type": "object",
-          "default": "{\"isRowSelectable\":false,\"tableClass\":\"simplr-table\",\"highlightFirstRowOnMobile\":true}"
-        },
-        {
-          "name": "tableLabel",
-          "type": "string",
-          "default": ""
-        },
-        {
-          "name": "tablePage",
-          "type": "number",
-          "default": "1"
-        },
-        {
-          "name": "pageCount",
-          "type": "number",
-          "default": "1"
-        },
-        {
-          "name": "resultsPerPage",
-          "type": "number",
-          "default": "20"
-        },
-        {
-          "name": "noResultsMessage",
-          "type": "string",
-          "default": ""
-        }
-      ],
-      "properties": [
-        {
-          "name": "loading",
-          "attribute": "loading",
-          "type": "boolean"
-        },
-        {
-          "name": "tableData",
-          "attribute": "tableData",
-          "type": "array",
-          "default": "[]"
-        },
-        {
-          "name": "tableColumns",
-          "attribute": "tableColumns",
-          "type": "array",
-          "default": "[]"
-        },
-        {
-          "name": "tableOptions",
-          "attribute": "tableOptions",
-          "type": "object",
-          "default": "{\"isRowSelectable\":false,\"tableClass\":\"simplr-table\",\"highlightFirstRowOnMobile\":true}"
-        },
-        {
-          "name": "tableLabel",
-          "attribute": "tableLabel",
-          "type": "string",
-          "default": ""
-        },
-        {
-          "name": "tablePage",
-          "attribute": "tablePage",
-          "type": "number",
-          "default": "1"
-        },
-        {
-          "name": "pageCount",
-          "attribute": "pageCount",
-          "type": "number",
-          "default": "1"
-        },
-        {
-          "name": "resultsPerPage",
-          "attribute": "resultsPerPage",
-          "type": "number",
-          "default": "20"
-        },
-        {
-          "name": "noResultsMessage",
-          "attribute": "noResultsMessage",
-          "type": "string",
-          "default": ""
-        }
-      ],
-      "events": [
-        {
-          "name": "rowClick"
-        }
-      ]
-    },
-    {
       "name": "simplr-fab",
       "path": "./lib/fab/fab.js",
       "attributes": [
@@ -634,6 +524,116 @@
           "attribute": "buttonColor",
           "type": "string",
           "default": ""
+        }
+      ]
+    },
+    {
+      "name": "simplr-data-table",
+      "path": "./lib/data-table/data-table.js",
+      "attributes": [
+        {
+          "name": "loading",
+          "type": "boolean"
+        },
+        {
+          "name": "tableData",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableColumns",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableOptions",
+          "type": "object",
+          "default": "{\"isRowSelectable\":false,\"tableClass\":\"simplr-table\",\"highlightFirstRowOnMobile\":true}"
+        },
+        {
+          "name": "tableLabel",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "tablePage",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "pageCount",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "resultsPerPage",
+          "type": "number",
+          "default": "20"
+        },
+        {
+          "name": "noResultsMessage",
+          "type": "string",
+          "default": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "loading",
+          "attribute": "loading",
+          "type": "boolean"
+        },
+        {
+          "name": "tableData",
+          "attribute": "tableData",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableColumns",
+          "attribute": "tableColumns",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableOptions",
+          "attribute": "tableOptions",
+          "type": "object",
+          "default": "{\"isRowSelectable\":false,\"tableClass\":\"simplr-table\",\"highlightFirstRowOnMobile\":true}"
+        },
+        {
+          "name": "tableLabel",
+          "attribute": "tableLabel",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "tablePage",
+          "attribute": "tablePage",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "pageCount",
+          "attribute": "pageCount",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "resultsPerPage",
+          "attribute": "resultsPerPage",
+          "type": "number",
+          "default": "20"
+        },
+        {
+          "name": "noResultsMessage",
+          "attribute": "noResultsMessage",
+          "type": "string",
+          "default": ""
+        }
+      ],
+      "events": [
+        {
+          "name": "rowClick"
         }
       ]
     },
@@ -938,6 +938,11 @@
         {
           "name": "helperText",
           "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "type": "boolean",
+          "default": "false"
         }
       ],
       "properties": [
@@ -981,6 +986,12 @@
           "name": "helperText",
           "attribute": "helperText",
           "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "attribute": "helperPersistent",
+          "type": "boolean",
+          "default": "false"
         }
       ]
     },

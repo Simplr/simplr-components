@@ -1,0 +1,30 @@
+import { html } from 'lit-html';
+import '../lib/icon/icon.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Icon|Icon"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-icon', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Icon
+
+### Usage
+
+```js
+import 'simplr-components/icon/icon.js';
+```
+
+```html
+<simplr-icon icon="code"></simplr-icon>
+```
+
+
+<Story name="Icon">
+  {html`
+    <simplr-icon icon="code"></simplr-icon>
+  `}
+</Story>
+
+<Props of="simplr-icon" />

@@ -1,0 +1,29 @@
+import { html } from 'lit-html';
+import '../lib/button/button.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Button|Button"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-button', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Button
+
+### Usage
+
+```js
+  import 'simplr-components/button/button.js';
+```
+
+```html
+  <simplr-button label="Button" icon="code" raised primary></simplr-button>
+```
+
+<Story name="Simplr Button">
+  {html`
+  <simplr-button label="Button" icon="code" raised primary></simplr-button>
+  `}
+</Story>
+
+<Props of="simplr-button" />

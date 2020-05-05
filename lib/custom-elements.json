@@ -135,7 +135,7 @@
     },
     {
       "name": "simplr-container",
-      "path": "./containers/container.js",
+      "path": "./container/container.js",
       "attributes": [
         {
           "name": "block",
