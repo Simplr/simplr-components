@@ -1,0 +1,20 @@
+{
+  "name": "@simplr-wc/theme",
+  "version": "0.2.0",
+  "homepage": "https://simplr.github.io/simplr-components/",
+  "description": "Simplr Theme. A theming tool for Simplr Components",
+  "main": "simplr-theme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Simplr/simplr-components.git",
+    "directory": "lib/theming"
+  },
+  "author": "Simplr",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

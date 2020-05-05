@@ -1,0 +1,25 @@
+{
+  "name": "@simplr-wc/list",
+  "version": "0.2.0",
+  "homepage": "https://simplr.github.io/simplr-components/",
+  "description": "List Web Component. Part of Simplr Components",
+  "main": "list.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Simplr/simplr-components.git",
+    "directory": "lib/list"
+  },
+  "author": "Simplr",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@material/mwc-list": "^0.14.1",
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0"
+  }
+}

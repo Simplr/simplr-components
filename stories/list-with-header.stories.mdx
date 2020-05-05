@@ -3,7 +3,7 @@ import "../lib/list/list.js"
 import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
 
 <Meta
-  title="List|Default"
+  title="List|With header"
   decorators={[withKnobs, withWebComponentsKnobs]}
   parameters={{ component: 'simplr-list', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
 />
@@ -13,15 +13,12 @@ import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '
 ### Usage
 
 ```js
-import 'simplr-components/list/list.js';
+import '@simplr-wc/list';
 
-const items = [
-    {label: "Item 1"},
-    {label: "Item 2"},
-    {label: "Item 3"},
-    {label: "Item 4"},
-    {label: "Item 5"},
-]
+const itemsForListWithHeader = [
+    {label: "About me", icon: "person"},
+    {label: "Log out", icon: "exit_to_app"},
+];
 ```
 
 ```html
@@ -33,7 +30,10 @@ const items = [
   {html`
     <simplr-list
         .listHeader=${{label: "Joe Exotic", subtitle: "Tiger King", icon: "folder"}}
-        .items=${itemsForListWithHeader}
+        .items=${[
+                     {label: "About me", icon: "person"},
+                     {label: "Log out", icon: "exit_to_app"},
+                 ]}
     ></simplr-list>
   `}
 </Story>

@@ -1,0 +1,24 @@
+{
+  "name": "@simplr-wc/input-base",
+  "version": "0.2.0",
+  "homepage": "https://simplr.github.io/simplr-components/",
+  "description": "Base class for Input Web Components. Part of Simplr Components",
+  "main": "simplr-input-base.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Simplr/simplr-components.git",
+    "directory": "lib/input/base"
+  },
+  "author": "Simplr",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0"
+  }
+}

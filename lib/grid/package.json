@@ -1,0 +1,24 @@
+{
+  "name": "@simplr-wc/grid",
+  "version": "0.2.0",
+  "homepage": "https://simplr.github.io/simplr-components/",
+  "description": "Grid Web Component. Part of Simplr Components",
+  "main": "grid.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Simplr/simplr-components.git",
+    "directory": "lib/grid"
+  },
+  "author": "Simplr",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0"
+  }
+}
