@@ -1,0 +1,30 @@
+import { html } from 'lit-html';
+import '../lib/input/text-input/text-input.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Input|Text Input"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-text-input', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Text Input
+
+### Usage
+
+```js
+  import 'simplr-components/input/text-input/text-input.js';
+```
+
+```html
+  <simplr-text-input label="Label" icon="cancel"></simplr-text-input>
+```
+
+
+<Story name="Simplr Text Input">
+  {html`
+    <simplr-text-input label="Label" icon="cancel"></simplr-text-input>
+  `}
+</Story>
+
+<Props of="simplr-text-input" />
