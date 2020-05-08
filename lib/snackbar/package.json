@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/snackbar",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Snackbar Web Component. Part of Simplr Components",
   "main": "snackbar.js",
@@ -22,5 +22,6 @@
     "@material/mwc-snackbar": "^0.14.1",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
-  }
+  },
+  "types": "snackbar.d.ts"
 }
