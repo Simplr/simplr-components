@@ -1,0 +1,28 @@
+import { html } from 'lit-html';
+import "../lib/loading/loading.js"
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Loading|Default"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-loading', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Loading
+
+### Usage
+
+```js
+import SimplrLoading from '@simplr-wc/loading';
+```
+
+
+<Story name="Simplr Loading">
+  {html`
+<simplr-container id="loading-container" width="200px" height="200px" elevation="3" roundedCorners>
+    <simplr-loading></simplr-loading>
+</simplr-container>
+  `}
+</Story>
+
+<Props of="simplr-list" />

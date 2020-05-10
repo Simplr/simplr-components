@@ -1,0 +1,16 @@
+{
+  "name": "@simplr-wc/loading",
+  "version": "0.2.0",
+  "description": "Simplr Loading",
+  "main": "loading.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@simplr-wc/theme": "^0.2.0",
+    "lit-element": "^2.3.1",
+    "lit-html": "^1.2.1"
+  }
+}
