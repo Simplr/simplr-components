@@ -1,16 +1,16 @@
 {
-  "name": "@simplr-wc/input-base",
-  "version": "0.2.1",
+  "name": "@simplr-wc/info-button",
+  "version": "0.2.0",
   "homepage": "https://simplr.github.io/simplr-components/",
-  "description": "Base class for Input Web Components. Part of Simplr Components",
-  "main": "simplr-input-base.js",
+  "description": "Info Button Web Component. Part of Simplr Components",
+  "main": "info-button.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Simplr/simplr-components.git",
-    "directory": "lib/input/base"
+    "directory": "lib/info-button"
   },
   "author": "Simplr",
   "license": "MIT",
@@ -18,6 +18,10 @@
     "access": "public"
   },
   "dependencies": {
+    "@simplr-wc/theme": "0.1.1",
+    "@simplr-wc/icon": "^0.2.0",
+    "@simplr-wc/elevation": "^0.2.0",
+    "@simplr-wc/dialog": "^0.2.0",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
   }

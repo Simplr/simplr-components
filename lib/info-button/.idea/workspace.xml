@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5c4e18de-eea0-4330-9701-4e4120721352" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../analyze.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../analyze.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../custom-elements.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../custom-elements.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docs/29224e2d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docs/56299ca5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docs/5fc6dbac.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docs/c4b9d314.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docs/custom-elements.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../docs/custom-elements.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docs/e55d2c8e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docs/e9cc6c26.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docs/iframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../docs/iframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docs/lib/custom-elements.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../icon-button/icon-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/../icon-button/icon-button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../input/base/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../input/base/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../input/textarea/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../input/textarea/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1bi2CBDoHWfKXOCQ6kAHkqcrZeU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="/usr/lib/node_modules/prettier" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c4e18de-eea0-4330-9701-4e4120721352" name="Default Changelist" comment="" />
+      <created>1589100464276</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589100464276</updated>
+      <workItem from="1589100468461" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

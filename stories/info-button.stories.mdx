@@ -1,0 +1,31 @@
+import { html } from 'lit-html';
+import '../lib/info-button/info-button.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Button|Info Button"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-info-button', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Info Button
+
+### Usage
+
+```js
+  import '@simplr-wc/info-button';
+```
+
+```html
+  <simplr-info-button content="I am helpful information" icon="code" primary></simplr-info-button>
+```
+
+<Story name="Default info button">
+  {html`
+    <div style="height: 200px; padding: 0 10%; display: flex; justify-content: space-between; align-items: flex-end;">
+     <simplr-info-button content="I am helpful information about code" icon="code" primary></simplr-info-button>
+    </div>
+  `}
+</Story>
+
+<Props of="simplr-info-button" />
