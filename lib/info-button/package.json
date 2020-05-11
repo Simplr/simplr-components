@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@simplr-wc/theme": "0.1.1",
-    "@simplr-wc/icon": "^0.2.0",
+    "@simplr-wc/icon-button": "^0.2.0",
     "@simplr-wc/elevation": "^0.2.0",
     "@simplr-wc/dialog": "^0.2.0",
     "lit-element": "^2.0.1",

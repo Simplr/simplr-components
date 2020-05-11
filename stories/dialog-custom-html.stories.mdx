@@ -1,5 +1,5 @@
 import { html } from 'lit-html';
-import SimplrDialog from '../lib/dialog/dialog.js';
+import CreateSimplrDialog from '../lib/dialog/dialog.js';
 import '../lib/button/button.js';
 import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
 
@@ -15,11 +15,11 @@ import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '
 
 ```js
 import '@simplr-wc/text-input';
-import SimplrDialog from '@simplr-wc/dialog';
+import CreateSimplrDialog from '@simplr-wc/dialog';
 import '@simplr-wc/button';
 
 const openDialog = () => {
-  const dialog = new SimplrDialog({
+  const dialog = CreateSimplrDialog({
       primaryAction: {label: "Cool"},
       secondaryAction: {label: "Bleh"},
       heading: "You can also have custom html",
@@ -55,7 +55,7 @@ const openDialog = () => {
   {html`
     <simplr-button
      @click=${() => {
-         const dialog = new SimplrDialog({
+         const dialog = CreateSimplrDialog({
                primaryAction: {label: "Cool"},
                secondaryAction: {label: "Bleh"},
                heading: "You can also have custom html",
@@ -78,8 +78,8 @@ const openDialog = () => {
      raised
      primary
      label="Open dialog"
-   ></simplr-button>
-   <simplr-dialog></simplr-dialog>
+  ></simplr-button>
+    <simplr-dialog></simplr-dialog>
   `}
 </Story>
 

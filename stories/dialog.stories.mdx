@@ -1,5 +1,5 @@
 import { html } from 'lit-html';
-import SimplrDialog from '../lib/dialog/dialog.js';
+import CreateSimplrDialog from '../lib/dialog/dialog.js';
 import '../lib/button/button.js';
 import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
 
@@ -18,7 +18,7 @@ import SimplrDialog from '@simplr-wc/dialog';
 import '@simplr-wc/button';
 
 const openDialog = () => {
-  const dialog = new SimplrDialog({
+  const dialog = CreateSimplrDialog({
       primaryAction: {label: "Cool"},
       secondaryAction: {label: "Bleh"},
       heading: "Hello",
@@ -51,7 +51,7 @@ const primaryAction = {
   action: saveDocument
 };
 
-const dialog = new SimplrDialog({
+const dialog = CreateSimplrDialog({
     primaryAction: primaryAction,
     secondaryAction: {label: "No"},
     heading: "Save Document",
@@ -65,7 +65,7 @@ const dialog = new SimplrDialog({
   {html`
     <simplr-button
      @click=${() => {
-         const dialog = new SimplrDialog({
+         const dialog = CreateSimplrDialog({
              primaryAction: {label: "Cool"},
              secondaryAction: {label: "Bleh"},
              heading: "Hello",
@@ -77,8 +77,8 @@ const dialog = new SimplrDialog({
      primary
      label="Open dialog"
    ></simplr-button>
-   <simplr-dialog></simplr-dialog>
-  `}
+<simplr-dialog></simplr-dialog>
+`}
 </Story>
 
 <Props of="simplr-dialog" />
