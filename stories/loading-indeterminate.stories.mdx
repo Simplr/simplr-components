@@ -3,12 +3,12 @@ import "../lib/loading/loading.js"
 import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
 
 <Meta
-  title="Loading|Bar"
+  title="Loading|Indeterminate bar"
   decorators={[withKnobs, withWebComponentsKnobs]}
   parameters={{ component: 'simplr-loading', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
 />
 
-# Simplr Loading
+# Simplr Loading - Indeterminate bar
 
 ### Usage
 
@@ -17,13 +17,13 @@ import SimplrLoading from '@simplr-wc/loading';
 ```
 
 ```html
-<simplr-loading></simplr-loading>
+<simplr-loading loadingType="indeterminate-bar"></simplr-loading>
 ```
 
-<Story name="Bar">
+<Story name="Indeterminate bar">
   {html`
 <simplr-container id="loading-container" width="200px" height="200px" elevation="3" roundedCorners>
-    <simplr-loading progress="35"></simplr-loading>
+    <simplr-loading loadingType="indeterminate-bar"></simplr-loading>
 </simplr-container>
   `}
 </Story>

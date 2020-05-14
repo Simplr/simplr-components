@@ -70,7 +70,7 @@ const filterBannedPropsAndAttributes = (component, prop) => {
 };
 
 const removeBannedPropertiesAndAttributes = component => {
-  if (!components.properties) {
+  if (!component.properties) {
     return;
   }
   component.properties = component.properties.filter(prop =>
