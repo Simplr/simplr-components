@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@simplr-wc/theme": "^0.1.1",
+    "@simplr-wc/info-button": "^0.2.1",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
   }

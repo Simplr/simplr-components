@@ -23,8 +23,8 @@ const tableOptions = {
 const tableColumns = ["First name", "Last name", "Gender", "Actions"];
 
 const tableActions = [ 
-    {icon: 'cancel', type: 'button', color: '#F08080', onClick: (rowData) => console.log('Decline action on row', rowData)},
-    {icon: 'done', type: 'button', color: '#5dbb61', onClick: (rowData) => console.log('Approve action on row', rowData)}
+    {icon: 'cancel', type: 'button', color: '#F08080', onClick: (rowData) => console.log('Decline action on row', rowData), content: "Decline"},
+    {icon: 'done', type: 'button', color: '#5dbb61', onClick: (rowData) => console.log('Approve action on row', rowData), content: "Approve"}
 ];
 
 const tableData = [
@@ -58,13 +58,13 @@ const tableData = [
                          {
                             id: 1, 
                             data: ["Bob", "The Builder", "Male", [ 
-                                     {icon: 'cancel', type: 'button', color: '#F08080', onClick: (rowData) => console.log('Decline action on row', rowData)},
-                                     {icon: 'done', type: 'button', color: '#5dbb61', onClick: (rowData) => console.log('Approve action on row', rowData)}
+                                     {icon: 'cancel', type: 'button', color: '#F08080', onClick: (rowData) => console.log('Decline action on row', rowData), content: "Decline"},
+                                     {icon: 'done', type: 'button', color: '#5dbb61', onClick: (rowData) => console.log('Approve action on row', rowData), content: "Approve"}
                                     ]
                                 ],
                         }, {
                             id: 2,
-                            data: data: ["Timmy", "Tommy", "Male", [ 
+                            data: ["Timmy", "Tommy", "Male", [ 
                                      {icon: 'cancel', type: 'button', color: '#F08080', onClick: (rowData) => console.log('Decline action on row', rowData)},
                                      {icon: 'done', type: 'button', color: '#5dbb61', onClick: (rowData) => console.log('Approve action on row', rowData)}
                                     ]

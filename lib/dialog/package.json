@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/dialog",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Dialog Web Component. Part of Simplr Components",
   "main": "dialog.js",
