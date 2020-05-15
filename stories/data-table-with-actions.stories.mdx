@@ -33,7 +33,7 @@ const tableData = [
 ];
 ```
 
-```html
+```js
 <simplr-data-table
     @rowClick=${e => console.log(e)}
     tableLabel="My data table"
@@ -65,8 +65,8 @@ const tableData = [
                         }, {
                             id: 2,
                             data: ["Timmy", "Tommy", "Male", [ 
-                                     {icon: 'cancel', type: 'button', color: '#F08080', onClick: (rowData) => console.log('Decline action on row', rowData)},
-                                     {icon: 'done', type: 'button', color: '#5dbb61', onClick: (rowData) => console.log('Approve action on row', rowData)}
+                                     {icon: 'cancel', type: 'button', color: '#F08080', onClick: (rowData) => console.log('Decline action on row', rowData), content: "Decline"},
+                                     {icon: 'done', type: 'button', color: '#5dbb61', onClick: (rowData) => console.log('Approve action on row', rowData), content: "Approve"}
                                     ]
                                 ]
                         }
