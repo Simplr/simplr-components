@@ -1,0 +1,78 @@
+import { html } from 'lit-html';
+import "../lib/data-table/data-table.js"
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Data Table|Default"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-data-table', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Data Table with actions
+
+### Usage
+
+```js
+import '@simplr-wc/data-table';
+
+const tableOptions = {
+    isRowSelectable: true,
+    tableClass: "my-data-table"
+};
+
+const tableColumns = ["First name", "Last name", "Gender", "Actions"];
+
+const tableActions = [ 
+    {icon: 'cancel', type: 'button', color: '#F08080', onClick: (rowData) => console.log('Decline action on row', rowData), content: "Decline"},
+    {icon: 'done', type: 'button', color: '#5dbb61', onClick: (rowData) => console.log('Approve action on row', rowData), content: "Approve"}
+];
+
+const tableData = [
+    {id: 1, data: ["Bob", "The Builder", "Male", tableActions]},
+    {id: 2, data: ["Joe", "Exotic", "Tiger King", tableActions]}
+];
+```
+
+```js
+<simplr-data-table
+    @rowClick=${e => console.log(e)}
+    tableLabel="My data table"
+    .tableOptions=${tableOptions}
+    .tableColumns=${tableColumns}
+    .tableData=${tableData}
+></simplr-data-table>
+```
+
+
+<Story name="Simplr Data Table with actions">
+  {html`
+    <simplr-data-table
+        @rowClick=${e => console.log(e)}
+        tableLabel="My data table"
+        .tableOptions=${{
+                            isRowSelectable: true,
+                            tableClass: "my-data-table"
+                        }}
+        .tableColumns=${["First name", "Last name", "Gender", "Actions"]}
+        .tableData=${[
+                         {
+                            id: 1, 
+                            data: ["Bob", "The Builder", "Male", [ 
+                                     {icon: 'cancel', type: 'button', color: '#F08080', onClick: (rowData) => console.log('Decline action on row', rowData), content: "Decline"},
+                                     {icon: 'done', type: 'button', color: '#5dbb61', onClick: (rowData) => console.log('Approve action on row', rowData), content: "Approve"}
+                                    ]
+                                ],
+                        }, {
+                            id: 2,
+                            data: ["Timmy", "Tommy", "Male", [ 
+                                     {icon: 'cancel', type: 'button', color: '#F08080', onClick: (rowData) => console.log('Decline action on row', rowData), content: "Decline"},
+                                     {icon: 'done', type: 'button', color: '#5dbb61', onClick: (rowData) => console.log('Approve action on row', rowData), content: "Approve"}
+                                    ]
+                                ]
+                        }
+                    ]}
+    ></simplr-data-table>
+  `}
+</Story>
+
+<Props of="simplr-data-table" />

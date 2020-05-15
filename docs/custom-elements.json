@@ -162,18 +162,6 @@
           "description": "Custom color for the button label",
           "type": "string",
           "default": "\"\""
-        },
-        {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
-        },
-        {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
-        },
-        {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
         }
       ]
     },
@@ -468,18 +456,6 @@
           "description": "Border radius of the container",
           "type": "string",
           "default": "\"0px\""
-        },
-        {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
-        },
-        {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
-        },
-        {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
         }
       ]
     },
@@ -487,10 +463,6 @@
       "name": "simplr-dialog",
       "path": "./lib/dialog/dialog.js",
       "attributes": [
-        {
-          "name": "elem",
-          "type": "object"
-        },
         {
           "name": "primaryAction",
           "description": "Button label and action on dialog's primary button",
@@ -504,17 +476,20 @@
         {
           "name": "content",
           "description": "Content of dialog",
-          "type": "object"
+          "type": "object",
+          "default": "\"\""
         },
         {
           "name": "heading",
           "description": "Heading of the dialog element",
-          "type": "string"
+          "type": "string",
+          "default": "\"\""
         },
         {
           "name": "stacked",
           "description": "Should dialog actions be stacked",
-          "type": "boolean"
+          "type": "boolean",
+          "default": "false"
         },
         {
           "name": "onOpened",
@@ -535,11 +510,6 @@
       ],
       "properties": [
         {
-          "name": "elem",
-          "attribute": "elem",
-          "type": "object"
-        },
-        {
           "name": "primaryAction",
           "attribute": "primaryAction",
           "description": "Button label and action on dialog's primary button",
@@ -555,19 +525,22 @@
           "name": "content",
           "attribute": "content",
           "description": "Content of dialog",
-          "type": "object"
+          "type": "object",
+          "default": "\"\""
         },
         {
           "name": "heading",
           "attribute": "heading",
           "description": "Heading of the dialog element",
-          "type": "string"
+          "type": "string",
+          "default": "\"\""
         },
         {
           "name": "stacked",
           "attribute": "stacked",
           "description": "Should dialog actions be stacked",
-          "type": "boolean"
+          "type": "boolean",
+          "default": "false"
         },
         {
           "name": "onOpened",
@@ -587,18 +560,6 @@
           "description": "Is the dialog open",
           "type": "boolean",
           "default": "false"
-        },
-        {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
-        },
-        {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
-        },
-        {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
         }
       ]
     },
@@ -724,18 +685,6 @@
           "description": "Is the data-table still loading",
           "type": "boolean",
           "default": "false"
-        },
-        {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
-        },
-        {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
-        },
-        {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
         }
       ],
       "events": [
@@ -879,18 +828,6 @@
           "description": "Use secondary color theme",
           "type": "boolean",
           "default": "false"
-        },
-        {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
-        },
-        {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
-        },
-        {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
         }
       ]
     },
@@ -999,18 +936,6 @@
           "attribute": "row",
           "description": "Grid-column row size",
           "type": "string"
-        },
-        {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
-        },
-        {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
-        },
-        {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
         }
       ]
     },
@@ -1084,18 +1009,6 @@
           "description": "Custom color of icon",
           "type": "string",
           "default": "\"inherit\""
-        },
-        {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
-        },
-        {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
-        },
-        {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
         }
       ]
     },
@@ -1182,18 +1095,171 @@
           "description": "Use custom color on button",
           "type": "string",
           "default": "\"inherit\""
+        }
+      ]
+    },
+    {
+      "name": "simplr-info-button",
+      "path": "./lib/info-button/info-button.js",
+      "attributes": [
+        {
+          "name": "dialogHeading",
+          "description": "Dialog heading for the dialog opened when clicking the info button",
+          "type": "string"
         },
         {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
+          "name": "dialogContent",
+          "description": "Content of info dialog opened by pressing the info button",
+          "type": "string"
         },
         {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
+          "name": "icon",
+          "description": "Determines the icon of info button",
+          "type": "string",
+          "default": "\"\""
         },
         {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+          "name": "content",
+          "description": "Content of info bubble displayed by the info button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "size",
+          "description": "Size of the info button. Determines the icon size as well as the button size",
+          "type": "string",
+          "default": "\"1.4rem\""
+        },
+        {
+          "name": "primary",
+          "description": "Use the primary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "description": "Use the secondary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "buttonColor",
+          "description": "Custom color for button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "color",
+          "description": "Custom color for the icon inside the button",
+          "type": "string",
+          "default": "\"#FFFFFF\""
+        },
+        {
+          "name": "bubbleColor",
+          "description": "Custom color for the bubble background",
+          "type": "string",
+          "default": "\"dark\""
+        },
+        {
+          "name": "bubbleTextColor",
+          "description": "Custom color for the bubble content",
+          "type": "string",
+          "default": "\"#FFFFFF\""
+        },
+        {
+          "name": "dialogCloseText",
+          "description": "Dialog's close text",
+          "type": "string",
+          "default": "\"close\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "dialogHeading",
+          "attribute": "dialogHeading",
+          "description": "Dialog heading for the dialog opened when clicking the info button",
+          "type": "string"
+        },
+        {
+          "name": "dialogContent",
+          "attribute": "dialogContent",
+          "description": "Content of info dialog opened by pressing the info button",
+          "type": "string"
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Determines the icon of info button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "content",
+          "attribute": "content",
+          "description": "Content of info bubble displayed by the info button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "size",
+          "attribute": "size",
+          "description": "Size of the info button. Determines the icon size as well as the button size",
+          "type": "string",
+          "default": "\"1.4rem\""
+        },
+        {
+          "name": "openDialog",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "description": "Use the primary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "description": "Use the secondary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "buttonColor",
+          "attribute": "buttonColor",
+          "description": "Custom color for button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "description": "Custom color for the icon inside the button",
+          "type": "string",
+          "default": "\"#FFFFFF\""
+        },
+        {
+          "name": "bubbleColor",
+          "attribute": "bubbleColor",
+          "description": "Custom color for the bubble background",
+          "type": "string",
+          "default": "\"dark\""
+        },
+        {
+          "name": "bubbleTextColor",
+          "attribute": "bubbleTextColor",
+          "description": "Custom color for the bubble content",
+          "type": "string",
+          "default": "\"#FFFFFF\""
+        },
+        {
+          "name": "dialogCloseText",
+          "attribute": "dialogCloseText",
+          "description": "Dialog's close text",
+          "type": "string",
+          "default": "\"close\""
         }
       ]
     },
@@ -1278,18 +1344,87 @@
           "description": "Array of selected item values from list",
           "type": "array",
           "default": "[]"
+        }
+      ]
+    },
+    {
+      "name": "simplr-loading",
+      "path": "./lib/loading/loading.js",
+      "description": "TODO:\n- Add multiple animations:\n   - Rotating symbol\n   - Indetermine loading bar (animates in a loop)\n   - Handle progress on normal bar\n   - Fit into elements",
+      "attributes": [
+        {
+          "name": "element",
+          "type": "string"
         },
         {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
+          "name": "type",
+          "type": "string"
         },
         {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
+          "name": "primary",
+          "type": "boolean"
         },
         {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
+          "name": "secondary",
+          "type": "boolean"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        },
+        {
+          "name": "oldPos",
+          "type": "string",
+          "default": "\"position\""
+        },
+        {
+          "name": "progress",
+          "type": "number",
+          "default": "0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "element",
+          "attribute": "element",
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string"
+        },
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "type": "boolean"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "type": "boolean"
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "type": "string"
+        },
+        {
+          "name": "loadingType",
+          "type": "string",
+          "default": "\"bar\""
+        },
+        {
+          "name": "oldPos",
+          "attribute": "oldPos",
+          "type": "string",
+          "default": "\"position\""
+        },
+        {
+          "name": "progress",
+          "attribute": "progress",
+          "type": "number",
+          "default": "0"
         }
       ]
     },
@@ -1297,10 +1432,6 @@
       "name": "simplr-select",
       "path": "./lib/select/select.js",
       "attributes": [
-        {
-          "name": "elem",
-          "type": "object"
-        },
         {
           "name": "label",
           "description": "Label of the select field",
@@ -1355,11 +1486,6 @@
         }
       ],
       "properties": [
-        {
-          "name": "elem",
-          "attribute": "elem",
-          "type": "object"
-        },
         {
           "name": "label",
           "attribute": "label",
@@ -1420,18 +1546,6 @@
           "description": "Is the helper text persistent or only displayed on focus",
           "type": "boolean",
           "default": "false"
-        },
-        {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
-        },
-        {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
-        },
-        {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
         }
       ]
     },
@@ -1439,10 +1553,6 @@
       "name": "simplr-snackbar",
       "path": "./lib/snackbar/snackbar.js",
       "attributes": [
-        {
-          "name": "elem",
-          "type": "object"
-        },
         {
           "name": "message",
           "description": "Message displayed with the snackbar",
@@ -1474,11 +1584,6 @@
         }
       ],
       "properties": [
-        {
-          "name": "elem",
-          "attribute": "elem",
-          "type": "object"
-        },
         {
           "name": "message",
           "attribute": "message",
@@ -1512,18 +1617,6 @@
           "description": "Status / Theme of the snackbar. Defaults to Info",
           "type": "\"success\"|\"error\"|\"caution\"|\"info\"",
           "default": "\"status\""
-        },
-        {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
-        },
-        {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
-        },
-        {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
         }
       ]
     },
@@ -1636,18 +1729,6 @@
           "description": "Array of action items displayed at the right end of top app bar",
           "type": "array",
           "default": "[]"
-        },
-        {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
-        },
-        {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
-        },
-        {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
         }
       ],
       "events": [
@@ -1660,10 +1741,6 @@
       "name": "simplr-checkbox",
       "path": "./lib/input/checkbox/checkbox.js",
       "attributes": [
-        {
-          "name": "elem",
-          "type": "object"
-        },
         {
           "name": "name",
           "description": "Name of checkbox.",
@@ -1702,11 +1779,6 @@
         }
       ],
       "properties": [
-        {
-          "name": "elem",
-          "attribute": "elem",
-          "type": "object"
-        },
         {
           "name": "name",
           "attribute": "name",
@@ -1748,18 +1820,6 @@
           "description": "If the checkbox is disabled.",
           "type": "boolean",
           "default": "false"
-        },
-        {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
-        },
-        {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
-        },
-        {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
         }
       ],
       "events": [
@@ -1772,6 +1832,12 @@
       "name": "simplr-checkbox-group",
       "path": "./lib/input/checkbox-group/checkbox-group.js",
       "attributes": [
+        {
+          "name": "name",
+          "description": "Name of the checkbox group element",
+          "type": "string",
+          "default": "\"\""
+        },
         {
           "name": "label",
           "description": "Label shown above the group of checkboxes",
@@ -1793,6 +1859,13 @@
       ],
       "properties": [
         {
+          "name": "name",
+          "attribute": "name",
+          "description": "Name of the checkbox group element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
           "name": "label",
           "attribute": "label",
           "description": "Label shown above the group of checkboxes",
@@ -1812,18 +1885,6 @@
           "description": "List of selected values in options.",
           "type": "array",
           "default": "[]"
-        },
-        {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
-        },
-        {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
-        },
-        {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
         }
       ]
     },
@@ -1939,18 +2000,6 @@
           "description": "Alignment of radio button group.",
           "type": "\"row\"|\"column\"",
           "default": "\"row\""
-        },
-        {
-          "name": "floatingLabelFoundation",
-          "type": "MDCFloatingLabelFoundation | undefined"
-        },
-        {
-          "name": "lineRippleFoundation",
-          "type": "MDCLineRippleFoundation | undefined"
-        },
-        {
-          "name": "charCounterFoundation",
-          "type": "MDCTextFieldCharacterCounterFoundation | undefined"
         }
       ],
       "events": [

@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/info-button",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Info Button Web Component. Part of Simplr Components",
   "main": "info-button.js",
@@ -19,9 +19,9 @@
   },
   "dependencies": {
     "@simplr-wc/theme": "0.1.1",
-    "@simplr-wc/icon": "^0.2.0",
+    "@simplr-wc/icon-button": "^0.2.0",
     "@simplr-wc/elevation": "^0.2.0",
-    "@simplr-wc/dialog": "^0.2.0",
+    "@simplr-wc/dialog": "^0.2.1",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
   }

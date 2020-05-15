@@ -1,0 +1,32 @@
+
+import { html } from 'lit-html';
+import "../lib/loading/loading.js"
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Loading|Circle"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-loading', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Loading - Circle
+
+### Usage
+
+```js
+import SimplrLoading from '@simplr-wc/loading';
+```
+
+```html
+<simplr-loading loadingType="circle"></simplr-loading>
+```
+
+<Story name="Circle">
+  {html`
+<simplr-container id="loading-container" width="200px" height="200px" elevation="3" roundedCorners>
+    <simplr-loading loadingType="circle"></simplr-loading>
+</simplr-container>
+  `}
+</Story>
+
+<Props of="simplr-list" />

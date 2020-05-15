@@ -1,5 +1,5 @@
 import { html } from 'lit-html';
-import SimplrDialog from '../lib/dialog/dialog.js';
+import CreateSimplrDialog from '../lib/dialog/dialog.js';
 import '../lib/input/radio-group/radio-group.js';
 import '../lib/button/button.js';
 import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
@@ -15,12 +15,12 @@ import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '
 ### Usage
 
 ```js
-import SimplrDialog from '@simplr-wc/dialog';
+import CreateSimplrDialog from '@simplr-wc/dialog';
 import '@simplr-wc/button';
 import '@simplr-wc/radio-group';
 
 const openDialog = () => {
-  const dialog = new SimplrDialog({
+  const dialog = CreateSimplrDialog({
      primaryAction: {label: "Submit"},
      secondaryAction: {label: "Cancel"},
      heading: "What's your favorite game?",
@@ -52,9 +52,10 @@ const openDialog = () => {
 
 <Story name="Simplr Dialog with Input Fields">
   {html`
+<simplr-dialog></simplr-dialog>
     <simplr-button
      @click=${() => {
-         const dialog = new SimplrDialog({
+         const dialog = CreateSimplrDialog({
              primaryAction: {label: "Submit"},
              secondaryAction: {label: "Cancel"},
              heading: "What's your favorite game?",
@@ -75,7 +76,6 @@ const openDialog = () => {
      primary
      label="Open dialog"
    ></simplr-button>
-   <simplr-dialog></simplr-dialog>
   `}
 </Story>
 

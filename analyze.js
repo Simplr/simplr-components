@@ -23,7 +23,12 @@ const customElementFile = 'custom-elements.json';
 // MDC uses some global properties, which mess with the WCA analyzer.
 // We remove those properties from the custom-elements.json to make knobs work.
 const bannedProperties = ['MDC'];
-const bannedNames = ['lineRippleFoundation', 'elem'];
+const bannedNames = [
+  'lineRippleFoundation',
+  'elem',
+  'floatingLabelFoundation',
+  'charCounterFoundation',
+];
 const verbose = process.argv.includes('--verbose');
 
 const green = '\x1b[32m';
@@ -65,7 +70,7 @@ const filterBannedPropsAndAttributes = (component, prop) => {
 };
 
 const removeBannedPropertiesAndAttributes = component => {
-  if (!components.properties) {
+  if (!component.properties) {
     return;
   }
   component.properties = component.properties.filter(prop =>
