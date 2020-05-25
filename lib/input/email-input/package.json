@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/email-input",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Email Input Web Component. Part of Simplr Components",
   "main": "email-input.js",
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@simplr-wc/input-base": "^0.1.4",
+    "@simplr-wc/theme": "^0.2.0",
     "@material/mwc-textfield": "^0.14.1",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"

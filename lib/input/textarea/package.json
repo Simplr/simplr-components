@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/textarea",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "TextArea Web Component. Part of Simplr Components",
   "main": "textarea.js",

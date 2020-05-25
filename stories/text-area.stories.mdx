@@ -1,0 +1,30 @@
+import { html } from 'lit-html';
+import '../lib/input/textarea/textarea.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Input|Textarea"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-text-area', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Text Input
+
+### Usage
+
+```js
+  import '@simplr-wc/textarea';
+```
+
+```html
+  <simplr-text-area label="Label" icon="cancel"></simplr-text-area>
+```
+
+
+<Story name="Simplr Textarea">
+  {html`
+    <simplr-text-area label="Label" icon="cancel"></simplr-text-area>
+  `}
+</Story>
+
+<Props of="simplr-text-area" />
