@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/input-base",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Base class for Input Web Components. Part of Simplr Components",
   "main": "simplr-input-base.js",
