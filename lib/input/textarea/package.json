@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/textarea",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "TextArea Web Component. Part of Simplr Components",
   "main": "textarea.js",
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@simplr-wc/input-base": "^0.2.1",
+    "@simplr-wc/input-base": "^0.2.3",
     "@material/mwc-textarea": "^0.14.1",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
