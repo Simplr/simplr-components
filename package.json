@@ -79,6 +79,7 @@
     "@simplr-wc/icon": "^0.2.0",
     "@simplr-wc/icon-button": "^0.2.0",
     "@simplr-wc/info-button": "^0.2.1",
+    "@simplr-wc/input-base": "^0.2.3",
     "@simplr-wc/number-input": "^0.2.0",
     "@simplr-wc/password-input": "^0.2.0",
     "@simplr-wc/radio-group": "^0.2.0",
@@ -88,9 +89,9 @@
     "@simplr-wc/textarea": "^0.2.0",
     "@simplr-wc/theme": "^0.2.0",
     "@simplr-wc/top-app-bar": "^0.2.0",
-    "@simplr-wc/input-base": "^0.2.2",
     "@webcomponents/webcomponentsjs": "^2.4.3",
     "lit-element": "^2.0.1",
+    "lit-flatpickr": "^0.2.1",
     "lit-html": "^1.0.0"
   }
 }

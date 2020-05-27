@@ -1,0 +1,27 @@
+{
+  "name": "@simplr-wc/date-input",
+  "version": "0.2.2",
+  "homepage": "https://simplr.github.io/simplr-components/",
+  "description": "Date Input Web Component. Part of Simplr Components",
+  "main": "date-input.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Simplr/simplr-components.git",
+    "directory": "lib/input/date-input"
+  },
+  "author": "Simplr",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@simplr-wc/text-input": "^0.2.2",
+    "@simplr-wc/input-base": "^0.2.3",
+    "lit-flatpickr": "^0.2.1",
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0"
+  }
+}
