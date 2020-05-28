@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/date-input",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Date Input Web Component. Part of Simplr Components",
   "main": "date-input.js",

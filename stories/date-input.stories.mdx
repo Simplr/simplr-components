@@ -17,13 +17,13 @@ import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '
 ```
 
 ```html
-  <simplr-date-input label="Label" icon="calendar_today"></simplr-date-input>
+<simplr-date-input label="Label" icon="calendar_today" .value="${new Date()}"></simplr-date-input>
 ```
 
 
 <Story name="Simplr Date Input">
   {html`
-    <simplr-date-input label="Label" icon="calendar_today"></simplr-date-input>
+    <simplr-date-input label="Label" icon="calendar_today" .value="${new Date()}"></simplr-date-input>
   `}
 </Story>
 
