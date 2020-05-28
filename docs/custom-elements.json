@@ -2942,6 +2942,421 @@
           "default": "20"
         }
       ]
+    },
+    {
+      "name": "simplr-date-input",
+      "path": "./lib/input/date-input/date-input.js",
+      "attributes": [
+        {
+          "name": "formatDateFn"
+        },
+        {
+          "name": "hoursIncrement",
+          "type": "number"
+        },
+        {
+          "name": "maxDate",
+          "type": "string"
+        },
+        {
+          "name": "minDate",
+          "type": "string"
+        },
+        {
+          "name": "onChange"
+        },
+        {
+          "name": "onClose"
+        },
+        {
+          "name": "onMonthChange"
+        },
+        {
+          "name": "onOpen"
+        },
+        {
+          "name": "onReady"
+        },
+        {
+          "name": "onValueUpdate"
+        },
+        {
+          "name": "onYearChange"
+        },
+        {
+          "name": "parseDateFn"
+        },
+        {
+          "name": "allowInput",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "altFormat",
+          "type": "string",
+          "default": "\"F j, Y\""
+        },
+        {
+          "name": "altInput",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "ariaDateFormat",
+          "type": "string",
+          "default": "\"F j, Y\""
+        },
+        {
+          "name": "clickOpens",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "dateFormat",
+          "type": "string",
+          "default": "\"d.m.Y\""
+        },
+        {
+          "name": "defaultHour",
+          "type": "number",
+          "default": "12"
+        },
+        {
+          "name": "defaultMinute",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "disable",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "disableMobile",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "enable",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "enableSeconds",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "enableTime",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "inline",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "minuteIncrement",
+          "type": "number",
+          "default": "5"
+        },
+        {
+          "name": "mode",
+          "type": "string",
+          "default": "\"single\""
+        },
+        {
+          "name": "nextArrow",
+          "type": "string",
+          "default": "\">\""
+        },
+        {
+          "name": "prevArrow",
+          "type": "string",
+          "default": "\"<\""
+        },
+        {
+          "name": "noCalendar",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "position",
+          "type": "string",
+          "default": "\"auto\""
+        },
+        {
+          "name": "shorthandCurrentMonth",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showMonths",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "static",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "theme",
+          "type": "string",
+          "default": "\"material_blue\""
+        },
+        {
+          "name": "time_24hr",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "weekNumbers",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "wrap",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "flatPickrInstance",
+          "type": "object"
+        }
+      ],
+      "properties": [
+        {
+          "name": "formatDateFn",
+          "attribute": "formatDateFn"
+        },
+        {
+          "name": "hoursIncrement",
+          "attribute": "hoursIncrement",
+          "type": "number"
+        },
+        {
+          "name": "maxDate",
+          "attribute": "maxDate",
+          "type": "string"
+        },
+        {
+          "name": "minDate",
+          "attribute": "minDate",
+          "type": "string"
+        },
+        {
+          "name": "onChange",
+          "attribute": "onChange"
+        },
+        {
+          "name": "onClose",
+          "attribute": "onClose"
+        },
+        {
+          "name": "onMonthChange",
+          "attribute": "onMonthChange"
+        },
+        {
+          "name": "onOpen",
+          "attribute": "onOpen"
+        },
+        {
+          "name": "onReady",
+          "attribute": "onReady"
+        },
+        {
+          "name": "onValueUpdate",
+          "attribute": "onValueUpdate"
+        },
+        {
+          "name": "onYearChange",
+          "attribute": "onYearChange"
+        },
+        {
+          "name": "parseDateFn",
+          "attribute": "parseDateFn"
+        },
+        {
+          "name": "allowInput",
+          "attribute": "allowInput",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "altFormat",
+          "attribute": "altFormat",
+          "type": "string",
+          "default": "\"F j, Y\""
+        },
+        {
+          "name": "altInput",
+          "attribute": "altInput",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "ariaDateFormat",
+          "attribute": "ariaDateFormat",
+          "type": "string",
+          "default": "\"F j, Y\""
+        },
+        {
+          "name": "clickOpens",
+          "attribute": "clickOpens",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "dateFormat",
+          "attribute": "dateFormat",
+          "type": "string",
+          "default": "\"d.m.Y\""
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "defaultHour",
+          "attribute": "defaultHour",
+          "type": "number",
+          "default": "12"
+        },
+        {
+          "name": "defaultMinute",
+          "attribute": "defaultMinute",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "disable",
+          "attribute": "disable",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "disableMobile",
+          "attribute": "disableMobile",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "enable",
+          "attribute": "enable",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "enableSeconds",
+          "attribute": "enableSeconds",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "enableTime",
+          "attribute": "enableTime",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hourIncrement",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "inline",
+          "attribute": "inline",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "minuteIncrement",
+          "attribute": "minuteIncrement",
+          "type": "number",
+          "default": "5"
+        },
+        {
+          "name": "mode",
+          "attribute": "mode",
+          "type": "string",
+          "default": "\"single\""
+        },
+        {
+          "name": "nextArrow",
+          "attribute": "nextArrow",
+          "type": "string",
+          "default": "\">\""
+        },
+        {
+          "name": "prevArrow",
+          "attribute": "prevArrow",
+          "type": "string",
+          "default": "\"<\""
+        },
+        {
+          "name": "noCalendar",
+          "attribute": "noCalendar",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "position",
+          "attribute": "position",
+          "type": "string",
+          "default": "\"auto\""
+        },
+        {
+          "name": "shorthandCurrentMonth",
+          "attribute": "shorthandCurrentMonth",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showMonths",
+          "attribute": "showMonths",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "static",
+          "attribute": "static",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "theme",
+          "attribute": "theme",
+          "type": "string",
+          "default": "\"material_blue\""
+        },
+        {
+          "name": "time_24hr",
+          "attribute": "time_24hr",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "weekNumbers",
+          "attribute": "weekNumbers",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "wrap",
+          "attribute": "wrap",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "flatPickrInstance",
+          "attribute": "flatPickrInstance",
+          "type": "object"
+        }
+      ]
     }
   ]
 }
+

@@ -14,31 +14,74 @@ import '@simplr-wc/date-input';
 <simplr-date-input label="Label" icon="cancel"></simplr-date-input>
 ```
 
+# simplr-date-input
+
 ## Properties
 
-| Property           | Attribute          | Type      | Default | Description                                                                |
-| ------------------ | ------------------ | --------- | ------- | -------------------------------------------------------------------------- |
-| `autoValidate`     | `autoValidate`     | `boolean` | false   | Report input validity on input rather than on blur                         |
-| `charCounter`      | `charCounter`      | `boolean` | false   | Enable character counter of input field (! Required maxLength to be set !) |
-| `disabled`         | `disabled`         | `boolean` | false   | Is input field disabled                                                    |
-| `errorMessage`     | `errorMessage`     | `string`  | ""      | Error message displayed on invalid input                                   |
-| `fullWidth`        | `fullWidth`        | `boolean` | false   | Does input field use the full width of the field                           |
-| `helperPersistent` | `helperPersistent` | `boolean` | false   | Determines if helper text is visible always or only on focus               |
-| `helperText`       | `helperText`       | `string`  | ""      | Helper text shown below input field                                        |
-| `icon`             | `icon`             | `string`  | ""      | Icon shown inside the input element                                        |
-| `iconTrailing`     | `iconTrailing`     | `string`  | ""      | Trailing icon shown inside the input element                               |
-| `label`            | `label`            | `string`  | ""      | Label of the input element                                                 |
-| `maxLength`        | `maxLength`        | `number`  | -1      | Maximum length of the input field                                          |
-| `name`             | `name`             | `string`  | ""      | Name of the input element                                                  |
-| `outlined`         | `outlined`         | `boolean` | false   | Style the input field as an outlined input element                         |
-| `placeHolder`      | `placeHolder`      | `string`  | ""      | Placeholder text of input field                                            |
-| `required`         | `required`         | `boolean` | false   | Is input field required                                                    |
-| `value`            | `value`            | `string`  | ""      | Preset value of the input field                                            |
+| Property                | Attribute               | Type      | Default         |
+| ----------------------- | ----------------------- | --------- | --------------- |
+| `allowInput`            | `allowInput`            | `boolean` | false           |
+| `altFormat`             | `altFormat`             | `string`  | "F j, Y"        |
+| `altInput`              | `altInput`              | `boolean` | false           |
+| `ariaDateFormat`        | `ariaDateFormat`        | `string`  | "F j, Y"        |
+| `clickOpens`            | `clickOpens`            | `boolean` | true            |
+| `dateFormat`            | `dateFormat`            | `string`  | "d.m.Y"         |
+| `defaultHour`           | `defaultHour`           | `number`  | 12              |
+| `defaultMinute`         | `defaultMinute`         | `number`  | 0               |
+| `disable`               | `disable`               | `array`   | []              |
+| `disableMobile`         | `disableMobile`         | `boolean` | false           |
+| `enable`                | `enable`                | `array`   | []              |
+| `enableSeconds`         | `enableSeconds`         | `boolean` | false           |
+| `enableTime`            | `enableTime`            | `boolean` | false           |
+| `flatPickrInstance`     | `flatPickrInstance`     | `object`  | null            |
+| `formatDateFn`          | `formatDateFn`          |           |                 |
+| `hourIncrement`         |                         | `number`  | 1               |
+| `hoursIncrement`        | `hoursIncrement`        | `number`  |                 |
+| `inline`                | `inline`                | `boolean` | false           |
+| `maxDate`               | `maxDate`               | `string`  |                 |
+| `minDate`               | `minDate`               | `string`  |                 |
+| `minuteIncrement`       | `minuteIncrement`       | `number`  | 5               |
+| `mode`                  | `mode`                  | `string`  | "single"        |
+| `nextArrow`             | `nextArrow`             | `string`  | ">"             |
+| `noCalendar`            | `noCalendar`            | `boolean` | false           |
+| `onChange`              | `onChange`              |           |                 |
+| `onClose`               | `onClose`               |           |                 |
+| `onMonthChange`         | `onMonthChange`         |           |                 |
+| `onOpen`                | `onOpen`                |           |                 |
+| `onReady`               | `onReady`               |           |                 |
+| `onValueUpdate`         | `onValueUpdate`         |           |                 |
+| `onYearChange`          | `onYearChange`          |           |                 |
+| `parseDateFn`           | `parseDateFn`           |           |                 |
+| `position`              | `position`              | `string`  | "auto"          |
+| `prevArrow`             | `prevArrow`             | `string`  | "<"             |
+| `shorthandCurrentMonth` | `shorthandCurrentMonth` | `boolean` | false           |
+| `showMonths`            | `showMonths`            | `number`  | 1               |
+| `static`                | `static`                | `boolean` | false           |
+| `theme`                 | `theme`                 | `string`  | "material_blue" |
+| `time_24hr`             | `time_24hr`             | `boolean` | true            |
+| `value`                 |                         | `string`  | ""              |
+| `weekNumbers`           | `weekNumbers`           | `boolean` | false           |
+| `wrap`                  | `wrap`                  | `boolean` | false           |
 
 ## Methods
 
-| Method          | Type                 |
-| --------------- | -------------------- |
-| `checkValidity` | `(): boolean`        |
-| `getValue`      | `(): string`         |
-| `setValue`      | `(value: any): void` |
+| Method                 | Type                                                     |
+| ---------------------- | -------------------------------------------------------- |
+| `changeMonth`          | `(monthNum: any, isOffset: any): void`                   |
+| `clear`                | `(): void`                                               |
+| `close`                | `(): void`                                               |
+| `destroy`              | `(): void`                                               |
+| `formatDate`           | `(dateObj: any, formatStr: any): any`                    |
+| `getCurrentMonth`      | `(): any`                                                |
+| `getCurrentYear`       | `(): any`                                                |
+| `getFlatpickrInstance` | `(): any`                                                |
+| `getSelectedDates`     | `(): any`                                                |
+| `getValue`             | `(): any`                                                |
+| `jumpToDate`           | `(date: any, triggerChange: any): void`                  |
+| `open`                 | `(): void`                                               |
+| `parseDate`            | `(dateStr: any, dateFormat: any): any`                   |
+| `redraw`               | `(): void`                                               |
+| `set`                  | `(option: any, value: any): void`                        |
+| `setDate`              | `(date: any, triggerChange: any, dateFormat: any): void` |
+| `setValue`             | `(value: any): void`                                     |
+| `toggle`               | `(): void`                                               |
