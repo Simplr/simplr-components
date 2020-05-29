@@ -2948,6 +2948,108 @@
       "path": "./lib/input/date-input/date-input.js",
       "attributes": [
         {
+          "name": "name",
+          "description": "Name of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "description": "Label of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperPersistent",
+          "description": "Determines if helper text is visible always or only on focus",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "description": "Is input field required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "description": "Is input field disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "fullWidth",
+          "description": "Does input field use the full width of the field",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "description": "Style the input field as an outlined input element",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounter",
+          "description": "Enable character counter of input field (! Required maxLength to be set !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "description": "Error message displayed on invalid input",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "autoValidate",
+          "description": "Report input validity on input rather than on blur",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Preset value of the input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "description": "Icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "description": "Trailing icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "description": "Placeholder text of input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "description": "Helper text shown below input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "description": "Maximum length of the input field",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "pattern",
+          "description": "The matching pattern for the input component",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
           "name": "formatDateFn"
         },
         {
@@ -3127,6 +3229,125 @@
         }
       ],
       "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "Name of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Label of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperPersistent",
+          "attribute": "helperPersistent",
+          "description": "Determines if helper text is visible always or only on focus",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "description": "Is input field required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Is input field disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "fullWidth",
+          "attribute": "fullWidth",
+          "description": "Does input field use the full width of the field",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "description": "Style the input field as an outlined input element",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounter",
+          "attribute": "charCounter",
+          "description": "Enable character counter of input field (! Required maxLength to be set !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "errorMessage",
+          "description": "Error message displayed on invalid input",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "autoValidate",
+          "attribute": "autoValidate",
+          "description": "Report input validity on input rather than on blur",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Preset value of the input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "attribute": "iconTrailing",
+          "description": "Trailing icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "attribute": "placeHolder",
+          "description": "Placeholder text of input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "description": "Helper text shown below input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxLength",
+          "description": "Maximum length of the input field",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "pattern",
+          "attribute": "pattern",
+          "description": "The matching pattern for the input component",
+          "type": "string",
+          "default": "\"\""
+        },
         {
           "name": "formatDateFn",
           "attribute": "formatDateFn"
@@ -3349,14 +3570,8 @@
           "attribute": "wrap",
           "type": "boolean",
           "default": "false"
-        },
-        {
-          "name": "flatPickrInstance",
-          "attribute": "flatPickrInstance",
-          "type": "object"
         }
       ]
     }
   ]
 }
-
