@@ -1,0 +1,29 @@
+import { html } from 'lit-html';
+import '../lib/accordion/accordion.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Layout|Accordion"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-accordion', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Accordion
+
+### Usage
+
+```js
+  import '@simplr-wc/accordion';
+```
+
+```html
+  <simplr-accordion label="Button" icon="code" ></simplr-accordion>
+```
+
+<Story name="Simplr Accordion">
+  {html`
+  <simplr-accordion label="Button" icon="code" ></simplr-accordion>
+  `}
+</Story>
+
+<Props of="simplr-accordion" />
