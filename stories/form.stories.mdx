@@ -1,0 +1,67 @@
+import { html } from 'lit-html';
+import '../lib/input/number-input/number-input.js';
+import '../lib/input/text-input/text-input.js';
+import '../lib/button/button.js'
+import '../lib/select/select.js';
+import '../lib/input/form/form.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Input|Form"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-form', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr Form
+
+### Usage
+
+```js
+  import '@simplr-wc/form';
+
+  document.querySelector("#my-form").getValue();
+// {name: "Foo Bar", age: 23, sex: "Other"}
+```
+
+```html
+<simplr-form id="my-form" @submit=${(e) => console.log("submit", e.detail.formData)}>
+    <simplr-text-input label="Name" value="Foo Bar" outlined name="name"></simplr-text-input> 
+    <simplr-number-input label="Name" value="23" outlined name="age"></simplr-number-input> 
+    <simplr-select
+        label="Sex"
+        name="sex"
+        .options=${[
+            {value: "Male", label: "Male"},
+            {value: "Woman", label: "Woman"},
+            {value: "Other", label: "Other"}
+        ]}
+        selectedValue="Other"
+        outlined
+    ></simplr-select>
+    <simplr-button @click=${() => document.querySelector("#my-form").submit()} primary raised label="Submit" icon="save" type="submit"></simplr-button>
+</simplr-form>
+```
+
+
+<Story name="Simplr Form">
+  {html`
+<simplr-form id="my-form" @submit=${(e) => console.log("submit", e.detail.formData)}>
+    <simplr-text-input label="Name" value="Foo Bar" outlined name="name"></simplr-text-input> 
+    <simplr-number-input label="Name" value="23" outlined name="age"></simplr-number-input> 
+    <simplr-select
+        label="Sex"
+        name="sex"
+        .options=${[
+            {value: "Male", label: "Male"},
+            {value: "Woman", label: "Woman"},
+            {value: "Other", label: "Other"}
+        ]}
+        selectedValue="Other"
+        outlined
+    ></simplr-select>
+    <simplr-button @click=${() => document.querySelector("#my-form").submit()} primary raised label="Submit" icon="save" type="submit"></simplr-button>
+</simplr-form>
+  `}
+</Story>
+
+<Props of="simplr-form" />

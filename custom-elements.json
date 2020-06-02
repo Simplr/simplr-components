@@ -3572,6 +3572,101 @@
           "default": "false"
         }
       ]
+    },
+    {
+      "name": "simplr-card",
+      "path": "./card.js",
+      "attributes": [
+        {
+          "name": "width",
+          "description": "Width of the card element. Automatically sized to reference\nsize between 250px and 350px if left unset",
+          "type": "string"
+        },
+        {
+          "name": "imageWidth",
+          "description": "Width of the image on card. 100% if not set.",
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "description": "Title of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "subtitle",
+          "description": "Subtitle of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "content",
+          "description": "Content of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "image",
+          "description": "Image url of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "dimOnHover",
+          "description": "Should the card dim on hover.\nThis should be turned on if the card is clickable",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "width",
+          "attribute": "width",
+          "description": "Width of the card element. Automatically sized to reference\nsize between 250px and 350px if left unset",
+          "type": "string"
+        },
+        {
+          "name": "imageWidth",
+          "attribute": "imageWidth",
+          "description": "Width of the image on card. 100% if not set.",
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "attribute": "title",
+          "description": "Title of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "subtitle",
+          "attribute": "subtitle",
+          "description": "Subtitle of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "content",
+          "attribute": "content",
+          "description": "Content of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "image",
+          "attribute": "image",
+          "description": "Image url of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "dimOnHover",
+          "attribute": "dimOnHover",
+          "description": "Should the card dim on hover.\nThis should be turned on if the card is clickable",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
     }
   ]
 }

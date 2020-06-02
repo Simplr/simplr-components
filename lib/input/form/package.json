@@ -1,0 +1,25 @@
+{
+  "name": "@simplr-wc/form",
+  "version": "0.2.0",
+  "homepage": "https://simplr.github.io/simplr-components/",
+  "description": "Form Web Component. Part of Simplr Components",
+  "main": "form.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Simplr/simplr-components.git",
+    "directory": "lib/input/form"
+  },
+  "author": "Simplr",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0",
+    "query-selector-shadow-dom": "^0.4.6"
+  }
+}

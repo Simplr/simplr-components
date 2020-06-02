@@ -1,0 +1,44 @@
+import { html } from 'lit-html';
+import '../lib/card/card.js';
+import '../lib/button/button.js';
+import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '@open-wc/demoing-storybook';
+
+<Meta
+  title="Layout|Card"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{ component: 'simplr-card', options: { selectedPanel: 'storybookjs/knobs/panel' } }}
+/>
+
+# Simplr card
+
+### Usage
+
+```js
+  import '@simplr-wc/card';
+```
+
+```html
+<simplr-card 
+    title="Card title"
+     subtitle="Card subtitle"
+     content="Card content, which should be descriptive. The content might span to multiple lines"
+    image="https://i.picsum.photos/id/217/300/200.jpg"
+></simplr-card>
+```
+
+
+<Story name="With actions">
+  {html`
+    <simplr-card 
+        title="Card title"
+         subtitle="Card subtitle"
+         content="Card content, which should be descriptive. The content might span to multiple lines"
+        image="https://i.picsum.photos/id/217/300/200.jpg"
+    >
+        <simplr-button label="Deny" secondary></simplr-button>
+        <simplr-button label="Approve" primary></simplr-button>
+    </simplr-card>
+  `}
+</Story>
+
+<Props of="simplr-card" />
