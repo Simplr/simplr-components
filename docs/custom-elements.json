@@ -1,0 +1,3672 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "simplr-button",
+      "path": "./lib/button/button.js",
+      "attributes": [
+        {
+          "name": "label",
+          "description": "Label of the button.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "description": "Icon shown next to the label.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "trailingIcon",
+          "description": "Is the icon trailing the label.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "description": "Is the button using the outlined style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "raised",
+          "description": "Is the button using the raised style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "unelevated",
+          "description": "Is the button using the unelevated style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "dense",
+          "description": "Is the button using the dense style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "description": "Is the button disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "primary",
+          "description": "Is the button using the primary style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "description": "Is the button using the secondary style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "color",
+          "description": "Custom color for the button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelColor",
+          "description": "Custom color for the button label",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Label of the button.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Icon shown next to the label.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "trailingIcon",
+          "attribute": "trailingIcon",
+          "description": "Is the icon trailing the label.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "description": "Is the button using the outlined style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "raised",
+          "attribute": "raised",
+          "description": "Is the button using the raised style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "unelevated",
+          "attribute": "unelevated",
+          "description": "Is the button using the unelevated style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "dense",
+          "attribute": "dense",
+          "description": "Is the button using the dense style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Is the button disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "description": "Is the button using the primary style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "description": "Is the button using the secondary style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "description": "Custom color for the button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelColor",
+          "attribute": "labelColor",
+          "description": "Custom color for the button label",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
+      "name": "simplr-container",
+      "path": "./lib/container/container.js",
+      "attributes": [
+        {
+          "name": "display",
+          "description": "Display type of the container",
+          "type": "\"inline\"|\"block\"|\"contents\"|\"flex\"|\"grid\"|\"inline-block\"|\"inline-flex\"|\"inline-grid\"|\"inline-table\"|\"list-item\"|\"run-in\"|\"table\"|\"table-caption\"|\"table-column-group\"|\"table-header-group\"|\"table-footer-group\"|\"table-row-group\"|\"table-cell\"|\"table-column\"|\"table-row\"|\"none\"|\"initial\"|\"inherit\"",
+          "default": "\"block\""
+        },
+        {
+          "name": "block",
+          "description": "Shorthand to use \"display: block;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "flex",
+          "description": "Shorthand to use \"display: flex;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "inline",
+          "description": "Shorthand to use \"display: inline;\"nm",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "maxWidth",
+          "description": "Shorthand for \"width: 100%;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "maxHeight",
+          "description": "Shorthand for \"height: 100%;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noMargin",
+          "description": "Shorthand for \"margin: 0;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noPadding",
+          "description": "Shorthand for \"padding: 0;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "alignItems",
+          "description": "Align-items property of the container",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "alignContent",
+          "description": "Align-content property of the container",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "justifyContent",
+          "description": "Justify-content property of the container",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "flexWrap",
+          "description": "Shorthand from \"flex-wrap: wrap;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "elevation",
+          "description": "Elevation of the container. (Values 0 - 12)",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "roundedCorners",
+          "description": "Shorthand to round corners by material guidelines (4px)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "verticalCenter",
+          "description": "Shorthand to vertically center content (! Required display: flex !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "horizontalCenter",
+          "description": "Shorthand to horizontally center content (! Required display: flex !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "width",
+          "description": "Width property of the container",
+          "type": "string",
+          "default": "\"auto\""
+        },
+        {
+          "name": "height",
+          "description": "Height property of the container",
+          "type": "string",
+          "default": "\"auto\""
+        },
+        {
+          "name": "flexDirection",
+          "description": "Flex-direction property of the container",
+          "type": "string",
+          "default": "\"row\""
+        },
+        {
+          "name": "margin",
+          "description": "Margin property of the container",
+          "type": "string",
+          "default": "\"8px\""
+        },
+        {
+          "name": "padding",
+          "description": "Padding property of the container",
+          "type": "string",
+          "default": "\"0px\""
+        },
+        {
+          "name": "borderRadius",
+          "description": "Border radius of the container",
+          "type": "string",
+          "default": "\"0px\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "display",
+          "attribute": "display",
+          "description": "Display type of the container",
+          "type": "\"inline\"|\"block\"|\"contents\"|\"flex\"|\"grid\"|\"inline-block\"|\"inline-flex\"|\"inline-grid\"|\"inline-table\"|\"list-item\"|\"run-in\"|\"table\"|\"table-caption\"|\"table-column-group\"|\"table-header-group\"|\"table-footer-group\"|\"table-row-group\"|\"table-cell\"|\"table-column\"|\"table-row\"|\"none\"|\"initial\"|\"inherit\"",
+          "default": "\"block\""
+        },
+        {
+          "name": "block",
+          "attribute": "block",
+          "description": "Shorthand to use \"display: block;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "flex",
+          "attribute": "flex",
+          "description": "Shorthand to use \"display: flex;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "inline",
+          "attribute": "inline",
+          "description": "Shorthand to use \"display: inline;\"nm",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "maxWidth",
+          "attribute": "maxWidth",
+          "description": "Shorthand for \"width: 100%;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "maxHeight",
+          "attribute": "maxHeight",
+          "description": "Shorthand for \"height: 100%;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noMargin",
+          "attribute": "noMargin",
+          "description": "Shorthand for \"margin: 0;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noPadding",
+          "attribute": "noPadding",
+          "description": "Shorthand for \"padding: 0;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "alignItems",
+          "attribute": "alignItems",
+          "description": "Align-items property of the container",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "alignContent",
+          "attribute": "alignContent",
+          "description": "Align-content property of the container",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "justifyContent",
+          "attribute": "justifyContent",
+          "description": "Justify-content property of the container",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "flexWrap",
+          "attribute": "flexWrap",
+          "description": "Shorthand from \"flex-wrap: wrap;\"",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "elevation",
+          "attribute": "elevation",
+          "description": "Elevation of the container. (Values 0 - 12)",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "roundedCorners",
+          "attribute": "roundedCorners",
+          "description": "Shorthand to round corners by material guidelines (4px)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "verticalCenter",
+          "attribute": "verticalCenter",
+          "description": "Shorthand to vertically center content (! Required display: flex !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "horizontalCenter",
+          "attribute": "horizontalCenter",
+          "description": "Shorthand to horizontally center content (! Required display: flex !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "width",
+          "attribute": "width",
+          "description": "Width property of the container",
+          "type": "string",
+          "default": "\"auto\""
+        },
+        {
+          "name": "height",
+          "attribute": "height",
+          "description": "Height property of the container",
+          "type": "string",
+          "default": "\"auto\""
+        },
+        {
+          "name": "flexDirection",
+          "attribute": "flexDirection",
+          "description": "Flex-direction property of the container",
+          "type": "string",
+          "default": "\"row\""
+        },
+        {
+          "name": "margin",
+          "attribute": "margin",
+          "description": "Margin property of the container",
+          "type": "string",
+          "default": "\"8px\""
+        },
+        {
+          "name": "padding",
+          "attribute": "padding",
+          "description": "Padding property of the container",
+          "type": "string",
+          "default": "\"0px\""
+        },
+        {
+          "name": "borderRadius",
+          "attribute": "borderRadius",
+          "description": "Border radius of the container",
+          "type": "string",
+          "default": "\"0px\""
+        }
+      ]
+    },
+    {
+      "name": "simplr-dialog",
+      "path": "./lib/dialog/dialog.js",
+      "attributes": [
+        {
+          "name": "primaryAction",
+          "description": "Button label and action on dialog's primary button",
+          "type": "object"
+        },
+        {
+          "name": "secondaryAction",
+          "description": "Button label and action on dialog's secondary button",
+          "type": "object"
+        },
+        {
+          "name": "content",
+          "description": "Content of dialog",
+          "type": "object",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "description": "Heading of the dialog element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "stacked",
+          "description": "Should dialog actions be stacked",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "onOpened",
+          "description": "Callback function launched as dialog is opened",
+          "type": "Function"
+        },
+        {
+          "name": "onClosed",
+          "description": "Callback function launched as dialog is closed",
+          "type": "Function"
+        },
+        {
+          "name": "open",
+          "description": "Is the dialog open",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "primaryAction",
+          "attribute": "primaryAction",
+          "description": "Button label and action on dialog's primary button",
+          "type": "object"
+        },
+        {
+          "name": "secondaryAction",
+          "attribute": "secondaryAction",
+          "description": "Button label and action on dialog's secondary button",
+          "type": "object"
+        },
+        {
+          "name": "content",
+          "attribute": "content",
+          "description": "Content of dialog",
+          "type": "object",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "attribute": "heading",
+          "description": "Heading of the dialog element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "stacked",
+          "attribute": "stacked",
+          "description": "Should dialog actions be stacked",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "onOpened",
+          "attribute": "onOpened",
+          "description": "Callback function launched as dialog is opened",
+          "type": "Function"
+        },
+        {
+          "name": "onClosed",
+          "attribute": "onClosed",
+          "description": "Callback function launched as dialog is closed",
+          "type": "Function"
+        },
+        {
+          "name": "open",
+          "attribute": "open",
+          "description": "Is the dialog open",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "simplr-fab",
+      "path": "./lib/fab/fab.js",
+      "attributes": [
+        {
+          "name": "mini",
+          "description": "Create a smaller version of the fab",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "extended",
+          "description": "Create a extended version of the fab. Enabled `label`",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showIconAtEnd",
+          "description": "Display icon after the label (! Only on extended mode !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "label",
+          "description": "Label to show next to the icon in the fab (! Only on extended mode !)",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "description": "Icon to populate the fab with",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "position",
+          "description": "Position of the Fab",
+          "type": "\"bottomright\"|\"bottom\"|\"bottomleft\"|\"topleft\"|\"top\"|\"topright\"",
+          "default": "\"bottomright\""
+        },
+        {
+          "name": "color",
+          "description": "Color of the fab icon and label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "buttonColor",
+          "description": "Color of the fab button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "primary",
+          "description": "Use primary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "description": "Use secondary color theme",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "mini",
+          "attribute": "mini",
+          "description": "Create a smaller version of the fab",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "extended",
+          "attribute": "extended",
+          "description": "Create a extended version of the fab. Enabled `label`",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showIconAtEnd",
+          "attribute": "showIconAtEnd",
+          "description": "Display icon after the label (! Only on extended mode !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Label to show next to the icon in the fab (! Only on extended mode !)",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Icon to populate the fab with",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "position",
+          "attribute": "position",
+          "description": "Position of the Fab",
+          "type": "\"bottomright\"|\"bottom\"|\"bottomleft\"|\"topleft\"|\"top\"|\"topright\"",
+          "default": "\"bottomright\""
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "description": "Color of the fab icon and label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "buttonColor",
+          "attribute": "buttonColor",
+          "description": "Color of the fab button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "description": "Use primary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "description": "Use secondary color theme",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "simplr-data-table",
+      "path": "./lib/data-table/data-table.js",
+      "attributes": [
+        {
+          "name": "tableData",
+          "description": "Data of data table",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableColumns",
+          "description": "Column names of data table",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableOptions",
+          "description": "Options of data table",
+          "type": "object",
+          "default": "{\"isRowSelectable\":false,\"tableClass\":\"simplr-table\",\"highlightFirstRowOnMobile\":true}"
+        },
+        {
+          "name": "tableLabel",
+          "description": "Label of the data table",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "tablePage",
+          "description": "Current page of data table",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "pageCount",
+          "description": "Count of pages in table",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "resultsPerPage",
+          "description": "Number of results to display per page",
+          "type": "number",
+          "default": "20"
+        },
+        {
+          "name": "noResultsMessage",
+          "description": "Message shown when no results were found",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "loading",
+          "description": "Is the data-table still loading",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "tableData",
+          "attribute": "tableData",
+          "description": "Data of data table",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableColumns",
+          "attribute": "tableColumns",
+          "description": "Column names of data table",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "tableOptions",
+          "attribute": "tableOptions",
+          "description": "Options of data table",
+          "type": "object",
+          "default": "{\"isRowSelectable\":false,\"tableClass\":\"simplr-table\",\"highlightFirstRowOnMobile\":true}"
+        },
+        {
+          "name": "tableLabel",
+          "attribute": "tableLabel",
+          "description": "Label of the data table",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "tablePage",
+          "attribute": "tablePage",
+          "description": "Current page of data table",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "pageCount",
+          "attribute": "pageCount",
+          "description": "Count of pages in table",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "resultsPerPage",
+          "attribute": "resultsPerPage",
+          "description": "Number of results to display per page",
+          "type": "number",
+          "default": "20"
+        },
+        {
+          "name": "noResultsMessage",
+          "attribute": "noResultsMessage",
+          "description": "Message shown when no results were found",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "loading",
+          "attribute": "loading",
+          "description": "Is the data-table still loading",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "rowClick"
+        }
+      ]
+    },
+    {
+      "name": "simplr-grid",
+      "path": "./lib/grid/grid.js",
+      "attributes": [
+        {
+          "name": "item",
+          "description": "Is the grid element an grid item",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "size",
+          "description": "Size of the grid / grid item { 1 - 12 }",
+          "type": "number",
+          "default": "12"
+        },
+        {
+          "name": "tabletSize",
+          "description": "Size of the grid / grid item on tablet devices { 1 - 12 }",
+          "type": "number",
+          "default": "8"
+        },
+        {
+          "name": "phoneSize",
+          "description": "Size of the grid / grid item on phones { 1 - 12 }",
+          "type": "number",
+          "default": "4"
+        },
+        {
+          "name": "columnGap",
+          "description": "Column gap size between grid items",
+          "type": "string",
+          "default": "\"0px\""
+        },
+        {
+          "name": "rowGap",
+          "description": "Row gap size between grid items",
+          "type": "string",
+          "default": "\"0px\""
+        },
+        {
+          "name": "column",
+          "description": "Grid-column column size",
+          "type": "string"
+        },
+        {
+          "name": "row",
+          "description": "Grid-column row size",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "item",
+          "attribute": "item",
+          "description": "Is the grid element an grid item",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "size",
+          "attribute": "size",
+          "description": "Size of the grid / grid item { 1 - 12 }",
+          "type": "number",
+          "default": "12"
+        },
+        {
+          "name": "tabletSize",
+          "attribute": "tabletSize",
+          "description": "Size of the grid / grid item on tablet devices { 1 - 12 }",
+          "type": "number",
+          "default": "8"
+        },
+        {
+          "name": "phoneSize",
+          "attribute": "phoneSize",
+          "description": "Size of the grid / grid item on phones { 1 - 12 }",
+          "type": "number",
+          "default": "4"
+        },
+        {
+          "name": "columnGap",
+          "attribute": "columnGap",
+          "description": "Column gap size between grid items",
+          "type": "string",
+          "default": "\"0px\""
+        },
+        {
+          "name": "rowGap",
+          "attribute": "rowGap",
+          "description": "Row gap size between grid items",
+          "type": "string",
+          "default": "\"0px\""
+        },
+        {
+          "name": "column",
+          "attribute": "column",
+          "description": "Grid-column column size",
+          "type": "string"
+        },
+        {
+          "name": "row",
+          "attribute": "row",
+          "description": "Grid-column row size",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "simplr-icon",
+      "path": "./lib/icon/icon.js",
+      "attributes": [
+        {
+          "name": "icon",
+          "description": "Icon displayed",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "size",
+          "description": "Size of the icon",
+          "type": "string",
+          "default": "\"initial\""
+        },
+        {
+          "name": "primary",
+          "description": "Use primary styles on icon",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "description": "Use secondary styles on icon",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "color",
+          "description": "Custom color of icon",
+          "type": "string",
+          "default": "\"inherit\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Icon displayed",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "size",
+          "attribute": "size",
+          "description": "Size of the icon",
+          "type": "string",
+          "default": "\"initial\""
+        },
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "description": "Use primary styles on icon",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "description": "Use secondary styles on icon",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "description": "Custom color of icon",
+          "type": "string",
+          "default": "\"inherit\""
+        }
+      ]
+    },
+    {
+      "name": "simplr-icon-button",
+      "path": "./lib/icon-button/icon-button.js",
+      "attributes": [
+        {
+          "name": "icon",
+          "description": "Icon displayed as a button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "size",
+          "description": "Size of the icon",
+          "type": "string",
+          "default": "\"initial\""
+        },
+        {
+          "name": "disabled",
+          "description": "Is the button disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "primary",
+          "description": "Use primary styles on button",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "description": "Use secondary styles on button",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "color",
+          "description": "Use custom color on button",
+          "type": "string",
+          "default": "\"inherit\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Icon displayed as a button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "size",
+          "attribute": "size",
+          "description": "Size of the icon",
+          "type": "string",
+          "default": "\"initial\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Is the button disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "description": "Use primary styles on button",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "description": "Use secondary styles on button",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "description": "Use custom color on button",
+          "type": "string",
+          "default": "\"inherit\""
+        }
+      ]
+    },
+    {
+      "name": "simplr-info-button",
+      "path": "./lib/info-button/info-button.js",
+      "attributes": [
+        {
+          "name": "dialogHeading",
+          "description": "Dialog heading for the dialog opened when clicking the info button",
+          "type": "string"
+        },
+        {
+          "name": "dialogContent",
+          "description": "Content of info dialog opened by pressing the info button",
+          "type": "string"
+        },
+        {
+          "name": "icon",
+          "description": "Determines the icon of info button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "content",
+          "description": "Content of info bubble displayed by the info button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "size",
+          "description": "Size of the info button. Determines the icon size as well as the button size",
+          "type": "string",
+          "default": "\"initial\""
+        },
+        {
+          "name": "primary",
+          "description": "Use the primary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "description": "Use the secondary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "buttonColor",
+          "description": "Custom color for button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "color",
+          "description": "Custom color for the icon inside the button",
+          "type": "string",
+          "default": "\"#808080\""
+        },
+        {
+          "name": "bubbleColor",
+          "description": "Custom color for the bubble background",
+          "type": "string",
+          "default": "\"#494b51\""
+        },
+        {
+          "name": "bubbleTextColor",
+          "description": "Custom color for the bubble content",
+          "type": "string",
+          "default": "\"#FFFFFF\""
+        },
+        {
+          "name": "dialogCloseText",
+          "description": "Dialog's close text",
+          "type": "string",
+          "default": "\"close\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "dialogHeading",
+          "attribute": "dialogHeading",
+          "description": "Dialog heading for the dialog opened when clicking the info button",
+          "type": "string"
+        },
+        {
+          "name": "dialogContent",
+          "attribute": "dialogContent",
+          "description": "Content of info dialog opened by pressing the info button",
+          "type": "string"
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Determines the icon of info button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "content",
+          "attribute": "content",
+          "description": "Content of info bubble displayed by the info button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "size",
+          "attribute": "size",
+          "description": "Size of the info button. Determines the icon size as well as the button size",
+          "type": "string",
+          "default": "\"initial\""
+        },
+        {
+          "name": "openDialog",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "description": "Use the primary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "description": "Use the secondary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "buttonColor",
+          "attribute": "buttonColor",
+          "description": "Custom color for button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "description": "Custom color for the icon inside the button",
+          "type": "string",
+          "default": "\"#808080\""
+        },
+        {
+          "name": "bubbleColor",
+          "attribute": "bubbleColor",
+          "description": "Custom color for the bubble background",
+          "type": "string",
+          "default": "\"#494b51\""
+        },
+        {
+          "name": "bubbleTextColor",
+          "attribute": "bubbleTextColor",
+          "description": "Custom color for the bubble content",
+          "type": "string",
+          "default": "\"#FFFFFF\""
+        },
+        {
+          "name": "dialogCloseText",
+          "attribute": "dialogCloseText",
+          "description": "Dialog's close text",
+          "type": "string",
+          "default": "\"close\""
+        }
+      ]
+    },
+    {
+      "name": "simplr-list",
+      "path": "./lib/list/list.js",
+      "attributes": [
+        {
+          "name": "listHeader",
+          "description": "Header element of the list",
+          "type": "object"
+        },
+        {
+          "name": "items",
+          "description": "Items shown on the list",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "separator",
+          "description": "Show separator between list items",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "activatable",
+          "description": "Activate activatable list item graphics",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "multi",
+          "description": "Allow activation of multiple list items (! Requires activatable !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "selectedItems",
+          "description": "Array of selected item values from list",
+          "type": "array",
+          "default": "[]"
+        }
+      ],
+      "properties": [
+        {
+          "name": "listHeader",
+          "attribute": "listHeader",
+          "description": "Header element of the list",
+          "type": "object"
+        },
+        {
+          "name": "items",
+          "attribute": "items",
+          "description": "Items shown on the list",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "separator",
+          "attribute": "separator",
+          "description": "Show separator between list items",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "activatable",
+          "attribute": "activatable",
+          "description": "Activate activatable list item graphics",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "multi",
+          "attribute": "multi",
+          "description": "Allow activation of multiple list items (! Requires activatable !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "selectedItems",
+          "attribute": "selectedItems",
+          "description": "Array of selected item values from list",
+          "type": "array",
+          "default": "[]"
+        }
+      ]
+    },
+    {
+      "name": "simplr-loading",
+      "path": "./lib/loading/loading.js",
+      "description": "TODO:\n- Add multiple animations:\n   - Rotating symbol\n   - Indetermine loading bar (animates in a loop)\n   - Fit into elements",
+      "attributes": [
+        {
+          "name": "oldPos",
+          "type": "string"
+        },
+        {
+          "name": "element",
+          "type": "object"
+        },
+        {
+          "name": "loadingType",
+          "type": "string",
+          "default": "\"bar\""
+        },
+        {
+          "name": "progress",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "primary",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "default": "\"#808080\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "oldPos",
+          "attribute": "oldPos",
+          "type": "string"
+        },
+        {
+          "name": "element",
+          "attribute": "element",
+          "type": "object"
+        },
+        {
+          "name": "loadingType",
+          "attribute": "loadingType",
+          "type": "string",
+          "default": "\"bar\""
+        },
+        {
+          "name": "progress",
+          "attribute": "progress",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "type": "string",
+          "default": "\"#808080\""
+        }
+      ]
+    },
+    {
+      "name": "simplr-select",
+      "path": "./lib/select/select.js",
+      "attributes": [
+        {
+          "name": "label",
+          "description": "Label of the select field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "selectedValue",
+          "description": "Select value of the select options",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "required",
+          "description": "Is a input required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "description": "Style the select input in the outline material style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "icon",
+          "description": "Icon shown next to the label in the select field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "options",
+          "description": "Selectable options of the select field",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "errorMessage",
+          "description": "Error message shown on invalid input",
+          "type": "string"
+        },
+        {
+          "name": "helperText",
+          "description": "Helper text shown below select element",
+          "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "description": "Is the helper text persistent or only displayed on focus",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Label of the select field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "selectedValue",
+          "attribute": "selectedValue",
+          "description": "Select value of the select options",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "description": "Is a input required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "description": "Style the select input in the outline material style",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Icon shown next to the label in the select field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "options",
+          "attribute": "options",
+          "description": "Selectable options of the select field",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "errorMessage",
+          "description": "Error message shown on invalid input",
+          "type": "string"
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "description": "Helper text shown below select element",
+          "type": "string"
+        },
+        {
+          "name": "helperPersistent",
+          "attribute": "helperPersistent",
+          "description": "Is the helper text persistent or only displayed on focus",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "simplr-snackbar",
+      "path": "./lib/snackbar/snackbar.js",
+      "attributes": [
+        {
+          "name": "message",
+          "description": "Message displayed with the snackbar",
+          "type": "string",
+          "default": "\"message\""
+        },
+        {
+          "name": "timeout",
+          "description": "Timeout in milliseconds until the snackbar fades away. Defaults to 4000",
+          "type": "number",
+          "default": "\"timeout\""
+        },
+        {
+          "name": "position",
+          "description": "Position of the snackbar. Defaults to bottom",
+          "type": "\"topleft\"|\"top\"|\"topright\"|\"right\"|\"bottomright\"|\"bottom\"|\"bottomleft\"|\"left\"",
+          "default": "\"position\""
+        },
+        {
+          "name": "action",
+          "description": "Function initiated if the user clicks on the snackbar",
+          "default": "\"action\""
+        },
+        {
+          "name": "status",
+          "description": "Status / Theme of the snackbar. Defaults to Info",
+          "type": "\"success\"|\"error\"|\"caution\"|\"info\"",
+          "default": "\"status\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "message",
+          "attribute": "message",
+          "description": "Message displayed with the snackbar",
+          "type": "string",
+          "default": "\"message\""
+        },
+        {
+          "name": "timeout",
+          "attribute": "timeout",
+          "description": "Timeout in milliseconds until the snackbar fades away. Defaults to 4000",
+          "type": "number",
+          "default": "\"timeout\""
+        },
+        {
+          "name": "position",
+          "attribute": "position",
+          "description": "Position of the snackbar. Defaults to bottom",
+          "type": "\"topleft\"|\"top\"|\"topright\"|\"right\"|\"bottomright\"|\"bottom\"|\"bottomleft\"|\"left\"",
+          "default": "\"position\""
+        },
+        {
+          "name": "action",
+          "attribute": "action",
+          "description": "Function initiated if the user clicks on the snackbar",
+          "default": "\"action\""
+        },
+        {
+          "name": "status",
+          "attribute": "status",
+          "description": "Status / Theme of the snackbar. Defaults to Info",
+          "type": "\"success\"|\"error\"|\"caution\"|\"info\"",
+          "default": "\"status\""
+        }
+      ]
+    },
+    {
+      "name": "simplr-top-app-bar",
+      "path": "./lib/top-app-bar/top-app-bar.js",
+      "attributes": [
+        {
+          "name": "showBurger",
+          "description": "Display burger menu at the left side of the top app bar",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "centerTitle",
+          "description": "Center horizontally title of top app bar",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "dense",
+          "description": "Activate dense styling of top app bar",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "backgroundColor",
+          "description": "Background color of top app bar",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "textColor",
+          "description": "Text color of top app bar",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "primary",
+          "description": "Use primary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "description": "Use secondary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "actionItems",
+          "description": "Array of action items displayed at the right end of top app bar",
+          "type": "array",
+          "default": "[]"
+        }
+      ],
+      "properties": [
+        {
+          "name": "showBurger",
+          "attribute": "showBurger",
+          "description": "Display burger menu at the left side of the top app bar",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "centerTitle",
+          "attribute": "centerTitle",
+          "description": "Center horizontally title of top app bar",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "dense",
+          "attribute": "dense",
+          "description": "Activate dense styling of top app bar",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "backgroundColor",
+          "attribute": "backgroundColor",
+          "description": "Background color of top app bar",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "textColor",
+          "attribute": "textColor",
+          "description": "Text color of top app bar",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "description": "Use primary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "description": "Use secondary color theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "actionItems",
+          "attribute": "actionItems",
+          "description": "Array of action items displayed at the right end of top app bar",
+          "type": "array",
+          "default": "[]"
+        }
+      ],
+      "events": [
+        {
+          "name": "navigationIconPressed"
+        }
+      ]
+    },
+    {
+      "name": "simplr-checkbox",
+      "path": "./lib/input/checkbox/checkbox.js",
+      "attributes": [
+        {
+          "name": "name",
+          "description": "Name of checkbox.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "description": "Label shown next to checkbox",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "value",
+          "description": "Value of the checkbox field.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "checked",
+          "description": "If the checkbox is checked.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "indeterminate",
+          "description": "If the checkbox is in an indeterminate state.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "description": "If the checkbox is disabled.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "Name of checkbox.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Label shown next to checkbox",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Value of the checkbox field.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "checked",
+          "attribute": "checked",
+          "description": "If the checkbox is checked.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "indeterminate",
+          "attribute": "indeterminate",
+          "description": "If the checkbox is in an indeterminate state.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "If the checkbox is disabled.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "change"
+        }
+      ]
+    },
+    {
+      "name": "simplr-checkbox-group",
+      "path": "./lib/input/checkbox-group/checkbox-group.js",
+      "attributes": [
+        {
+          "name": "name",
+          "description": "Name of the checkbox group element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "description": "Label shown above the group of checkboxes",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "options",
+          "description": "List of options shown as checkboxes.",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "selectedOptions",
+          "description": "List of selected values in options.",
+          "type": "array",
+          "default": "[]"
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "Name of the checkbox group element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Label shown above the group of checkboxes",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "options",
+          "attribute": "options",
+          "description": "List of options shown as checkboxes.",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "selectedOptions",
+          "attribute": "selectedOptions",
+          "description": "List of selected values in options.",
+          "type": "array",
+          "default": "[]"
+        }
+      ]
+    },
+    {
+      "name": "simplr-email-input",
+      "path": "./lib/input/email-input/email-input.js",
+      "attributes": [
+        {
+          "name": "name",
+          "description": "Name of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "description": "Label of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperPersistent",
+          "description": "Determines if helper text is visible always or only on focus",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "description": "Is input field required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "description": "Is input field disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "fullWidth",
+          "description": "Does input field use the full width of the field",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "description": "Style the input field as an outlined input element",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounter",
+          "description": "Enable character counter of input field (! Required maxLength to be set !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "description": "Error message displayed on invalid input",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "autoValidate",
+          "description": "Report input validity on input rather than on blur",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Preset value of the input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "description": "Icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "description": "Trailing icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "description": "Placeholder text of input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "description": "Helper text shown below input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "description": "Maximum length of the input field",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "pattern",
+          "description": "The matching pattern for the input component",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "Name of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Label of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperPersistent",
+          "attribute": "helperPersistent",
+          "description": "Determines if helper text is visible always or only on focus",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "description": "Is input field required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Is input field disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "fullWidth",
+          "attribute": "fullWidth",
+          "description": "Does input field use the full width of the field",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "description": "Style the input field as an outlined input element",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounter",
+          "attribute": "charCounter",
+          "description": "Enable character counter of input field (! Required maxLength to be set !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "errorMessage",
+          "description": "Error message displayed on invalid input",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "autoValidate",
+          "attribute": "autoValidate",
+          "description": "Report input validity on input rather than on blur",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Preset value of the input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "attribute": "iconTrailing",
+          "description": "Trailing icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "attribute": "placeHolder",
+          "description": "Placeholder text of input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "description": "Helper text shown below input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxLength",
+          "description": "Maximum length of the input field",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "pattern",
+          "attribute": "pattern",
+          "description": "The matching pattern for the input component",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
+      "name": "simplr-number-input",
+      "path": "./lib/input/number-input/number-input.js",
+      "attributes": [
+        {
+          "name": "min",
+          "description": "Number field minimum value. Leave empty to unset.",
+          "type": "number",
+          "default": "\"\""
+        },
+        {
+          "name": "max",
+          "description": "Number field maximum value. Leave empty to unset.",
+          "type": "number",
+          "default": "\"\""
+        },
+        {
+          "name": "step",
+          "description": "Number field step size",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "name",
+          "description": "Name of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "description": "Label of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperPersistent",
+          "description": "Determines if helper text is visible always or only on focus",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "description": "Is input field required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "description": "Is input field disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "fullWidth",
+          "description": "Does input field use the full width of the field",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "description": "Style the input field as an outlined input element",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounter",
+          "description": "Enable character counter of input field (! Required maxLength to be set !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "description": "Error message displayed on invalid input",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "autoValidate",
+          "description": "Report input validity on input rather than on blur",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Preset value of the input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "description": "Icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "description": "Trailing icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "description": "Placeholder text of input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "description": "Helper text shown below input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "description": "Maximum length of the input field",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "pattern",
+          "description": "The matching pattern for the input component",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "min",
+          "attribute": "min",
+          "description": "Number field minimum value. Leave empty to unset.",
+          "type": "number",
+          "default": "\"\""
+        },
+        {
+          "name": "max",
+          "attribute": "max",
+          "description": "Number field maximum value. Leave empty to unset.",
+          "type": "number",
+          "default": "\"\""
+        },
+        {
+          "name": "step",
+          "attribute": "step",
+          "description": "Number field step size",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "Name of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Label of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperPersistent",
+          "attribute": "helperPersistent",
+          "description": "Determines if helper text is visible always or only on focus",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "description": "Is input field required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Is input field disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "fullWidth",
+          "attribute": "fullWidth",
+          "description": "Does input field use the full width of the field",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "description": "Style the input field as an outlined input element",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounter",
+          "attribute": "charCounter",
+          "description": "Enable character counter of input field (! Required maxLength to be set !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "errorMessage",
+          "description": "Error message displayed on invalid input",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "autoValidate",
+          "attribute": "autoValidate",
+          "description": "Report input validity on input rather than on blur",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Preset value of the input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "attribute": "iconTrailing",
+          "description": "Trailing icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "attribute": "placeHolder",
+          "description": "Placeholder text of input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "description": "Helper text shown below input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxLength",
+          "description": "Maximum length of the input field",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "pattern",
+          "attribute": "pattern",
+          "description": "The matching pattern for the input component",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
+      "name": "simplr-password-input",
+      "path": "./lib/input/password-input/password-input.js",
+      "attributes": [
+        {
+          "name": "name",
+          "description": "Name of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "description": "Label of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperPersistent",
+          "description": "Determines if helper text is visible always or only on focus",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "description": "Is input field required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "description": "Is input field disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "fullWidth",
+          "description": "Does input field use the full width of the field",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "description": "Style the input field as an outlined input element",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounter",
+          "description": "Enable character counter of input field (! Required maxLength to be set !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "description": "Error message displayed on invalid input",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "autoValidate",
+          "description": "Report input validity on input rather than on blur",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Preset value of the input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "description": "Icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "description": "Trailing icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "description": "Placeholder text of input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "description": "Helper text shown below input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "description": "Maximum length of the input field",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "pattern",
+          "description": "The matching pattern for the input component",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "Name of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Label of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperPersistent",
+          "attribute": "helperPersistent",
+          "description": "Determines if helper text is visible always or only on focus",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "description": "Is input field required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Is input field disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "fullWidth",
+          "attribute": "fullWidth",
+          "description": "Does input field use the full width of the field",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "description": "Style the input field as an outlined input element",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounter",
+          "attribute": "charCounter",
+          "description": "Enable character counter of input field (! Required maxLength to be set !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "errorMessage",
+          "description": "Error message displayed on invalid input",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "autoValidate",
+          "attribute": "autoValidate",
+          "description": "Report input validity on input rather than on blur",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Preset value of the input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "attribute": "iconTrailing",
+          "description": "Trailing icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "attribute": "placeHolder",
+          "description": "Placeholder text of input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "description": "Helper text shown below input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxLength",
+          "description": "Maximum length of the input field",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "pattern",
+          "attribute": "pattern",
+          "description": "The matching pattern for the input component",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
+      "name": "simplr-radio-group",
+      "path": "./lib/input/radio-group/radio-group.js",
+      "attributes": [
+        {
+          "name": "name",
+          "description": "Name of the group of radio buttons",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "options",
+          "description": "Array of radio button options.",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "selectedValue",
+          "description": "Pre-selected radio button value.",
+          "type": "string",
+          "default": "[]"
+        },
+        {
+          "name": "align",
+          "description": "Alignment of radio button group.",
+          "type": "\"row\"|\"column\"",
+          "default": "\"row\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "Name of the group of radio buttons",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "options",
+          "attribute": "options",
+          "description": "Array of radio button options.",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "selectedValue",
+          "attribute": "selectedValue",
+          "description": "Pre-selected radio button value.",
+          "type": "string",
+          "default": "[]"
+        },
+        {
+          "name": "align",
+          "attribute": "align",
+          "description": "Alignment of radio button group.",
+          "type": "\"row\"|\"column\"",
+          "default": "\"row\""
+        }
+      ],
+      "events": [
+        {
+          "name": "change"
+        }
+      ]
+    },
+    {
+      "name": "simplr-text-input",
+      "path": "./lib/input/text-input/text-input.js",
+      "attributes": [
+        {
+          "name": "name",
+          "description": "Name of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "description": "Label of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperPersistent",
+          "description": "Determines if helper text is visible always or only on focus",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "description": "Is input field required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "description": "Is input field disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "fullWidth",
+          "description": "Does input field use the full width of the field",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "description": "Style the input field as an outlined input element",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounter",
+          "description": "Enable character counter of input field (! Required maxLength to be set !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "description": "Error message displayed on invalid input",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "autoValidate",
+          "description": "Report input validity on input rather than on blur",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Preset value of the input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "description": "Icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "description": "Trailing icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "description": "Placeholder text of input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "description": "Helper text shown below input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "description": "Maximum length of the input field",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "pattern",
+          "description": "The matching pattern for the input component",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "Name of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Label of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperPersistent",
+          "attribute": "helperPersistent",
+          "description": "Determines if helper text is visible always or only on focus",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "description": "Is input field required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Is input field disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "fullWidth",
+          "attribute": "fullWidth",
+          "description": "Does input field use the full width of the field",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "description": "Style the input field as an outlined input element",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounter",
+          "attribute": "charCounter",
+          "description": "Enable character counter of input field (! Required maxLength to be set !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "errorMessage",
+          "description": "Error message displayed on invalid input",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "autoValidate",
+          "attribute": "autoValidate",
+          "description": "Report input validity on input rather than on blur",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Preset value of the input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "attribute": "iconTrailing",
+          "description": "Trailing icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "attribute": "placeHolder",
+          "description": "Placeholder text of input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "description": "Helper text shown below input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxLength",
+          "description": "Maximum length of the input field",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "pattern",
+          "attribute": "pattern",
+          "description": "The matching pattern for the input component",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
+      "name": "simplr-text-area",
+      "path": "./lib/input/textarea/textarea.js",
+      "attributes": [
+        {
+          "name": "rows",
+          "description": "Row count of text area.",
+          "type": "number",
+          "default": "2"
+        },
+        {
+          "name": "cols",
+          "description": "Column counr of text area.",
+          "type": "number",
+          "default": "20"
+        }
+      ],
+      "properties": [
+        {
+          "name": "rows",
+          "attribute": "rows",
+          "description": "Row count of text area.",
+          "type": "number",
+          "default": "2"
+        },
+        {
+          "name": "cols",
+          "attribute": "cols",
+          "description": "Column counr of text area.",
+          "type": "number",
+          "default": "20"
+        }
+      ]
+    },
+    {
+      "name": "simplr-date-input",
+      "path": "./lib/input/date-input/date-input.js",
+      "attributes": [
+        {
+          "name": "name",
+          "description": "Name of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "description": "Label of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperPersistent",
+          "description": "Determines if helper text is visible always or only on focus",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "description": "Is input field required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "description": "Is input field disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "fullWidth",
+          "description": "Does input field use the full width of the field",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "description": "Style the input field as an outlined input element",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounter",
+          "description": "Enable character counter of input field (! Required maxLength to be set !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "description": "Error message displayed on invalid input",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "autoValidate",
+          "description": "Report input validity on input rather than on blur",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Preset value of the input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "description": "Icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "description": "Trailing icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "description": "Placeholder text of input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "description": "Helper text shown below input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "description": "Maximum length of the input field",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "pattern",
+          "description": "The matching pattern for the input component",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "formatDateFn"
+        },
+        {
+          "name": "hoursIncrement",
+          "type": "number"
+        },
+        {
+          "name": "maxDate",
+          "type": "string"
+        },
+        {
+          "name": "minDate",
+          "type": "string"
+        },
+        {
+          "name": "onChange"
+        },
+        {
+          "name": "onClose"
+        },
+        {
+          "name": "onMonthChange"
+        },
+        {
+          "name": "onOpen"
+        },
+        {
+          "name": "onReady"
+        },
+        {
+          "name": "onValueUpdate"
+        },
+        {
+          "name": "onYearChange"
+        },
+        {
+          "name": "parseDateFn"
+        },
+        {
+          "name": "allowInput",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "altFormat",
+          "type": "string",
+          "default": "\"F j, Y\""
+        },
+        {
+          "name": "altInput",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "ariaDateFormat",
+          "type": "string",
+          "default": "\"F j, Y\""
+        },
+        {
+          "name": "clickOpens",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "dateFormat",
+          "type": "string",
+          "default": "\"d.m.Y\""
+        },
+        {
+          "name": "defaultHour",
+          "type": "number",
+          "default": "12"
+        },
+        {
+          "name": "defaultMinute",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "disable",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "disableMobile",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "enable",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "enableSeconds",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "enableTime",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "inline",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "minuteIncrement",
+          "type": "number",
+          "default": "5"
+        },
+        {
+          "name": "mode",
+          "type": "string",
+          "default": "\"single\""
+        },
+        {
+          "name": "nextArrow",
+          "type": "string",
+          "default": "\">\""
+        },
+        {
+          "name": "prevArrow",
+          "type": "string",
+          "default": "\"<\""
+        },
+        {
+          "name": "noCalendar",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "position",
+          "type": "string",
+          "default": "\"auto\""
+        },
+        {
+          "name": "shorthandCurrentMonth",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showMonths",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "static",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "theme",
+          "type": "string",
+          "default": "\"material_blue\""
+        },
+        {
+          "name": "time_24hr",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "weekNumbers",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "wrap",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "flatPickrInstance",
+          "type": "object"
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "Name of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Label of the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperPersistent",
+          "attribute": "helperPersistent",
+          "description": "Determines if helper text is visible always or only on focus",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "description": "Is input field required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Is input field disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "fullWidth",
+          "attribute": "fullWidth",
+          "description": "Does input field use the full width of the field",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "outlined",
+          "attribute": "outlined",
+          "description": "Style the input field as an outlined input element",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "charCounter",
+          "attribute": "charCounter",
+          "description": "Enable character counter of input field (! Required maxLength to be set !)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "errorMessage",
+          "description": "Error message displayed on invalid input",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "autoValidate",
+          "attribute": "autoValidate",
+          "description": "Report input validity on input rather than on blur",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Preset value of the input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconTrailing",
+          "attribute": "iconTrailing",
+          "description": "Trailing icon shown inside the input element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeHolder",
+          "attribute": "placeHolder",
+          "description": "Placeholder text of input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "description": "Helper text shown below input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxLength",
+          "description": "Maximum length of the input field",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "pattern",
+          "attribute": "pattern",
+          "description": "The matching pattern for the input component",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "formatDateFn",
+          "attribute": "formatDateFn"
+        },
+        {
+          "name": "hoursIncrement",
+          "attribute": "hoursIncrement",
+          "type": "number"
+        },
+        {
+          "name": "maxDate",
+          "attribute": "maxDate",
+          "type": "string"
+        },
+        {
+          "name": "minDate",
+          "attribute": "minDate",
+          "type": "string"
+        },
+        {
+          "name": "onChange",
+          "attribute": "onChange"
+        },
+        {
+          "name": "onClose",
+          "attribute": "onClose"
+        },
+        {
+          "name": "onMonthChange",
+          "attribute": "onMonthChange"
+        },
+        {
+          "name": "onOpen",
+          "attribute": "onOpen"
+        },
+        {
+          "name": "onReady",
+          "attribute": "onReady"
+        },
+        {
+          "name": "onValueUpdate",
+          "attribute": "onValueUpdate"
+        },
+        {
+          "name": "onYearChange",
+          "attribute": "onYearChange"
+        },
+        {
+          "name": "parseDateFn",
+          "attribute": "parseDateFn"
+        },
+        {
+          "name": "allowInput",
+          "attribute": "allowInput",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "altFormat",
+          "attribute": "altFormat",
+          "type": "string",
+          "default": "\"F j, Y\""
+        },
+        {
+          "name": "altInput",
+          "attribute": "altInput",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "ariaDateFormat",
+          "attribute": "ariaDateFormat",
+          "type": "string",
+          "default": "\"F j, Y\""
+        },
+        {
+          "name": "clickOpens",
+          "attribute": "clickOpens",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "dateFormat",
+          "attribute": "dateFormat",
+          "type": "string",
+          "default": "\"d.m.Y\""
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "defaultHour",
+          "attribute": "defaultHour",
+          "type": "number",
+          "default": "12"
+        },
+        {
+          "name": "defaultMinute",
+          "attribute": "defaultMinute",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "disable",
+          "attribute": "disable",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "disableMobile",
+          "attribute": "disableMobile",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "enable",
+          "attribute": "enable",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "enableSeconds",
+          "attribute": "enableSeconds",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "enableTime",
+          "attribute": "enableTime",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hourIncrement",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "inline",
+          "attribute": "inline",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "minuteIncrement",
+          "attribute": "minuteIncrement",
+          "type": "number",
+          "default": "5"
+        },
+        {
+          "name": "mode",
+          "attribute": "mode",
+          "type": "string",
+          "default": "\"single\""
+        },
+        {
+          "name": "nextArrow",
+          "attribute": "nextArrow",
+          "type": "string",
+          "default": "\">\""
+        },
+        {
+          "name": "prevArrow",
+          "attribute": "prevArrow",
+          "type": "string",
+          "default": "\"<\""
+        },
+        {
+          "name": "noCalendar",
+          "attribute": "noCalendar",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "position",
+          "attribute": "position",
+          "type": "string",
+          "default": "\"auto\""
+        },
+        {
+          "name": "shorthandCurrentMonth",
+          "attribute": "shorthandCurrentMonth",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showMonths",
+          "attribute": "showMonths",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "static",
+          "attribute": "static",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "theme",
+          "attribute": "theme",
+          "type": "string",
+          "default": "\"material_blue\""
+        },
+        {
+          "name": "time_24hr",
+          "attribute": "time_24hr",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "weekNumbers",
+          "attribute": "weekNumbers",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "wrap",
+          "attribute": "wrap",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "simplr-card",
+      "path": "./card.js",
+      "attributes": [
+        {
+          "name": "width",
+          "description": "Width of the card element. Automatically sized to reference\nsize between 250px and 350px if left unset",
+          "type": "string"
+        },
+        {
+          "name": "imageWidth",
+          "description": "Width of the image on card. 100% if not set.",
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "description": "Title of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "subtitle",
+          "description": "Subtitle of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "content",
+          "description": "Content of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "image",
+          "description": "Image url of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "dimOnHover",
+          "description": "Should the card dim on hover.\nThis should be turned on if the card is clickable",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "width",
+          "attribute": "width",
+          "description": "Width of the card element. Automatically sized to reference\nsize between 250px and 350px if left unset",
+          "type": "string"
+        },
+        {
+          "name": "imageWidth",
+          "attribute": "imageWidth",
+          "description": "Width of the image on card. 100% if not set.",
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "attribute": "title",
+          "description": "Title of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "subtitle",
+          "attribute": "subtitle",
+          "description": "Subtitle of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "content",
+          "attribute": "content",
+          "description": "Content of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "image",
+          "attribute": "image",
+          "description": "Image url of the card element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "dimOnHover",
+          "attribute": "dimOnHover",
+          "description": "Should the card dim on hover.\nThis should be turned on if the card is clickable",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    }
+  ]
+}
