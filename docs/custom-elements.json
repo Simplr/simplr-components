@@ -3616,6 +3616,13 @@
           "description": "Should the card dim on hover.\nThis should be turned on if the card is clickable",
           "type": "boolean",
           "default": "false"
+        },
+        {
+          "name": "imagePadding",
+          "attribute": "imagePadding",
+          "description": "Padding of the image on the card element",
+          "type": "string",
+          "default": "\"\""
         }
       ],
       "properties": [
@@ -3665,6 +3672,13 @@
           "description": "Should the card dim on hover.\nThis should be turned on if the card is clickable",
           "type": "boolean",
           "default": "false"
+        },
+        {
+          "name": "imagePadding",
+          "attribute": "imagePadding",
+          "description": "Padding of the image on the card element",
+          "type": "string",
+          "default": "\"\""
         }
       ]
     },
