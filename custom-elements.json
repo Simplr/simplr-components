@@ -3667,6 +3667,79 @@
           "default": "false"
         }
       ]
+    },
+    {
+      "name": "simplr-accordion",
+      "path": "./accordion.js",
+      "attributes": [
+        {
+          "name": "label",
+          "description": "Label of the accordion",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "description": "Icon shown in the header of accordion",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "backgroundColor",
+          "description": "Background color of the accordion header",
+          "type": "string",
+          "default": "\"#FFFFFF\""
+        },
+        {
+          "name": "openBackgroundColor",
+          "description": "Backgroundcolor of the header when the accordion is open",
+          "type": "string",
+          "default": "\"backgroundColor\""
+        },
+        {
+          "name": "open",
+          "description": "Is the accordion open?",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Label of the accordion",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Icon shown in the header of accordion",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "backgroundColor",
+          "attribute": "backgroundColor",
+          "description": "Background color of the accordion header",
+          "type": "string",
+          "default": "\"#FFFFFF\""
+        },
+        {
+          "name": "openBackgroundColor",
+          "attribute": "openBackgroundColor",
+          "description": "Backgroundcolor of the header when the accordion is open",
+          "type": "string",
+          "default": "\"backgroundColor\""
+        },
+        {
+          "name": "open",
+          "attribute": "open",
+          "description": "Is the accordion open?",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
     }
   ]
 }

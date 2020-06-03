@@ -17,12 +17,57 @@ import { withKnobs, withWebComponentsKnobs, Story, Preview, Meta, Props } from '
 ```
 
 ```html
-  <simplr-accordion label="Button" icon="code" ></simplr-accordion>
+  <simplr-accordion label="Accordion 1" icon="code" >
+    <simplr-container>
+        <h2>This is the Accordion content pane</h2>
+        <p>This pane can contain anything from text to images to whatever you can imagine</p>
+        <p>Lorem ipsum and so on</p>
+    </simplr-container>
+  </simplr-accordion>
+  <simplr-accordion label="Accordion 2 (No Icon)" >
+    <simplr-container>
+        <h2>This is the Accordion content pane</h2>
+        <p>This pane can contain anything from text to images to whatever you can imagine</p>
+        <p>Lorem ipsum and so on</p>
+    </simplr-container>
+  </simplr-accordion>
+  <simplr-accordion label="Accordion 3 (Background color when open)" openBackgroundColor="red" >
+    <simplr-container>
+        <h2>This is the Accordion content pane</h2>
+        <p>This pane can contain anything from text to images to whatever you can imagine</p>
+        <p>Lorem ipsum and so on</p>
+    </simplr-container>
+  </simplr-accordion>
 ```
 
 <Story name="Simplr Accordion">
   {html`
-  <simplr-accordion label="Button" icon="code" ></simplr-accordion>
+<style>
+    body {
+         background: #fafafa;
+    }
+</style>
+  <simplr-accordion label="Accordion 1" icon="code" >
+    <simplr-container>
+        <h2>This is the Accordion content pane</h2>
+        <p>This pane can contain anything from text to images to whatever you can imagine</p>
+        <p>Lorem ipsum and so on</p>
+    </simplr-container>
+  </simplr-accordion>
+  <simplr-accordion label="Accordion 2 (No Icon)" >
+    <simplr-container>
+        <h2>This is the Accordion content pane</h2>
+        <p>This pane can contain anything from text to images to whatever you can imagine</p>
+        <p>Lorem ipsum and so on</p>
+    </simplr-container>
+  </simplr-accordion>
+  <simplr-accordion label="Accordion 3 (Background color when open)" openBackgroundColor="red" >
+    <simplr-container>
+        <h2>This is the Accordion content pane</h2>
+        <p>This pane can contain anything from text to images to whatever you can imagine</p>
+        <p>Lorem ipsum and so on</p>
+    </simplr-container>
+  </simplr-accordion>
   `}
 </Story>
 
