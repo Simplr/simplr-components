@@ -3623,6 +3623,13 @@
           "description": "Padding of the image on the card element",
           "type": "string",
           "default": "\"\""
+        },
+        {
+          "name": "elevated",
+          "attribute": "elevated",
+          "description": "Should the card be elevated",
+          "type": "boolean",
+          "default": "false"
         }
       ],
       "properties": [
@@ -3679,6 +3686,13 @@
           "description": "Padding of the image on the card element",
           "type": "string",
           "default": "\"\""
+        },
+        {
+          "name": "elevated",
+          "attribute": "elevated",
+          "description": "Should the card be elevated",
+          "type": "boolean",
+          "default": "false"
         }
       ]
     },
