@@ -24,6 +24,7 @@ import '@simplr-wc/card';
 | `content`      | `content`      | `string`  | ""      | Content of the card element                                                                                 |
 | `dimOnHover`   | `dimOnHover`   | `boolean` | false   | Should the card dim on hover.<br />This should be turned on if the card is clickable                        |
 | `elevated`     | `elevated`     | `boolean` | false   | Should the card be elevated                                                                                 |
+| `fontSize`     | `fontSize`     | `string`  | "1rem"  | Font size to scale the card contents by                                                                     |
 | `image`        | `image`        | `string`  | ""      | Image url of the card element                                                                               |
 | `imagePadding` | `imagePadding` | `string`  | ""      | Padding of the image on the card element                                                                    |
 | `imageWidth`   | `imageWidth`   | `string`  |         | Width of the image on card. 100% if not set.                                                                |

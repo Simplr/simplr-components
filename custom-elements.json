@@ -3630,6 +3630,13 @@
           "description": "Should the card be elevated",
           "type": "boolean",
           "default": "false"
+        },
+        {
+          "name": "fontSize",
+          "attribute": "fontSize",
+          "description": "Font size to scale the card contents by",
+          "type": "string",
+          "default": "\"1rem\""
         }
       ],
       "properties": [
@@ -3693,6 +3700,13 @@
           "description": "Should the card be elevated",
           "type": "boolean",
           "default": "false"
+        },
+        {
+          "name": "fontSize",
+          "attribute": "fontSize",
+          "description": "Font size to scale the card contents by",
+          "type": "string",
+          "default": "\"1rem\""
         }
       ]
     },
