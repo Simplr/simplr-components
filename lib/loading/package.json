@@ -12,5 +12,9 @@
     "@simplr-wc/theme": "^0.3.0",
     "lit-element": "^2.3.1",
     "lit-html": "^1.2.1"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "dbc324d00bb8b7db9225d8104086e61cb0d1a7a0"
 }

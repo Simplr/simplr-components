@@ -22,5 +22,6 @@
     "@simplr-wc/button": "^0.1.6",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
-  }
+  },
+  "gitHead": "dbc324d00bb8b7db9225d8104086e61cb0d1a7a0"
 }
