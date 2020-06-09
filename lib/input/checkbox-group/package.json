@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/checkbox-group",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Checkbox Group Web Component. Part of Simplr Components",
   "main": "checkbox-group.js",
@@ -18,8 +18,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@simplr-wc/checkbox": "0.1.6",
     "@material/mwc-formfield": "^0.14.1",
+    "@simplr-wc/checkbox": "0.1.6",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
   }

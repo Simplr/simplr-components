@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/button",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Button Web Component. Part of Simplr Components",
   "main": "button.js",

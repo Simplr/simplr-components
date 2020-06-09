@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/theme",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Simplr Theme. A theming tool for Simplr Components",
   "main": "simplr-theme.js",

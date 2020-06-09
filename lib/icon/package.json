@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/icon",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Material Icon Web Component. Part of Simplr Components",
   "main": "icon.js",
@@ -18,8 +18,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@simplr-wc/theme": "0.1.1",
     "@material/mwc-icon": "^0.14.1",
+    "@simplr-wc/theme": "0.1.1",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
   }

@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/select",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Select Web Component. Part of Simplr Components",
   "main": "select.js",
@@ -18,8 +18,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@material/mwc-select": "^0.14.1",
     "@material/mwc-list": "^0.14.1",
+    "@material/mwc-select": "^0.14.1",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
   }

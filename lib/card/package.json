@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/card",
-  "version": "0.2.7",
+  "version": "0.3.0",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Card Web Component. Part of Simplr Components",
   "main": "card.js",
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@simplr-wc/container": "^0.2.1",
+    "@simplr-wc/container": "^0.3.0",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
   }

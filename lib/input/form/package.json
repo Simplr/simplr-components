@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/form",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Form Web Component. Part of Simplr Components",
   "main": "form.js",

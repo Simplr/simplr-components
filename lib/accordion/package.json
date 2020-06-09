@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/accordion",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Accordion Web Component. Part of Simplr Components",
   "main": "accordion.js",
@@ -18,8 +18,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@simplr-wc/icon": "^0.2.0",
-    "@simplr-wc/elevation": "^0.2.0",
+    "@simplr-wc/elevation": "^0.3.0",
+    "@simplr-wc/icon": "^0.3.0",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
   }

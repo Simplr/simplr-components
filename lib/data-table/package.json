@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/data-table",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Data Table Web Component. Part of Simplr Components",
   "main": "data-table.js",
@@ -18,8 +18,8 @@
     "access": "public"
   },
   "dependencies": {
+    "@simplr-wc/info-button": "^0.3.0",
     "@simplr-wc/theme": "^0.1.1",
-    "@simplr-wc/info-button": "^0.2.1",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
   }
