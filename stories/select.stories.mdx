@@ -45,4 +45,52 @@ const options = [
   `}
 </Story>
 
+<Story name="Multi-Select">
+    {html`
+    <simplr-select
+    multi
+        label="Simple select"
+        .selectedValues=${[1,3]}
+        .options=${[
+                       {label: "Banana", value: 1},
+                       {label: "Strawberry", value: 2},
+                       {label: "Kiwi", value: 3},
+                       {label: "Peach", value: 4},
+                   ]}
+    ></simplr-select>
+    `}
+</Story>
+
+<Story name="Select with icon">
+  {html`
+    <simplr-select
+        label="Simple select"
+        icon="shopping_cart"
+        .options=${[
+                       {label: "Banana", value: 1},
+                       {label: "Strawberry", value: 2},
+                       {label: "Kiwi", value: 3},
+                       {label: "Peach", value: 4},
+                   ]}
+    ></simplr-select>
+  `}
+</Story>
+
+
+<Story name="Required Select">
+  {html`
+    <simplr-select
+        label="Simple select"
+        icon="shopping_cart"
+        required
+        .options=${[
+                       {label: "Banana", value: 1},
+                       {label: "Strawberry", value: 2},
+                       {label: "Kiwi", value: 3},
+                       {label: "Peach", value: 4},
+                   ]}
+    ></simplr-select>
+  `}
+</Story>
+
 <Props of="simplr-select" />
