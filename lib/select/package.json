@@ -1,6 +1,6 @@
 {
   "name": "@simplr-wc/select",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "homepage": "https://simplr.github.io/simplr-components/",
   "description": "Select Web Component. Part of Simplr Components",
   "main": "select.js",
